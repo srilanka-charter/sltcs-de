@@ -14,11 +14,11 @@
 - [x] vitestテストを作成・実行して全テスト通過を確認する
 - [x] TypeScriptエラーを全て解消する
 - [x] ビルドを確認してエラーがないことを検証する
-- [ ] チェックポイントを保存してデプロイする
+- [x] チェックポイントを保存してデプロイする
 
 ## 既存サイトの hreflang 更新
 
-- [ ] sltcs-en の index.html にドイツ語 hreflang を追加して GitHub を更新する
-- [ ] sltcs-fr の index.html にドイツ語 hreflang を追加して GitHub を更新する
-- [ ] sltcs-es の index.html にドイツ語 hreflang を追加して GitHub を更新する
-- [ ] sltcs-ru の index.html にドイツ語 hreflang を追加して GitHub を更新する
+- [x] sltcs-en の index.html にドイツ語 hreflang を追加して GitHub を更新する
+- [x] srilanka-charter-fr の index.html にドイツ語 hreflang を追加して GitHub を更新する
+- [x] srilanka-charter-es の index.html にドイツ語 hreflang を追加して GitHub を更新する
+- [x] srilanka-charter-ru の index.html にドイツ語 hreflang を追加して GitHub を更新する
