@@ -1,0 +1,24 @@
+# SLTCS-DE Project TODO
+
+## ドイツ語サイト構築
+
+- [x] Home.tsx を英語版ベースにドイツ語テキストで実装する
+- [x] Thanks.tsx をドイツ語で実装する
+- [x] index.html に canonical・hreflang（全5言語）を設定する
+- [x] カスタム日付ピッカーの月名・曜日名をドイツ語にローカライズする
+- [x] お問い合わせフォームの tRPC バックエンドを設定する（メール送信）
+- [x] App.tsx に Thanks ページのルートを追加する
+- [x] 全17枚の画像をwebdev-static-assetsにアップロードしてURLを更新する
+- [x] sitemap.xmlをドイツ語用に作成する
+- [x] Gmail認証情報（GMAIL_USER, GMAIL_APP_PASSWORD）を設定する
+- [x] vitestテストを作成・実行して全テスト通過を確認する
+- [x] TypeScriptエラーを全て解消する
+- [x] ビルドを確認してエラーがないことを検証する
+- [ ] チェックポイントを保存してデプロイする
+
+## 既存サイトの hreflang 更新
+
+- [ ] sltcs-en の index.html にドイツ語 hreflang を追加して GitHub を更新する
+- [ ] sltcs-fr の index.html にドイツ語 hreflang を追加して GitHub を更新する
+- [ ] sltcs-es の index.html にドイツ語 hreflang を追加して GitHub を更新する
+- [ ] sltcs-ru の index.html にドイツ語 hreflang を追加して GitHub を更新する
