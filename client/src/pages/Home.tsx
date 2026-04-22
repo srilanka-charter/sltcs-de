@@ -461,6 +461,9 @@ function ContactForm() {
                   {submitError}
                 </div>
               )}
+              <p className="text-sm text-amber-200/80 text-center mb-2">
+                Bitte beachten Sie: Nach Ihrer Anfrage antworten wir auf Englisch.
+              </p>
               <button
                 type="submit"
                 className={`form-submit-btn${isSubmitting ? " loading" : ""}`}
