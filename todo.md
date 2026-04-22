@@ -22,3 +22,11 @@
 - [x] srilanka-charter-fr の index.html にドイツ語 hreflang を追加して GitHub を更新する
 - [x] srilanka-charter-es の index.html にドイツ語 hreflang を追加して GitHub を更新する
 - [x] srilanka-charter-ru の index.html にドイツ語 hreflang を追加して GitHub を更新する
+
+## hreflang追加（nl/ja）
+
+- [x] sltcs-de の index.html に nl/ja hreflang を追加する
+- [x] sltcs-en の index.html に nl/ja hreflang を追加して GitHub にプッシュする
+- [x] srilanka-charter-fr の index.html に nl/ja hreflang を追加して GitHub にプッシュする
+- [x] srilanka-charter-es の index.html に nl/ja hreflang を追加して GitHub にプッシュする
+- [x] srilanka-charter-ru の index.html に nl/ja hreflang を追加して GitHub にプッシュする
