@@ -30,3 +30,7 @@
 - [x] srilanka-charter-fr の index.html に nl/ja hreflang を追加して GitHub にプッシュする
 - [x] srilanka-charter-es の index.html に nl/ja hreflang を追加して GitHub にプッシュする
 - [x] srilanka-charter-ru の index.html に nl/ja hreflang を追加して GitHub にプッシュする
+
+## 言語切り替えプルダウン
+
+- [x] ヘッダーのKONTAKTの横に言語切り替えプルダウンを追加する（英語表記、7言語リンク）

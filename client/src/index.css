@@ -191,6 +191,44 @@
   z-index: 100;
 }
 .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+
+/* Language switcher */
+.lang-switcher { position: relative; }
+.lang-switcher > button {
+  background: none;
+  border: 1px solid rgba(201,168,76,0.4);
+  border-radius: 4px;
+  color: var(--text);
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.lang-switcher > button:hover { border-color: var(--gold); color: var(--gold); }
+.lang-menu {
+  display: block !important;
+  right: 0;
+  left: auto;
+  min-width: 140px;
+}
+.mobile-lang-switcher {
+  border-top: 1px solid rgba(201,168,76,0.15);
+  margin-top: 8px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.mobile-lang-switcher a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+.mobile-lang-switcher a:hover { color: var(--gold); }
 .nav-dropdown-menu a {
   display: block;
   padding: 10px 20px;

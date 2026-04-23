@@ -111,10 +111,30 @@ const SLIDES = [
 // Note: hero1 = van image (first slide), hero2 = Sigiriya (second slide)
 
 // ─── Navbar ───────────────────────────────────────────────────────────────────
+const LANGUAGES = [
+  { code: "de", label: "German", url: "https://de.srilanka-charter.com/" },
+  { code: "en", label: "English", url: "https://en.srilanka-charter.com/" },
+  { code: "fr", label: "French", url: "https://fr.srilanka-charter.com/" },
+  { code: "es", label: "Spanish", url: "https://es.srilanka-charter.com/" },
+  { code: "nl", label: "Dutch", url: "https://nl.srilanka-charter.com/" },
+  { code: "ru", label: "Russian", url: "https://ru.srilanka-charter.com/" },
+  { code: "ja", label: "Japanese", url: "https://sltcs.srilanka-charter.com/" },
+];
+
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef<HTMLLIElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) setLangOpen(false);
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -150,6 +170,24 @@ function Navbar() {
           <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>FAHRZEUGE</a></li>
           <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>KONTAKT</a></li>
+          <li className="nav-dropdown lang-switcher" ref={langRef}>
+            <button onClick={() => setLangOpen(o => !o)} aria-label="Language" style={{display:"flex",alignItems:"center",gap:"4px"}}>
+              <span style={{fontSize:"1.1em"}}>🌐</span> DE <span style={{fontSize:"0.7em",opacity:0.7}}>▾</span>
+            </button>
+            {langOpen && (
+              <div className="nav-dropdown-menu lang-menu">
+                {LANGUAGES.map(lang => (
+                  <a
+                    key={lang.code}
+                    href={lang.url}
+                    style={lang.code === "de" ? {fontWeight:700, color:"#c9a84c"} : {}}
+                  >
+                    {lang.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </li>
         </ul>
         <button className="hamburger" aria-label="Menü" onClick={() => setMobileOpen(!mobileOpen)}>
           <span /><span /><span />
@@ -163,6 +201,18 @@ function Navbar() {
           <a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kontakt</a>
           <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kostenlose Anfrage</a>
+          <div className="mobile-lang-switcher">
+            <p style={{margin:"8px 0 4px",fontSize:"0.75rem",opacity:0.6,letterSpacing:"0.1em"}}>LANGUAGE</p>
+            {LANGUAGES.map(lang => (
+              <a
+                key={lang.code}
+                href={lang.url}
+                style={lang.code === "de" ? {fontWeight:700, color:"#c9a84c"} : {}}
+              >
+                {lang.label}
+              </a>
+            ))}
+          </div>
         </div>
       )}
     </>
