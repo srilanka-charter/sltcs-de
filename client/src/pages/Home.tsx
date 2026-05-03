@@ -169,8 +169,8 @@ function Navbar() {
           </li>
           <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>FAHRZEUGE</a></li>
           <li><a href="/price">PREIS</a></li>
-          <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>KONTAKT</a></li>
+          <li><a href="/faq">FAQ</a></li>
           <li className="nav-dropdown lang-switcher" ref={langRef}>
             <button onClick={() => setLangOpen(o => !o)} aria-label="Language" style={{display:"flex",alignItems:"center",gap:"4px"}}>
               <span style={{fontSize:"1.1em"}}>🌐</span> DE <span style={{fontSize:"0.7em",opacity:0.7}}>▾</span>
@@ -200,8 +200,8 @@ function Navbar() {
           <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Beispielreisen</a>
           <a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>Fahrzeuge</a>
           <a href="/price">Preis</a>
-          <a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kontakt</a>
+          <a href="/faq">FAQ</a>
           <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kostenlose Anfrage</a>
           <div className="mobile-lang-switcher">
             <p style={{margin:"8px 0 4px",fontSize:"0.75rem",opacity:0.6,letterSpacing:"0.1em"}}>LANGUAGE</p>
@@ -1203,7 +1203,7 @@ function Footer() {
               <li><a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Pläne</a></li>
               <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Beispielrouten</a></li>
               <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>Fahrzeuge</a></li>
-              <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a></li>
+              <li><a href="/faq">FAQ</a></li>
               <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kontakt</a></li>
             </ul>
           </div>
@@ -1265,7 +1265,6 @@ export default function Home() {
       <Reviews />
       <HowItWorks />
       <Vehicles />
-      <FAQ />
       <Company />
       <Footer />
       <FloatingCTA />

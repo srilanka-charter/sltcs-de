@@ -51,3 +51,11 @@
 - [x] Pricing.tsxにcanonicalタグの動的設定を追加する（/priceページ用URL）
 - [x] Pricing.tsxにhreflangの動的設定を追加する（/priceページ用７言語URL）
 - [x] ビルド確認・チェックポイント保存
+
+## FAQページ作成・ナビゲーション更新
+
+- [x] ドイツ語版FAQ.tsxを新規作成する（英語版と同じ内容をドイツ語訳）
+- [x] App.tsxに/faqルートを追加する
+- [x] SiteNavbar.tsxのFAQリンクを/faqへ変更し、KONTAKTの右に移動する
+- [x] Home.tsxのFAQセクションを削除する
+- [x] ビルド確認・チェックポイント保存
