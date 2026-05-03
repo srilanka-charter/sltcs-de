@@ -168,6 +168,7 @@ function Navbar() {
             )}
           </li>
           <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>FAHRZEUGE</a></li>
+          <li><a href="/price">PREIS</a></li>
           <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>KONTAKT</a></li>
           <li className="nav-dropdown lang-switcher" ref={langRef}>
@@ -198,6 +199,7 @@ function Navbar() {
           <a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Angebote</a>
           <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Beispielreisen</a>
           <a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>Fahrzeuge</a>
+          <a href="/price">Preis</a>
           <a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kontakt</a>
           <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kostenlose Anfrage</a>
@@ -642,6 +644,120 @@ function Plans() {
             </ul>
             <a href="#contact" className="plan-cta" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Details ansehen</a>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── Pricing Preview ─────────────────────────────────────────────────────────
+type CurrencyKeyHP = "USD" | "GBP" | "EUR" | "AUD";
+type TierKeyHP = "bronze" | "silver" | "gold";
+type VehicleKeyHP = "sedan" | "van" | "bigvan";
+
+const CURRENCY_SYMBOLS_HP: Record<CurrencyKeyHP, string> = { USD: "$", GBP: "£", EUR: "€", AUD: "A$" };
+
+const PRICES_HP: Record<CurrencyKeyHP, Record<TierKeyHP, Record<VehicleKeyHP, number[]>>> = {
+  USD: {
+    bronze: { sedan: [290,370,460,550,610,670,730,830,920,1020,1110,1210,1300,1400,1490,1590,1680,1780,1870], van: [350,450,560,660,730,800,870,990,1090,1210,1320,1430,1540,1650,1750,1860,1960,2070,2170], bigvan: [410,530,660,770,850,920,1000,1140,1260,1400,1520,1650,1770,1900,2010,2140,2260,2390,2510] },
+    silver: { sedan: [340,440,550,660,730,800,870,990,1090,1210,1320,1440,1550,1670,1780,1900,2010,2130,2240], van: [410,530,660,780,860,940,1030,1170,1290,1430,1560,1700,1830,1970,2090,2230,2360,2500,2630], bigvan: [480,620,770,900,990,1070,1170,1330,1470,1630,1770,1930,2080,2240,2380,2540,2690,2850,2990] },
+    gold:   { sedan: [390,510,640,770,860,950,1040,1180,1310,1450,1590,1730,1870,2010,2140,2280,2420,2560,2700], van: [470,610,760,900,1000,1100,1200,1360,1510,1680,1830,2000,2160,2330,2490,2660,2820,2990,3150], bigvan: [540,700,870,1030,1150,1250,1370,1550,1720,1910,2080,2270,2450,2640,2820,3010,3200,3390,3580] },
+  },
+  GBP: {
+    bronze: { sedan: [230,290,360,430,480,520,570,650,720,800,870,950,1020,1100,1170,1250,1320,1400,1470], van: [270,350,440,520,570,630,680,780,860,950,1040,1130,1210,1300,1380,1460,1540,1630,1710], bigvan: [320,410,520,610,670,730,790,900,990,1100,1200,1300,1390,1500,1590,1690,1780,1880,1980] },
+    silver: { sedan: [270,340,430,520,570,630,680,780,860,950,1040,1130,1220,1310,1400,1490,1580,1670,1760], van: [320,410,520,610,680,740,810,920,1020,1130,1230,1340,1440,1550,1650,1760,1860,1970,2070], bigvan: [370,480,600,700,780,840,920,1040,1150,1280,1390,1520,1630,1760,1870,2000,2120,2250,2360] },
+    gold:   { sedan: [300,400,500,600,670,740,810,920,1020,1130,1240,1350,1460,1570,1680,1790,1900,2010,2120], van: [360,470,590,700,780,860,940,1070,1190,1320,1440,1570,1690,1830,1950,2090,2210,2350,2470], bigvan: [420,550,680,800,900,980,1070,1210,1340,1490,1630,1780,1920,2070,2210,2360,2510,2660,2810] },
+  },
+  EUR: {
+    bronze: { sedan: [270,340,430,510,570,620,680,770,860,950,1040,1130,1220,1310,1400,1490,1580,1670,1760], van: [330,420,530,630,690,760,830,940,1040,1160,1260,1370,1480,1590,1690,1800,1900,2010,2110], bigvan: [390,500,620,730,800,880,950,1080,1200,1330,1450,1580,1700,1830,1940,2070,2190,2320,2440] },
+    silver: { sedan: [320,410,510,610,680,740,810,920,1020,1130,1240,1350,1460,1570,1680,1790,1900,2010,2120], van: [390,500,620,730,810,880,960,1090,1210,1350,1470,1610,1730,1870,1990,2130,2260,2400,2530], bigvan: [450,580,720,840,930,1010,1100,1250,1390,1550,1690,1840,1980,2140,2280,2440,2590,2750,2890] },
+    gold:   { sedan: [360,480,600,720,810,890,980,1110,1240,1380,1510,1650,1790,1930,2060,2200,2340,2480,2620], van: [440,580,720,860,960,1060,1160,1320,1470,1640,1800,1970,2130,2310,2470,2650,2820,3010,3170], bigvan: [510,660,820,980,1100,1200,1320,1500,1670,1860,2040,2230,2420,2620,2810,3010,3210,3420,3620] },
+  },
+  AUD: {
+    bronze: { sedan: [440,560,700,830,920,1010,1100,1250,1390,1540,1680,1830,1970,2120,2260,2410,2550,2700,2840], van: [530,680,840,990,1090,1200,1310,1490,1650,1830,2000,2170,2340,2510,2670,2840,3000,3170,3330], bigvan: [620,790,980,1160,1280,1400,1530,1740,1930,2140,2330,2530,2730,2930,3120,3330,3520,3720,3920] },
+    silver: { sedan: [520,660,820,980,1080,1180,1290,1470,1630,1810,1980,2160,2330,2510,2680,2860,3030,3210,3380], van: [610,780,970,1140,1260,1380,1510,1720,1910,2120,2310,2520,2720,2930,3120,3340,3540,3750,3950], bigvan: [710,910,1120,1320,1460,1580,1730,1970,2190,2440,2660,2900,3130,3380,3610,3860,4100,4350,4580] },
+    gold:   { sedan: [580,770,960,1150,1290,1420,1560,1780,1980,2200,2410,2630,2850,3080,3300,3530,3760,3990,4220], van: [690,900,1120,1330,1490,1640,1800,2060,2290,2550,2790,3050,3310,3580,3840,4110,4380,4660,4930], bigvan: [790,1030,1270,1510,1690,1840,2020,2310,2570,2860,3130,3430,3730,4040,4340,4650,4970,5290,5610] },
+  },
+};
+
+const DAYS_HP = Array.from({ length: 19 }, (_, i) => i + 2);
+const TIERS_HP: { key: TierKeyHP; label: string; badge?: string; color: string }[] = [
+  { key: "bronze", label: "Bronze-Plan", color: "#cd7f32" },
+  { key: "silver", label: "Silber-Plan", badge: "Beliebteste Wahl", color: "#c9a84c" },
+  { key: "gold",   label: "Gold-Plan",   color: "#d4af37" },
+];
+const VEHICLES_HP: { key: VehicleKeyHP; label: string; capacity: string }[] = [
+  { key: "sedan",  label: "Sedan",   capacity: "1–3 Personen" },
+  { key: "van",    label: "Van",     capacity: "3–6 Personen" },
+  { key: "bigvan", label: "Großer Van", capacity: "6–9 Personen" },
+];
+function PriceCard({ tier, currency }: { tier: (typeof TIERS_HP)[number]; currency: CurrencyKeyHP }) {
+  const [vehicle, setVehicle] = useState<VehicleKeyHP>("sedan");
+  const sym = CURRENCY_SYMBOLS_HP[currency];
+  const prices = PRICES_HP[currency][tier.key][vehicle];
+  return (
+    <div style={{ background: "var(--dark2, #1a1a1a)", border: `1px solid ${tier.color}40`, borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column" }}>
+      <div style={{ background: `linear-gradient(135deg, ${tier.color}22, ${tier.color}08)`, borderBottom: `1px solid ${tier.color}30`, padding: "16px 20px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "6px" }}>
+          <span style={{ background: tier.color, color: "#000", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.1em", padding: "2px 8px", borderRadius: "20px", textTransform: "uppercase" }}>{tier.key.toUpperCase()}</span>
+          {tier.badge && <span style={{ background: "rgba(201,168,76,0.15)", border: "1px solid rgba(201,168,76,0.4)", color: "#c9a84c", fontSize: "0.6rem", fontWeight: 600, padding: "2px 7px", borderRadius: "20px", textTransform: "uppercase" }}>{tier.badge}</span>}
+        </div>
+        <h3 style={{ color: "#fff", fontSize: "1rem", fontWeight: 700, margin: 0 }}>{tier.label}</h3>
+      </div>
+      <div style={{ display: "flex", borderBottom: "1px solid rgba(255,255,255,0.08)", background: "rgba(0,0,0,0.2)" }}>
+        {VEHICLES_HP.map((v) => (
+          <button key={v.key} onClick={() => setVehicle(v.key)} style={{ flex: 1, padding: "8px 4px", background: "none", border: "none", borderBottom: vehicle === v.key ? `2px solid ${tier.color}` : "2px solid transparent", color: vehicle === v.key ? tier.color : "rgba(255,255,255,0.5)", fontSize: "0.7rem", fontWeight: vehicle === v.key ? 600 : 400, cursor: "pointer", transition: "all 0.2s", textAlign: "center", lineHeight: 1.3 }}>
+            <div>{v.label}</div>
+            <div style={{ fontSize: "0.6rem", opacity: 0.7 }}>{v.capacity}</div>
+          </button>
+        ))}
+      </div>
+      <div style={{ flex: 1 }}>
+        <table style={{ width: "100%", borderCollapse: "collapse" }}>
+          <thead>
+            <tr>
+              <th style={{ padding: "8px 14px", textAlign: "left", color: "rgba(255,255,255,0.5)", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", background: "rgba(20,20,20,0.95)" }}>Tage</th>
+              <th style={{ padding: "8px 14px", textAlign: "right", color: "rgba(255,255,255,0.5)", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", background: "rgba(20,20,20,0.95)" }}>Preis (inkl. Steuer)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {DAYS_HP.map((day, idx) => (
+              <tr key={day} style={{ borderBottom: "1px solid rgba(255,255,255,0.04)", background: idx % 2 === 0 ? "transparent" : "rgba(255,255,255,0.02)" }}>
+                <td style={{ padding: "8px 14px", color: "rgba(255,255,255,0.7)", fontSize: "0.82rem" }}>{day} Tage</td>
+                <td style={{ padding: "8px 14px", textAlign: "right", color: "#fff", fontSize: "0.9rem", fontWeight: 600 }}>{sym}{prices[idx].toLocaleString()}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+function PricingPreview() {
+  const [currency, setCurrency] = useState<CurrencyKeyHP>("EUR");
+  return (
+    <section id="pricing" style={{ background: "var(--dark, #0d0d0d)", padding: "80px 0" }}>
+      <div className="container">
+        <div className="section-eyebrow">TRANSPARENTE PREISE</div>
+        <h2 className="section-title">Pauschalpreisliste</h2>
+        <p className="section-sub" style={{ marginBottom: "32px" }}>Alle Preise sind inklusive Steuern und gelten für englischsprachige Fahrer. Wählen Sie Ihre bevorzugte Währung und Fahrzeugtyp.</p>
+        <div style={{ display: "flex", gap: "8px", marginBottom: "28px", flexWrap: "wrap" }}>
+          {(["USD", "GBP", "EUR", "AUD"] as CurrencyKeyHP[]).map((c) => (
+            <button key={c} onClick={() => setCurrency(c)} style={{ padding: "8px 20px", background: currency === c ? "rgba(201,168,76,0.2)" : "rgba(255,255,255,0.05)", border: currency === c ? "1px solid rgba(201,168,76,0.5)" : "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", color: currency === c ? "#c9a84c" : "rgba(255,255,255,0.55)", fontSize: "0.85rem", fontWeight: currency === c ? 700 : 400, cursor: "pointer", transition: "all 0.2s" }}>
+              {CURRENCY_SYMBOLS_HP[c]} {c}
+            </button>
+          ))}
+        </div>
+        <div style={{ background: "rgba(201,168,76,0.06)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "8px", padding: "12px 18px", marginBottom: "28px" }}>
+          <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.85rem", lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: "#c9a84c" }}>Hinweis:</strong> Zusätzliche Gebühren können anfallen, wenn die Gesamtentfernung die Standardschätzung überschreitet oder wenn der Abhol-/Absetzpunkt außerhalb des Flughafenbereichs liegt.
+          </p>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+          {TIERS_HP.map((tier) => <PriceCard key={tier.key} tier={tier} currency={currency} />)}
+        </div>
+        <div style={{ textAlign: "center", marginTop: "32px" }}>
+          <a href="/price" className="btn-outline" style={{ display: "inline-block" }}>Vollständige Preisseite ansehen →</a>
         </div>
       </div>
     </section>
@@ -1143,6 +1259,7 @@ export default function Home() {
       <WhySLTCS />
       <Concerns />
       <Plans />
+      <PricingPreview />
       <Itineraries />
       <Destinations />
       <Reviews />

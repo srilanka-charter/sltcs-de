@@ -34,3 +34,12 @@
 ## 言語切り替えプルダウン
 
 - [x] ヘッダーのKONTAKTの横に言語切り替えプルダウンを追加する（英語表記、7言語リンク）
+
+## /priceページ作成・ヘッダー更新
+
+- [x] 英語サイトの/priceページのソースコードを確認する
+- [x] /priceページをドイツ語訳してsltcs-deに実装する（Pricing.tsx）
+- [x] App.tsxに/priceルートを追加する
+- [x] ヘッダーナビゲーションにPREISリンクを追加する
+- [x] Home.tsxにPricingPreviewセクション（Pauschalpreisliste）をドイツ語版で追加する
+- [x] ビルド確認・チェックポイント保存
