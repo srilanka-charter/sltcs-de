@@ -338,12 +338,13 @@ function PlanCard({
 export default function Pricing() {
   const [currency, setCurrency] = useState<CurrencyKey>("USD");
 
-  // ─── SEO: title, meta description, JSON-LD ──────────────────────────────────
+  // ─── SEO: title, meta description, canonical, hreflang, JSON-LD ──────────────
   useEffect(() => {
-    // Title
-    document.title = "Sri Lanka Mietwagen Preise | Pauschaltarife | SLTCS";
+    // ─ Title ─────────────────────────────────────────────────────────────────────
+    const prevTitle = document.title;
+    document.title = "Sri Lanka Mietwagen mit Fahrer – Preise & Pauschaltarife | SLTCS";
 
-    // Meta description
+    // ─ Meta description ──────────────────────────────────────────────────────────
     let metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     if (!metaDesc) {
       metaDesc = document.createElement("meta");
@@ -352,9 +353,44 @@ export default function Pricing() {
     }
     const prevDesc = metaDesc.content;
     metaDesc.content =
-      "Pauschaltarife für privaten Mietwagen mit Fahrer in Sri Lanka. Bronze-, Silber- & Gold-Plan ab $270. Limousine, Van & Großer Van. USD, GBP, EUR, AUD.";
+      "Sri Lanka Mietwagen mit Fahrer – Pauschaltarife ohne versteckte Kosten. Bronze, Silber & Gold ab $270. Limousine, Van & Großer Van. Jetzt kostenlos anfragen.";
 
-    // JSON-LD
+    // ─ Canonical ─────────────────────────────────────────────────────────────────
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    const prevCanonical = canonical?.href ?? "";
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://de.srilanka-charter.com/price";
+
+    // ─ hreflang ──────────────────────────────────────────────────────────────────
+    const hreflangData = [
+      { hreflang: "de", href: "https://de.srilanka-charter.com/price" },
+      { hreflang: "en", href: "https://en.srilanka-charter.com/price" },
+      { hreflang: "fr", href: "https://fr.srilanka-charter.com/price" },
+      { hreflang: "es", href: "https://es.srilanka-charter.com/price" },
+      { hreflang: "ru", href: "https://ru.srilanka-charter.com/price" },
+      { hreflang: "nl", href: "https://nl.srilanka-charter.com/price" },
+      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/price" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/price" },
+    ];
+    // Remove existing hreflang links (homepage ones from index.html)
+    const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
+    existingHreflangs.forEach((el) => el.remove());
+    // Add /price-specific hreflang links
+    const addedHreflangs: HTMLLinkElement[] = [];
+    hreflangData.forEach(({ hreflang, href }) => {
+      const link = document.createElement("link");
+      link.rel = "alternate";
+      link.setAttribute("hreflang", hreflang);
+      link.href = href;
+      document.head.appendChild(link);
+      addedHreflangs.push(link);
+    });
+
+    // ─ JSON-LD ───────────────────────────────────────────────────────────────────
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": "Product",
@@ -419,8 +455,28 @@ export default function Pricing() {
     document.head.appendChild(script);
 
     return () => {
-      document.title = "SLTCS｜Sri Lanka Mietwagen mit privatem Fahrer";
+      document.title = prevTitle;
       metaDesc!.content = prevDesc;
+      if (canonical) canonical.href = prevCanonical;
+      // Restore homepage hreflang links
+      addedHreflangs.forEach((el) => el.remove());
+      const homepageHreflangs = [
+        { hreflang: "de", href: "https://de.srilanka-charter.com/" },
+        { hreflang: "en", href: "https://en.srilanka-charter.com/" },
+        { hreflang: "fr", href: "https://fr.srilanka-charter.com/" },
+        { hreflang: "es", href: "https://es.srilanka-charter.com/" },
+        { hreflang: "ru", href: "https://ru.srilanka-charter.com/" },
+        { hreflang: "nl", href: "https://nl.srilanka-charter.com/" },
+        { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/" },
+        { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
+      ];
+      homepageHreflangs.forEach(({ hreflang, href }) => {
+        const link = document.createElement("link");
+        link.rel = "alternate";
+        link.setAttribute("hreflang", hreflang);
+        link.href = href;
+        document.head.appendChild(link);
+      });
       document.getElementById("price-jsonld")?.remove();
     };
   }, []);

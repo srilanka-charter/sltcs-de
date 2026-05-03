@@ -43,3 +43,11 @@
 - [x] ヘッダーナビゲーションにPREISリンクを追加する
 - [x] Home.tsxにPricingPreviewセクション（Pauschalpreisliste）をドイツ語版で追加する
 - [x] ビルド確認・チェックポイント保存
+
+## /priceページ SEO最適化
+
+- [x] Pricing.tsxのdocument.titleをSEO最適化する（キーワード重視）
+- [x] Pricing.tsxのmeta descriptionを最適化する（50～160文字、ドイツ語キーワード重視）
+- [x] Pricing.tsxにcanonicalタグの動的設定を追加する（/priceページ用URL）
+- [x] Pricing.tsxにhreflangの動的設定を追加する（/priceページ用７言語URL）
+- [x] ビルド確認・チェックポイント保存
