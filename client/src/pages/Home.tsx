@@ -302,9 +302,9 @@ function Stats() {
             const progress = Math.min(elapsed / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3);
             setCounts({
-              charters: Math.floor(346 * eased),
-              satisfaction: parseFloat((4.2 * eased).toFixed(1)),
-              drivers: Math.floor(20 * eased),
+              charters: Math.floor(400 * eased),
+              satisfaction: parseFloat((4.9 * eased).toFixed(1)),
+              drivers: Math.floor(30 * eased),
             });
             if (progress < 1) requestAnimationFrame(animate);
           };
