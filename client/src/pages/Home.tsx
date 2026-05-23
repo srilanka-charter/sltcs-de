@@ -126,15 +126,8 @@ function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
-  const langRef = useRef<HTMLLIElement>(null);
-
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (langRef.current && !langRef.current.contains(e.target as Node)) setLangOpen(false);
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
+  const [mobileItineraryOpen, setMobileItineraryOpen] = useState(false);
+  const [mobileLangOpen, setMobileLangOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -151,7 +144,8 @@ function Navbar() {
     <>
       <nav className={`sltcs-nav${scrolled ? " scrolled" : ""}`}>
         <a href="#hero" className="nav-logo" onClick={(e) => { e.preventDefault(); scrollTo("hero"); }}>
-          SLTCS｜Sri Lanka Mietwagen mit privatem Fahrer
+          <span className="nav-logo-full">SLTCS｜Sri Lanka Mietwagen mit privatem Fahrer</span>
+          <span className="nav-logo-short">SLTCS</span>
         </a>
         <ul className="nav-links">
           <li><a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>ANGEBOTE</a></li>
@@ -171,20 +165,15 @@ function Navbar() {
           <li><a href="/price">PREIS</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>KONTAKT</a></li>
           <li><a href="/faq">FAQ</a></li>
-          <li className="nav-dropdown lang-switcher" ref={langRef}>
-            <button onClick={() => setLangOpen(o => !o)} aria-label="Language" style={{display:"flex",alignItems:"center",gap:"4px"}}>
-              <span style={{fontSize:"1.1em"}}>🌐</span> DE <span style={{fontSize:"0.7em",opacity:0.7}}>▾</span>
+          <li className="nav-dropdown nav-lang-dropdown" onMouseEnter={() => setLangOpen(true)} onMouseLeave={() => setLangOpen(false)}>
+            <button style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              DE
             </button>
             {langOpen && (
-              <div className="nav-dropdown-menu lang-menu">
-                {LANGUAGES.map(lang => (
-                  <a
-                    key={lang.code}
-                    href={lang.url}
-                    style={lang.code === "de" ? {fontWeight:700, color:"#c9a84c"} : {}}
-                  >
-                    {lang.label}
-                  </a>
+              <div className="nav-dropdown-menu">
+                {LANGUAGES.filter(l => l.code !== "de").map((lang) => (
+                  <a key={lang.code} href={lang.url}>{lang.label}</a>
                 ))}
               </div>
             )}
@@ -197,24 +186,53 @@ function Navbar() {
       {mobileOpen && (
         <div className="mobile-menu open">
           <a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Angebote</a>
-          <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Beispielreisen</a>
+          {/* Beispielreisen accordion */}
+          <div className="mobile-accordion">
+            <button
+              className="mobile-accordion-btn"
+              onClick={() => setMobileItineraryOpen(o => !o)}
+            >
+              <span>Beispielreisen</span>
+              <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                style={{ transform: mobileItineraryOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
+              ><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            {mobileItineraryOpen && (
+              <div className="mobile-accordion-body">
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nächte / 5 Tage</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nächte / 6 Tage</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nächte / 7 Tage</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Tage – Kulturelles Dreieck</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Tage bis 2 Wochen – Klassisch</a>
+              </div>
+            )}
+          </div>
           <a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>Fahrzeuge</a>
           <a href="/price">Preis</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kontakt</a>
           <a href="/faq">FAQ</a>
-          <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kostenlose Anfrage</a>
-          <div className="mobile-lang-switcher">
-            <p style={{margin:"8px 0 4px",fontSize:"0.75rem",opacity:0.6,letterSpacing:"0.1em"}}>LANGUAGE</p>
-            {LANGUAGES.map(lang => (
-              <a
-                key={lang.code}
-                href={lang.url}
-                style={lang.code === "de" ? {fontWeight:700, color:"#c9a84c"} : {}}
-              >
-                {lang.label}
-              </a>
-            ))}
+          {/* Language accordion */}
+          <div className="mobile-accordion">
+            <button
+              className="mobile-accordion-btn"
+              onClick={() => setMobileLangOpen(o => !o)}
+            >
+              <span>Andere Sprachen</span>
+              <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                style={{ transform: mobileLangOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
+              ><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            {mobileLangOpen && (
+              <div className="mobile-accordion-body">
+                {LANGUAGES.filter(l => l.code !== "de").map((lang) => (
+                  <a key={lang.code} href={lang.url}>{lang.label}</a>
+                ))}
+              </div>
+            )}
           </div>
+          <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kostenlose Anfrage</a>
         </div>
       )}
     </>
@@ -264,7 +282,7 @@ function Hero() {
           <span className="hero-tag">Regierungszertifizierter Fahrer</span>
         </div>
         <a href="#contact" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>
-          <span>💬</span> Kostenlose Anfrage
+          Kostenlose Anfrage
         </a>
       </div>
       <div className="hero-location">
@@ -337,8 +355,8 @@ function Stats() {
   );
 }
 
-// ─── Contact Form ─────────────────────────────────────────────────────────────
-function ContactForm() {
+// ─── Contact + Why SLTCS (2-column layout) ──────────────────────────────────
+function ContactAndWhy() {
   const [country, setCountry] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -346,21 +364,14 @@ function ContactForm() {
   const [startDate, setStartDate] = useState(today);
   const [endDate, setEndDate] = useState(today);
   const [, setLocation] = useLocation();
-  const formRef = useRef<HTMLFormElement>(null);
 
   const submitMutation = trpc.enquiry.submit.useMutation({
-    onSuccess: () => {
-      setLocation("/thanks");
-    },
+    onSuccess: () => { setLocation("/thanks"); },
     onError: (err) => {
       setSubmitError(err.message || "Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.");
       setIsSubmitting(false);
     },
   });
-
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -385,32 +396,64 @@ function ContactForm() {
     });
   };
 
+  const reasons = [
+    {
+      num: "01",
+      title: "Von der Regierung zertifizierte Fahrer",
+      desc: "Alle unsere Fahrer besitzen offizielle Lizenzen als Sri Lanka Tourist Driver oder Chauffeur Guide Driver. Professionell geschult, sicherheitsorientiert und von früheren Kunden hoch bewertet.",
+      svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z",
+    },
+    {
+      num: "02",
+      title: "Vollständige englische Unterstützung",
+      desc: "Von der ersten Anfrage bis zum letzten Absetzen steht Ihnen unser englischsprachiges Team zur Verfügung. Keine Sprachbarrieren – nur nahtlose Kommunikation während Ihrer gesamten Reise.",
+      svgPath: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z",
+    },
+    {
+      num: "03",
+      title: "Völlig private Charter",
+      desc: "Im Gegensatz zu Gruppentouren sind Ihr Fahrzeug und Fahrer ausschließlich für Sie reserviert. Legen Sie Ihren eigenen Zeitplan fest, wählen Sie Ihre Stopps und reisen Sie ganz nach Ihren Wünschen.",
+      svgPath: "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z",
+    },
+    {
+      num: "04",
+      title: "Expertenwissen vor Ort",
+      desc: "Unsere Chauffeur Guide Fahrer sind leidenschaftlich an Sri Lankas Geschichte, Kultur und Küche interessiert. Sie führen Sie über den Reiseführer hinaus zu versteckten Schätzen und authentischen Erlebnissen.",
+      svgPath: "M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z",
+    },
+    {
+      num: "05",
+      title: "Das richtige Fahrzeug für jede Gruppe",
+      desc: "Von Paaren bis zu großen Familiengruppen von 10 Personen – wir wählen das perfekte Fahrzeug für Ihre Gruppengröße aus und sorgen so für Komfort, selbst auf langen Fahrten über die Insel.",
+      svgPath: "M17 5H3c-1.1 0-2 .9-2 2v9h2c0 1.65 1.34 3 3 3s3-1.35 3-3h5.5c0 1.65 1.34 3 3 3s3-1.35 3-3H23v-5l-6-6zM3 11V7h4v4H3zm3 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7-6.5H9V7h4v4zm4.5 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM15 11V7h1l4 4h-5z",
+    },
+    {
+      num: "06",
+      title: "Vertraut von europäischen Reisenden",
+      desc: "Mit über 400 abgeschlossenen Charterfahrten und einer durchschnittlichen Zufriedenheitsbewertung von 4,9 ist SLTCS die bevorzugte Wahl für Besucher aus Großbritannien und Europa, die Sri Lanka erkunden.",
+      svgPath: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z",
+    },
+  ];
+
   return (
-    <section id="contact">
+    <section id="contact" style={{ background: "#faf7f2", padding: "100px 0" }}>
       <div className="container">
-        <div className="contact-inner">
-          <div className="contact-info">
-            <div className="section-eyebrow">KONTAKT</div>
-            <h2>Beginnen Sie mit der Planung<br />Ihres Sri Lanka<br />Abenteuers</h2>
-            <p>Teilen Sie uns Ihre Reisedaten, Gruppengröße und Vorlieben mit — wir antworten Ihnen innerhalb von 24 Stunden mit einem maßgeschneiderten Reiseplan und Angebot.</p>
-            <p>Ob Sie eine 5-tägige Kulturreise oder eine zweiwöchige Inselrundreise planen, unser Team steht Ihnen zur Seite.</p>
-            <div className="contact-detail">
-              <div className="contact-detail-icon">⏱️</div>
-              <div className="contact-detail-text">
-                <strong>Antwort innerhalb von 24 Stunden</strong>
-                Anfragen werden rund um die Uhr entgegengenommen — wir melden uns schnellstmöglich bei Ihnen.
-              </div>
-            </div>
-            <div className="contact-detail" style={{ marginTop: "12px" }}>
-              <div className="contact-detail-icon">🔒</div>
-              <div className="contact-detail-text">
-                <strong>Keine Verpflichtung</strong>
-                Dies ist eine kostenlose, unverbindliche Anfrage.
-              </div>
-            </div>
-          </div>
-          <div className="contact-form-wrap">
-            <form onSubmit={handleSubmit}>
+        <div className="contact-why-grid">
+
+          {/* ── LEFT: Contact Form ─────────────────────────────────────────── */}
+          <div>
+            <div className="section-eyebrow" style={{ color: "#c9a84c" }}>KONTAKT</div>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1.8rem, 3vw, 2.6rem)", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.2, margin: "0 0 16px" }}>
+              Beginnen Sie mit der Planung<br />Ihres Sri Lanka<br />Abenteuers
+            </h2>
+            <p style={{ color: "#4a4a4a", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "8px" }}>
+              Teilen Sie uns Ihre Reisedaten, Gruppengröße und Vorlieben mit — wir antworten Ihnen innerhalb von 24 Stunden mit einem maßgeschneiderten Reiseplan und Angebot.
+            </p>
+            <p style={{ color: "#4a4a4a", fontSize: "0.88rem", lineHeight: 1.7, marginBottom: "24px" }}>
+              Füllen Sie das Formular aus und senden Sie es ab. Wir antworten in der Regel innerhalb von 24 Stunden.
+            </p>
+
+            <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
               <div className="form-grid">
                 <div className="form-group full">
                   <label htmlFor="name">VOLLSTÄNDIGER NAME *</label>
@@ -443,7 +486,8 @@ function ContactForm() {
                   <label htmlFor="email">E-MAIL-ADRESSE *</label>
                   <input type="email" id="email" name="email" placeholder="ihre@email.com" required />
                 </div>
-                <div className="form-group full">                  <label htmlFor="phone">TELEFONNUMMER</label>
+                <div className="form-group full">
+                  <label htmlFor="phone">TELEFONNUMMER</label>
                   <input type="tel" id="phone" name="phone" placeholder="+44 7700 000000" />
                 </div>
                 <div className="form-group">
@@ -491,7 +535,8 @@ function ContactForm() {
                     <option value="Sedan (up to 3 pax)">Limousine (bis zu 3 Personen)</option>
                     <option value="Van (up to 6 pax)">Van (bis zu 6 Personen)</option>
                     <option value="Large Van (up to 10 pax)">Großer Van (bis zu 10 Personen)</option>
-                    <option value="Let us recommend">Lassen Sie uns empfehlen</option>                  </select>
+                    <option value="Let us recommend">Lassen Sie uns empfehlen</option>
+                  </select>
                 </div>
                 <div className="form-group full">
                   <label htmlFor="currency">BEVORZUGTE WÄHRUNG</label>
@@ -513,9 +558,6 @@ function ContactForm() {
                   {submitError}
                 </div>
               )}
-              <p className="text-sm text-amber-200/80 text-center mb-2">
-                Bitte beachten Sie: Nach Ihrer Anfrage antworten wir auf Englisch.
-              </p>
               <button
                 type="submit"
                 className={`form-submit-btn${isSubmitting ? " loading" : ""}`}
@@ -530,35 +572,53 @@ function ContactForm() {
               </p>
             </form>
           </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
-// ─── Warum SLTCS ────────────────────────────────────────────────────────────────
-function WhySLTCS() {
-  const reasons = [
-    { icon: "🛡️", title: "Von der Regierung zertifizierte Fahrer", desc: "Alle unsere Fahrer besitzen offizielle Lizenzen als Sri Lanka Tourist Driver oder Chauffeur Guide Driver. Professionell geschult, sicherheitsorientiert und von früheren Kunden hoch bewertet." },
-    { icon: "💬", title: "Vollständige englische Unterstützung", desc: "Von der ersten Anfrage bis zum letzten Absetzen steht Ihnen unser englischsprachiges Team zur Verfügung. Keine Sprachbarrieren – nur nahtlose Kommunikation während Ihrer gesamten Reise." },
-    { icon: "🚗", title: "Völlig private Charter", desc: "Im Gegensatz zu Gruppentouren sind Ihr Fahrzeug und Fahrer ausschließlich für Sie reserviert. Legen Sie Ihren eigenen Zeitplan fest, wählen Sie Ihre Stopps und reisen Sie ganz nach Ihren Wünschen." },
-    { icon: "🗺️", title: "Expertenwissen vor Ort", desc: "Unsere Chauffeur Guide Fahrer sind leidenschaftlich an Sri Lankas Geschichte, Kultur und Küche interessiert. Sie führen Sie über den Reiseführer hinaus zu versteckten Schätzen und authentischen Erlebnissen." },
-    { icon: "🚌", title: "Das Richtige Fahrzeug für Jede Gruppe", desc: "Von Paaren bis zu großen Familiengruppen von 10 Personen – wir wählen das perfekte Fahrzeug für Ihre Gruppengröße aus und sorgen so für Komfort, selbst auf langen Fahrten über die Insel." },
-    { icon: "🌍", title: "Vertraut von Europäischen Reisenden", desc: "Mit über 1.200 abgeschlossenen Charterfahrten und einer durchschnittlichen Zufriedenheitsbewertung von 4,9 ist SLTCS die bevorzugte Wahl für Besucher aus Großbritannien und Europa, die Sri Lanka erkunden." },
-  ];
-  return (
-    <section id="why">
-      <div className="container">
-        <div className="section-eyebrow">WARUM SLTCS</div>
-        <h2 className="section-title">5 Gründe, warum Reisende<br />SLTCS wählen</h2>
-        <div className="why-grid">
-          {reasons.map((r, i) => (
-            <div key={i} className="why-card">
-              <div className="why-icon">{r.icon}</div>
-              <h3>{r.title}</h3>
-              <p>{r.desc}</p>
+          {/* ── RIGHT: Why SLTCS ──────────────────────────────────────────── */}
+          <div id="why">
+            <div style={{ textAlign: "center", marginBottom: "40px" }}>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "12px" }}>
+                <div style={{ width: "40px", height: "1px", background: "#c9a84c" }} />
+                <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>WARUM SLTCS</span>
+                <div style={{ width: "40px", height: "1px", background: "#c9a84c" }} />
+              </div>
+              <div style={{ marginBottom: "12px" }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#c9a84c"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+              </div>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1.6rem, 2.5vw, 2.4rem)", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.2, margin: 0 }}>
+                6 Gründe, warum Reisende<br /><span style={{ color: "#c9a84c" }}>SLTCS</span> wählen
+              </h2>
             </div>
-          ))}
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+              {reasons.map((r) => (
+                <div
+                  key={r.num}
+                  style={{
+                    display: "flex",
+                    alignItems: "stretch",
+                    background: "#f9f5ee",
+                    border: "1px solid rgba(201,168,76,0.25)",
+                    borderRadius: "10px",
+                    overflow: "hidden",
+                    transition: "box-shadow 0.2s, border-color 0.2s",
+                  }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 20px rgba(201,168,76,0.15)"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(201,168,76,0.5)"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(201,168,76,0.25)"; }}
+                >
+                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "6px", padding: "18px 16px", minWidth: "76px", borderRight: "1px solid rgba(201,168,76,0.15)" }}>
+                    <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "#f0e8d0", border: "1px solid rgba(201,168,76,0.4)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#1a3a1a"><path d={r.svgPath} /></svg>
+                    </div>
+                    <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", fontWeight: 700, color: "#c9a84c", lineHeight: 1 }}>{r.num}</span>
+                  </div>
+                  <div style={{ padding: "18px 20px", flex: 1 }}>
+                    <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem", fontWeight: 700, color: "#1a1a1a", margin: "0 0 6px", lineHeight: 1.3 }}>{r.title}</h3>
+                    <p style={{ fontSize: "0.8rem", color: "#4a4a4a", lineHeight: 1.65, margin: 0 }}>{r.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -568,28 +628,63 @@ function WhySLTCS() {
 // ─── Concerns ─────────────────────────────────────────────────────────────────
 function Concerns() {
   const concerns = [
-    "🗣️ Sprachbarrieren", "🚌 Unabhängig unterwegs sein",
-    "💸 Überteuerte Preise", "🚕 Sicherheitsbedenken bei Taxis",
-    "📍 Die richtigen Orte finden", "⏰ Den Zeitplan einhalten",
-    "👨‍👩‍👧 Reisen mit Kindern oder älteren Menschen", "🗺️ Die lokale Kultur verstehen",
+    { label: "Sprachbarrieren", svgPath: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" },
+    { label: "Unabhängig unterwegs sein", svgPath: "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" },
+    { label: "Überteuerte Preise", svgPath: "M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" },
+    { label: "Sicherheitsbedenken bei Taxis", svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z" },
+    { label: "Die richtigen Orte finden", svgPath: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" },
+    { label: "Den Zeitplan einhalten", svgPath: "M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z" },
+    { label: "Reisen mit Kindern oder älteren Menschen", svgPath: "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" },
+    { label: "Die lokale Kultur verstehen", svgPath: "M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" },
   ];
   const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   return (
-    <section id="concerns" className="concerns-section">
+    <section id="concerns" style={{ background: "#0d0f13", padding: "100px 0" }}>
       <div className="container">
-        <div className="section-eyebrow">IHRE SORGEN</div>
-        <h2 className="section-title">Besorgt wegen<br />Reisen in Sri Lanka?</h2>
-        <div className="concerns-grid">
-          {concerns.map((c, i) => <div key={i} className="concern-tag">{c}</div>)}
-        </div>
-        <div className="concerns-cta">
-          <div>
-            <h3>SLTCS löst all diese Sorgen</h3>
-            <p>Ihr persönlicher privater Fahrer kümmert sich um alles – Navigation, Kommunikation, Zeitplanung und lokales Fachwissen. Sie müssen sich nur zurücklehnen und die Reise genießen.</p>
+        {/* Header */}
+        <div style={{ marginBottom: "56px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
+            <div style={{ width: "32px", height: "1px", background: "#c9a84c" }} />
+            <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>IHRE SORGEN</span>
           </div>
-          <a href="#contact" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>
+          <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 700, color: "#fff", lineHeight: 1.15, margin: 0 }}>
+            Besorgt wegen Reisen<br />in <span style={{ color: "#c9a84c" }}>Sri Lanka?</span>
+          </h2>
+        </div>
+        {/* Concern tiles */}
+        <div className="concerns-inline-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "12px", marginBottom: "40px" }}>
+          {concerns.map((c) => (
+            <div
+              key={c.label}
+              style={{ display: "flex", alignItems: "center", gap: "14px", background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: "4px", padding: "18px 20px", transition: "border-color 0.2s, background 0.2s" }}
+              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(201,168,76,0.3)"; (e.currentTarget as HTMLDivElement).style.background = "rgba(201,168,76,0.04)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(255,255,255,0.07)"; (e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.03)"; }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#c9a84c" style={{ flexShrink: 0, opacity: 0.8 }}><path d={c.svgPath} /></svg>
+              <span style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.4 }}>{c.label}</span>
+            </div>
+          ))}
+        </div>
+        {/* CTA bar */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "32px", background: "linear-gradient(135deg, rgba(201,168,76,0.08) 0%, rgba(201,168,76,0.04) 100%)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "4px", padding: "36px 48px", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: "20px" }}>
+            <div style={{ flexShrink: 0, width: "48px", height: "48px", borderRadius: "50%", border: "1px solid rgba(201,168,76,0.4)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#c9a84c"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z" /></svg>
+            </div>
+            <div>
+              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", fontWeight: 700, color: "#fff", margin: "0 0 8px" }}>SLTCS löst all diese Sorgen</h3>
+              <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.7, margin: 0, maxWidth: "560px" }}>Ihr persönlicher privater Fahrer kümmert sich um alles – Navigation, Kommunikation, Zeitplanung und lokales Fachwissen. Sie müssen sich nur zurücklehnen und die Reise genießen.</p>
+            </div>
+          </div>
+          <button
+            onClick={() => scrollTo("contact")}
+            style={{ flexShrink: 0, display: "inline-flex", alignItems: "center", gap: "10px", background: "#c9a84c", border: "none", color: "#0a0c0f", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", padding: "16px 36px", borderRadius: "3px", cursor: "pointer", transition: "opacity 0.2s" }}
+            onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.opacity = "0.88"; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.opacity = "1"; }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             Jetzt anfragen – Kostenlos
-          </a>
+          </button>
         </div>
       </div>
     </section>
@@ -1133,37 +1228,6 @@ function Vehicles() {
   );
 }
 
-// ─── FAQ ──────────────────────────────────────────────────────────────────────
-function FAQ() {
-  const [openIdx, setOpenIdx] = useState<number | null>(null);
-  const faqs = [
-    { q: "Sprechen Ihre Fahrer Englisch?", a: "Ja. Alle SLTCS-Fahrer sind Englischsprachig und kommunizieren während der gesamten Reise klar. Unsere Fahrer der Silber- und Gold-Pläne besitzen offizielle staatliche Gästeführerlizenzen und haben Erfahrung im Umgang mit internationalen Gästen. Unser Koordinationsteam bietet zudem umfassenden englischsprachigen Support vor und während Ihrer Reise." },
-    { q: "Wie viel kostet ein privater Fahrer in Sri Lanka?", a: "Die Preise hängen von der Dauer Ihrer Reise, der Anzahl der Passagiere, dem Fahrzeugtyp und dem gewählten Plan (Bronze, Silber oder Gold) ab. Wir bieten transparente, all-inclusive Angebote ohne versteckte Gebühren. Kontaktieren Sie uns für ein persönliches Angebot – es ist völlig kostenlos und unverbindlich." },
-    { q: "Können wir die Reiseroute während der Reise ändern?", a: "Absolut. Einer der großen Vorteile eines privaten Charters ist die vollständige Flexibilität. Sie können Ihre Reiseroute anpassen, die Zeit an einem bestimmten Ort verlängern, neue Ziele hinzufügen oder das Tempo ganz ändern – sprechen Sie einfach mit Ihrem Fahrer. Wir planen alles im Voraus, berücksichtigen aber immer Ihre Wünsche am Tag selbst." },
-    { q: "Ist dieser Service für Familien mit Kindern oder älteren Reisenden geeignet?", a: "Ja, auf jeden Fall. Unser privater Charter-Service ist ideal für Familien mit kleinen Kindern und Gruppen, die mit älteren Mitgliedern reisen. Ihr Fahrer passt das Tempo und den Zeitplan an die Bedürfnisse aller an. Kindersitze können auf Anfrage bereitgestellt werden. Wir haben umfangreiche Erfahrung mit mehrgenerationen Familiengruppen aus ganz Europa." },
-    { q: "Wie lautet Ihre Stornierungsrichtlinie?", a: "Wir verstehen, dass sich Reisepläne ändern können. Unsere Stornierungsrichtlinie ist fair und transparent gestaltet. Die vollständigen Details erhalten Sie bei der Buchung. Im Allgemeinen sind Stornierungen, die frühzeitig erfolgen, kostenfrei. Bitte kontaktieren Sie uns direkt für die spezifischen Bedingungen, die für Ihre Buchung gelten." },
-    { q: "Welche Währungen akzeptieren Sie für die Zahlung?", a: "Wir akzeptieren Zahlungen in GBP (£), EUR (€), USD ($) und AUD (A$). Sie können Ihre bevorzugte Währung im Kontaktformular angeben, und wir erstellen Ihnen ein Angebot in dieser Währung. Die Zahlungsmethoden werden bei der Buchung bestätigt." },
-  ];
-  return (
-    <section id="faq">
-      <div className="container">
-        <div className="section-eyebrow">FAQ</div>
-        <h2 className="section-title">Häufig gestellte Fragen</h2>
-        <div className="faq-list">
-          {faqs.map((f, i) => (
-            <div key={i} className={`faq-item${openIdx === i ? " open" : ""}`}>
-              <button className="faq-question" onClick={() => setOpenIdx(openIdx === i ? null : i)}>
-                {f.q} <span className="faq-icon">+</span>
-              </button>
-              <div className="faq-answer"><p>{f.a}</p></div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 // ─── Company ──────────────────────────────────────────────────────────────────
 function Company() {
   return (
@@ -1242,7 +1306,7 @@ function FloatingCTA() {
   return (
     <div className="floating-cta">
       <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>
-        <span>💬</span> Kostenlose Anfrage
+        Kostenlose Anfrage
       </a>
     </div>
   );
@@ -1255,8 +1319,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Stats />
-      <ContactForm />
-      <WhySLTCS />
+      <ContactAndWhy />
       <Concerns />
       <Plans />
       <PricingPreview />
