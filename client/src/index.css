@@ -1365,7 +1365,24 @@ footer {
   .footer-top { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .floating-cta { bottom: 20px; right: 16px; }
-  .hero-content { left: 0; right: 0; }
+  .hero {
+    height: auto;
+    min-height: 100svh;
+  }
+  .hero-content {
+    position: relative;
+    bottom: auto;
+    top: auto;
+    left: 0;
+    right: 0;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    padding-left: clamp(20px, 5vw, 40px);
+    padding-right: clamp(20px, 5vw, 40px);
+  }
+  .hero h1 {
+    font-size: clamp(1.8rem, 7.5vw, 2.6rem);
+  }
   .concerns-inline-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     overflow-x: auto !important;
