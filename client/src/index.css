@@ -343,6 +343,7 @@
 }
 .hero-content .container {
   max-width: 1280px;
+  padding-left: clamp(32px, 6vw, 100px);
 }
 .hero-badge {
   display: inline-block;
