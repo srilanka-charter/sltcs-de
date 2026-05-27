@@ -59,3 +59,13 @@
 - [x] SiteNavbar.tsxのFAQリンクを/faqへ変更し、KONTAKTの右に移動する
 - [x] Home.tsxのFAQセクションを削除する
 - [x] ビルド確認・チェックポイント保存
+
+## ms/sv言語追加（マレーシア語・スウェーデン語）
+
+- [x] Home.tsxのLANGUAGES配列にms（Malay）・sv（Swedish）を追加する
+- [x] index.htmlのhreflangにms・svを追加する
+- [x] Pricing.tsxのhreflangData（/priceページ用）にms・svを追加する
+- [x] Pricing.tsxのhomepageHreflangs（復元用）にms・svを追加する
+- [x] FAQ.tsxのhreflangData（/faqページ用）にms・svを追加する
+- [x] FAQ.tsxのhomepageHreflangs（復元用）にms・svを追加する
+- [x] ビルド確認・チェックポイント保存

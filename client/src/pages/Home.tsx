@@ -119,6 +119,8 @@ const LANGUAGES = [
   { code: "nl", label: "Dutch", url: "https://nl.srilanka-charter.com/" },
   { code: "ru", label: "Russian", url: "https://ru.srilanka-charter.com/" },
   { code: "ja", label: "Japanese", url: "https://sltcs.srilanka-charter.com/" },
+  { code: "ms", label: "Malay", url: "https://ms.srilanka-charter.com/" },
+  { code: "sv", label: "Swedish", url: "https://sv.srilanka-charter.com/" },
 ];
 
 function Navbar() {

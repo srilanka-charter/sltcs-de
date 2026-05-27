@@ -495,6 +495,8 @@ export default function FAQ() {
       { hreflang: "ru", href: "https://ru.srilanka-charter.com/faq" },
       { hreflang: "nl", href: "https://nl.srilanka-charter.com/faq" },
       { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/faq" },
+      { hreflang: "ms", href: "https://ms.srilanka-charter.com/faq" },
+      { hreflang: "sv", href: "https://sv.srilanka-charter.com/faq" },
       { hreflang: "x-default", href: "https://en.srilanka-charter.com/faq" },
     ];
     const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
@@ -544,6 +546,8 @@ export default function FAQ() {
         { hreflang: "ru", href: "https://ru.srilanka-charter.com/" },
         { hreflang: "nl", href: "https://nl.srilanka-charter.com/" },
         { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/" },
+        { hreflang: "ms", href: "https://ms.srilanka-charter.com/" },
+        { hreflang: "sv", href: "https://sv.srilanka-charter.com/" },
         { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
       ];
       homepageHreflangs.forEach(({ hreflang, href }) => {

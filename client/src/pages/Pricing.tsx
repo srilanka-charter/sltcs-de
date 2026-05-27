@@ -374,6 +374,8 @@ export default function Pricing() {
       { hreflang: "ru", href: "https://ru.srilanka-charter.com/price" },
       { hreflang: "nl", href: "https://nl.srilanka-charter.com/price" },
       { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/price" },
+      { hreflang: "ms", href: "https://ms.srilanka-charter.com/price" },
+      { hreflang: "sv", href: "https://sv.srilanka-charter.com/price" },
       { hreflang: "x-default", href: "https://en.srilanka-charter.com/price" },
     ];
     // Remove existing hreflang links (homepage ones from index.html)
@@ -468,6 +470,8 @@ export default function Pricing() {
         { hreflang: "ru", href: "https://ru.srilanka-charter.com/" },
         { hreflang: "nl", href: "https://nl.srilanka-charter.com/" },
         { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/" },
+        { hreflang: "ms", href: "https://ms.srilanka-charter.com/" },
+        { hreflang: "sv", href: "https://sv.srilanka-charter.com/" },
         { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
       ];
       homepageHreflangs.forEach(({ hreflang, href }) => {
