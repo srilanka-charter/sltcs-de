@@ -9,7 +9,11 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [mobileItineraryOpen, setMobileItineraryOpen] = useState(false);
+  const [mobileInfoOpen, setMobileInfoOpen] = useState(false);
+  const [mobileLangOpen, setMobileLangOpen] = useState(false);
 
   const LANGUAGES = [
     { label: "English",  url: "https://en.srilanka-charter.com/" },
@@ -18,6 +22,8 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
     { label: "Dutch",    url: "https://nl.srilanka-charter.com/" },
     { label: "Russian",  url: "https://ru.srilanka-charter.com/" },
     { label: "Japanese", url: "https://sltcs.srilanka-charter.com/" },
+    { label: "Malay",    url: "https://ms.srilanka-charter.com/" },
+    { label: "Swedish",  url: "https://sv.srilanka-charter.com/" },
   ];
 
   useEffect(() => {
@@ -39,7 +45,8 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
     <>
       <nav className={`sltcs-nav${scrolled ? " scrolled" : ""}`}>
         <a href="/" className="nav-logo">
-          SLTCS｜Sri Lanka Mietwagen mit privatem Fahrer
+          <span className="nav-logo-full">SLTCS｜Sri Lanka Mietwagen mit privatem Fahrer</span>
+          <span className="nav-logo-short">SLTCS</span>
         </a>
         <ul className="nav-links">
           <li>
@@ -49,7 +56,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
             </a>
           </li>
           <li className="nav-dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
-            <button>MUSTERREISEROUTE</button>
+            <button>BEISPIELREISEN</button>
             {dropdownOpen && (
               <div className="nav-dropdown-menu">
                 <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nächte / 5 Tage</a>
@@ -60,8 +67,17 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
               </div>
             )}
           </li>
-          <li><a href="/vehicles">FAHRZEUGE</a></li>
           <li><a href="/price">PREIS</a></li>
+          <li className="nav-dropdown" onMouseEnter={() => setInfoOpen(true)} onMouseLeave={() => setInfoOpen(false)}>
+            <button>INFORMATION</button>
+            {infoOpen && (
+              <div className="nav-dropdown-menu">
+                <a href="/information/privater-fahrer-ratgeber">Privater Fahrer – Ratgeber</a>
+                <a href="/information/kosten-buchungsratgeber">Kosten &amp; Buchungsratgeber</a>
+                <a href="/information/familien-gruppenreisen">Familien- &amp; Gruppenreisen</a>
+              </div>
+            )}
+          </li>
           <li>
             <a href={mode === "home" ? "#contact" : "/#contact"}
               onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>
@@ -94,17 +110,71 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
       {mobileOpen && (
         <div className="mobile-menu open">
           <a href="/#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Pläne</a>
-          <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Musterreiseroute</a>
-          <a href="/vehicles">Fahrzeuge</a>
+          {/* Beispielreisen accordion */}
+          <div className="mobile-accordion">
+            <button
+              className="mobile-accordion-btn"
+              onClick={() => setMobileItineraryOpen(o => !o)}
+            >
+              <span>Beispielreisen</span>
+              <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                style={{ transform: mobileItineraryOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
+              ><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            {mobileItineraryOpen && (
+              <div className="mobile-accordion-body">
+                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nächte / 5 Tage</a>
+                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nächte / 6 Tage</a>
+                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nächte / 7 Tage</a>
+                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Tage – Kulturelles Dreieck</a>
+                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Tage bis 2 Wochen – Klassisch</a>
+              </div>
+            )}
+          </div>
           <a href="/price">Preis</a>
+          {/* Information accordion */}
+          <div className="mobile-accordion">
+            <button
+              className="mobile-accordion-btn"
+              onClick={() => setMobileInfoOpen(o => !o)}
+            >
+              <span>Information</span>
+              <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                style={{ transform: mobileInfoOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
+              ><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            {mobileInfoOpen && (
+              <div className="mobile-accordion-body">
+                <a href="/information/privater-fahrer-ratgeber">Privater Fahrer – Ratgeber</a>
+                <a href="/information/kosten-buchungsratgeber">Kosten &amp; Buchungsratgeber</a>
+                <a href="/information/familien-gruppenreisen">Familien- &amp; Gruppenreisen</a>
+              </div>
+            )}
+          </div>
           <a href="/#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kontakt</a>
           <a href="/faq">FAQ</a>
           <a href="/#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kostenlose Anfrage</a>
-          <div style={{ borderTop: "1px solid rgba(201,168,76,0.3)", paddingTop: "8px", marginTop: "4px" }}>
-            <div style={{ color: "#c9a84c", fontSize: "11px", letterSpacing: "0.1em", marginBottom: "6px", paddingLeft: "4px" }}>ANDERE SPRACHEN</div>
-            {LANGUAGES.map((lang) => (
-              <a key={lang.label} href={lang.url}>{lang.label}</a>
-            ))}
+          {/* Language accordion */}
+          <div className="mobile-accordion">
+            <button
+              className="mobile-accordion-btn"
+              onClick={() => setMobileLangOpen(o => !o)}
+            >
+              <span>Andere Sprachen</span>
+              <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                style={{ transform: mobileLangOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
+              ><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            {mobileLangOpen && (
+              <div className="mobile-accordion-body">
+                {LANGUAGES.map((lang) => (
+                  <a key={lang.label} href={lang.url}>{lang.label}</a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       )}

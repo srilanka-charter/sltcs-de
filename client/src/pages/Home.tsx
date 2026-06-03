@@ -127,8 +127,10 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [mobileItineraryOpen, setMobileItineraryOpen] = useState(false);
+  const [mobileInfoOpen, setMobileInfoOpen] = useState(false);
   const [mobileLangOpen, setMobileLangOpen] = useState(false);
 
   useEffect(() => {
@@ -165,6 +167,16 @@ function Navbar() {
           </li>
           <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>FAHRZEUGE</a></li>
           <li><a href="/price">PREIS</a></li>
+          <li className="nav-dropdown" onMouseEnter={() => setInfoOpen(true)} onMouseLeave={() => setInfoOpen(false)}>
+            <button>INFORMATION</button>
+            {infoOpen && (
+              <div className="nav-dropdown-menu">
+                <a href="/information/privater-fahrer-ratgeber">Privater Fahrer – Ratgeber</a>
+                <a href="/information/kosten-buchungsratgeber">Kosten &amp; Buchungsratgeber</a>
+                <a href="/information/familien-gruppenreisen">Familien- &amp; Gruppenreisen</a>
+              </div>
+            )}
+          </li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>KONTAKT</a></li>
           <li><a href="/faq">FAQ</a></li>
           <li className="nav-dropdown nav-lang-dropdown" onMouseEnter={() => setLangOpen(true)} onMouseLeave={() => setLangOpen(false)}>
@@ -212,6 +224,26 @@ function Navbar() {
           </div>
           <a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>Fahrzeuge</a>
           <a href="/price">Preis</a>
+          {/* Information accordion */}
+          <div className="mobile-accordion">
+            <button
+              className="mobile-accordion-btn"
+              onClick={() => setMobileInfoOpen(o => !o)}
+            >
+              <span>Information</span>
+              <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                style={{ transform: mobileInfoOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
+              ><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            {mobileInfoOpen && (
+              <div className="mobile-accordion-body">
+                <a href="/information/privater-fahrer-ratgeber">Privater Fahrer – Ratgeber</a>
+                <a href="/information/kosten-buchungsratgeber">Kosten &amp; Buchungsratgeber</a>
+                <a href="/information/familien-gruppenreisen">Familien- &amp; Gruppenreisen</a>
+              </div>
+            )}
+          </div>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Kontakt</a>
           <a href="/faq">FAQ</a>
           {/* Language accordion */}

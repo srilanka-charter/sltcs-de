@@ -69,3 +69,15 @@
 - [x] FAQ.tsxのhreflangData（/faqページ用）にms・svを追加する
 - [x] FAQ.tsxのhomepageHreflangs（復元用）にms・svを追加する
 - [x] ビルド確認・チェックポイント保存
+
+## Informationプルダウン・記事ページ（2026年6月4日分）
+
+- [x] SiteNavbar.tsxにINFORMATIONプルダウンを追加する（3カテゴリー・モバイルアコーディオン対応）
+- [x] Home.tsxのNavbarにINFORMATIONプルダウンを追加する
+- [x] App.tsxにArticleList・ArticleDetailのルートを追加する
+- [x] client/src/data/articles.tsを作成する（3記事ドイツ語訳・公開日2026-06-04）
+- [x] ArticleList.tsxをドイツ語版に書き換える（de-DEロケール・SiteNavbar使用）
+- [x] ArticleDetail.tsxをドイツ語版に書き換える（de.srilanka-charter.com・ドイツ語UI）
+- [x] index.cssに記事ページ用スタイルを追加する（article-list・article-detail・article-toc等）
+- [x] index.cssのCSS重複・不完全ブロックを修正する
+- [x] ビルド確認（エラー0件）
