@@ -89,3 +89,9 @@
 - [x] 記事010: van-miete-fahrer-sri-lanka-familien-kleingruppen（Familien- & Gruppenreisen）を追加する
 - [x] 記事mi-4n5d: sri-lanka-4-naechte-5-tage-reiseroute（Beispielreiserouten）を追加する
 - [x] TypeScriptエラー0件・ビルド確認
+
+## バグ修正（2026-06-05報告）
+
+- [x] ①BEISPIELREISENプルダウンからfahrermiete記事へのリンクが機能しない問題を修正する
+- [x] ③Van-Miete記事（010）のアイキャッチ画像を作成してcoverImageに設定する
+- [x] ④記事カードの縦幅が見切れる問題とカード内画像が非表示になる問題を修正する

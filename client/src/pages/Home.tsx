@@ -157,7 +157,7 @@ function Navbar() {
             <button>BEISPIELREISEN</button>
             {dropdownOpen && (
               <div className="nav-dropdown-menu">
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nächte / 5 Tage</a>
+                <a href="/information/beispielreiserouten/sri-lanka-4-naechte-5-tage-reiseroute">4 Nächte / 5 Tage</a>
                 <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nächte / 6 Tage</a>
                 <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nächte / 7 Tage</a>
                 <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 bis 7 Tage – Kulturelles Dreieck</a>
@@ -214,7 +214,7 @@ function Navbar() {
             </button>
             {mobileItineraryOpen && (
               <div className="mobile-accordion-body">
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nächte / 5 Tage</a>
+                <a href="/information/beispielreiserouten/sri-lanka-4-naechte-5-tage-reiseroute">4 Nächte / 5 Tage</a>
                 <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nächte / 6 Tage</a>
                 <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nächte / 7 Tage</a>
                 <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Tage – Kulturelles Dreieck</a>

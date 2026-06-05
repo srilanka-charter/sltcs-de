@@ -1358,7 +1358,7 @@ export const ARTICLES: Article[] = [
     title: "Van-Miete mit Fahrer in Sri Lanka für Familien und Kleingruppen",
     excerpt:
       "Reisen Sie mit Kindern, Großeltern oder einer Gruppe von Freunden? Ein privater Van mit einem engagierten Fahrer ist die komfortabelste und praktischste Art, Sri Lanka gemeinsam zu erkunden. Hier erfahren Sie alles, was Sie wissen müssen.",
-    coverImage: "/manus-storage/review_smith_3ba6750f.jpeg",
+    coverImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/KxvXVEQKpifZSATp3iPeHv/van_hire_family_sri_lanka_de-UjwaXDb9QPydNem6P8Cnoj.webp",
     publishedAt: "2026-06-05",
     readingTime: 10,
     tags: ["Familienreise", "Gruppenreise", "Van-Miete", "Sri Lanka", "Privatfahrer"],
@@ -1392,7 +1392,7 @@ export const ARTICLES: Article[] = [
   </p>
 
   <img
-    src="/manus-storage/review1_r_family_eranga_a3545b4c.png"
+    src="/manus-storage/review1_r_family_eranga_a3545b4c_e80312b7.png"
     alt="Familienurlauber mit ihrem Privatfahrer in Sri Lanka"
     class="article-inline-img"
   />
@@ -1559,7 +1559,7 @@ export const ARTICLES: Article[] = [
   <div class="a10-review-grid">
     <div class="a10-review-card">
       <div class="a10-review-photo-wrap">
-        <img src="/manus-storage/review_smith_3ba6750f.jpeg" alt="Familie K mit Fahrer Smith" class="a10-review-photo" />
+        <img src="/manus-storage/review_smith_3ba6750f_d4c567a9.jpeg" alt="Familie K mit Fahrer Smith" class="a10-review-photo" />
       </div>
       <div class="a10-review-body">
         <div class="a10-review-stars">★★★★★</div>
@@ -1570,7 +1570,7 @@ export const ARTICLES: Article[] = [
     </div>
     <div class="a10-review-card">
       <div class="a10-review-photo-wrap">
-        <img src="/manus-storage/review_lasith_family_ae2d2464.jpeg" alt="Familie W mit Fahrer Lasith" class="a10-review-photo" />
+        <img src="/manus-storage/review_lasith_family_ae2d2464_2c051693.jpeg" alt="Familie W mit Fahrer Lasith" class="a10-review-photo" />
       </div>
       <div class="a10-review-body">
         <div class="a10-review-stars">★★★★★</div>
@@ -1581,7 +1581,7 @@ export const ARTICLES: Article[] = [
     </div>
     <div class="a10-review-card">
       <div class="a10-review-photo-wrap">
-        <img src="/manus-storage/review_dfamily_chamil_9214e24c.png" alt="Familie D mit Fahrer Chamil" class="a10-review-photo" />
+        <img src="/manus-storage/review_dfamily_chamil_9214e24c_33b0fb3d.png" alt="Familie D mit Fahrer Chamil" class="a10-review-photo" />
       </div>
       <div class="a10-review-body">
         <div class="a10-review-stars">★★★★★</div>
@@ -1595,7 +1595,7 @@ export const ARTICLES: Article[] = [
   <p>Lesen Sie weitere verifizierte Bewertungen auf unserer <a href="/voice" class="article-link">Gästestimmen-Seite</a>.</p>
 
   <img
-    src="/manus-storage/review1_r_family_eranga_a3545b4c.png"
+    src="/manus-storage/review1_r_family_eranga_a3545b4c_e80312b7.png"
     alt="Familie R erkundet Sri Lanka mit ihrem Privatfahrer"
     class="article-inline-img"
   />
@@ -1704,7 +1704,7 @@ export const ARTICLES: Article[] = [
     category: "beispielreiserouten",
     title: "Sri Lanka 4 Nächte / 5 Tage Reiseroute: Kulturhöhepunkte mit Privatfahrer",
     excerpt: "Eine kompakte, aber lohnende 5-tägige Privatfahrer-Tour durch Sigiriya, Kandy, Nuwara Eliya und Galle – perfekt für Erstbesucher mit knappem Zeitplan.",
-    coverImage: "/manus-storage/slide2_sigiriya_b8468f12.jpg",
+    coverImage: "/manus-storage/slide2_sigiriya_b8468f12_63ec60fa.jpg",
     publishedAt: "2026-06-05",
     readingTime: 8,
     tags: ["4 Nächte 5 Tage", "Sigiriya", "Kandy", "Galle", "Privatfahrer", "Erstbesucher"],
@@ -1727,7 +1727,7 @@ export const ARTICLES: Article[] = [
 <article class="article-body">
 
   <img
-    src="/manus-storage/slide2_sigiriya_b8468f12.jpg"
+    src="/manus-storage/slide2_sigiriya_b8468f12_63ec60fa.jpg"
     alt="Luftaufnahme der Sigiriya-Felsfestung, Sri Lanka"
     class="article-inline-img"
     loading="lazy"
@@ -1797,7 +1797,7 @@ export const ARTICLES: Article[] = [
   </p>
 
   <img
-    src="/manus-storage/sigiriya_top_driver_guests_4n5d_e9dfe478.jpeg"
+    src="/manus-storage/sigiriya_top_driver_guests_4n5d_e9dfe478_66674563.jpeg"
     alt="SLTCS-Fahrer mit Gästen auf dem Gipfel der Sigiriya-Felsfestung, Sri Lanka"
     class="article-inline-img"
     loading="lazy"
@@ -1821,14 +1821,14 @@ export const ARTICLES: Article[] = [
   </div>
 
   <img
-    src="/manus-storage/itinerary_5n6d_sigiriya_top_24b584a1.jpg"
+    src="/manus-storage/itinerary_5n6d_sigiriya_top_24b584a1_a7e9aad7.jpg"
     alt="Private Jeep-Safari arrangiert von SLTCS – Gäste in einem Safari-Jeep in Sri Lanka"
     class="article-inline-img"
     loading="lazy"
   />
 
   <img
-    src="/manus-storage/safari_jeep_yala_group_08928221.jpeg"
+    src="/manus-storage/safari_jeep_yala_group_08928221_c1ba467c.jpeg"
     alt="Gruppe genießt eine private Jeep-Safari im Yala-Nationalpark, Sri Lanka"
     class="article-inline-img"
     loading="lazy"
@@ -1857,7 +1857,7 @@ export const ARTICLES: Article[] = [
   </p>
 
   <img
-    src="/manus-storage/slide5_galle_8aced38c.jpg"
+    src="/manus-storage/slide5_galle_8aced38c_d7153825.jpg"
     alt="Galle Fort holländische Kolonialwälle und Leuchtturm, Sri Lanka"
     class="article-inline-img"
     loading="lazy"
