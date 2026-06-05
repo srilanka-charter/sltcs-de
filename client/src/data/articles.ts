@@ -1796,13 +1796,6 @@ export const ARTICLES: Article[] = [
     Planen Sie 2,5–3 Stunden für den vollständigen Auf- und Abstieg ein.
   </p>
 
-  <img
-    src="/manus-storage/sigiriya_top_driver_guests_4n5d_e9dfe478_66674563.jpeg"
-    alt="SLTCS-Fahrer mit Gästen auf dem Gipfel der Sigiriya-Felsfestung, Sri Lanka"
-    class="article-inline-img"
-    loading="lazy"
-  />
-
   <p>
     Am Nachmittag genießen Sie optional eine Jeep-Safari im <strong>Minneriya-Nationalpark</strong>, bekannt für seine saisonalen Elefantenversammlungen – eine der größten der Welt. Rückkehr zum Hotel für den Abend.
   </p>
