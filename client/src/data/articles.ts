@@ -1048,6 +1048,880 @@ export const ARTICLES: Article[] = [
 </article>
 `,
   },
+  // ─── Artikel 003: Fahrermiete – Kosten, Sicherheit & Checkliste ─────────────
+  {
+    id: "003",
+    slug: "fahrermiete-sri-lanka-kosten-sicherheit-checkliste",
+    category: "kosten-buchungsratgeber",
+    title: "Fahrermiete in Sri Lanka: Kosten, Sicherheit und was Sie vor der Buchung prüfen sollten",
+    excerpt:
+      "Bevor Sie einen Privatfahrer in Sri Lanka buchen, gibt es sieben wichtige Punkte zu überprüfen – von staatlichen Lizenzen und Versicherungen bis hin zu Englischkenntnissen und Stornierungsbedingungen. Diese Checkliste hilft Ihnen, Angebote sicher zu vergleichen und die häufigsten Buchungsfehler zu vermeiden.",
+    coverImage:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article3_cover_driver_checklist-L5mZhGwmPs4uzuBS3dnse3.webp",
+    publishedAt: "2026-06-05",
+    readingTime: 9,
+    tags: [
+      "Fahrermiete Sri Lanka",
+      "Privatfahrer Kosten",
+      "Buchungs-Checkliste",
+      "Fahrersicherheit",
+      "Mietwagen Sri Lanka",
+    ],
+    hreflang: {
+      en: "https://en.srilanka-charter.com/information/cost-booking-guide/driver-hire-sri-lanka-costs-safety-checklist",
+    },
+    seo: {
+      metaTitle: "Fahrermiete Sri Lanka: Kosten, Sicherheit & Buchungs-Checkliste (2026) | SLTCS",
+      metaDescription:
+        "Privatfahrer in Sri Lanka mieten? Lizenzen, Versicherung, Englischkenntnisse & Preise vor der Buchung prüfen. Vollständige Kostenübersicht 2026: Bronze ab 270 $, Silber ab 310 $, Gold ab 350 $ für 2 Tage.",
+      keywords: [
+        "Fahrermiete Sri Lanka",
+        "Fahrer mieten Sri Lanka",
+        "Privatfahrer Sri Lanka Kosten",
+        "Sri Lanka Fahrermiete Checkliste",
+        "Sri Lanka Chauffeur buchen",
+        "Sri Lanka Mietwagen mit Fahrer Preis",
+        "Sri Lanka Fahrermiete 2026",
+        "Was kostet ein Fahrer in Sri Lanka",
+      ],
+    },
+    content: `
+<article class="article-body">
+
+  <p class="article-lead">
+    Einen Privatfahrer zu mieten ist eine der klügsten Entscheidungen für eine Sri-Lanka-Reise – doch nicht alle Fahrerservices sind gleich. Bevor Sie eine Buchung bestätigen, gibt es sieben Dinge, die jeder Reisende überprüfen sollte.
+  </p>
+
+  <p class="article-lead">
+    Dieser Leitfaden führt Sie durch jeden dieser Punkte und bietet eine transparente Übersicht, was die Fahrermiete in Sri Lanka im Jahr 2026 tatsächlich kostet.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article3_cover_driver_checklist-L5mZhGwmPs4uzuBS3dnse3.webp"
+      alt="Reisender überprüft eine Sri-Lanka-Reise-Checkliste auf einem Tablet, im Hintergrund ein weißer japanischer Minivan"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      Etwas Vorbereitung vor der Buchung kann Sie vor kostspieligen Überraschungen auf der Straße bewahren.
+    </figcaption>
+  </figure>
+
+
+  <h2>Warum die Buchungsphase so entscheidend ist</h2>
+
+  <p>
+    Sri Lanka verfügt über einen großen und vielfältigen Markt für Fahrerservices – von einzelnen freiberuflichen Fahrern bis hin zu etablierten Charterunternehmen. Die Qualitätsunterschiede zwischen den besten und schlechtesten Optionen sind erheblich.
+  </p>
+
+  <p>
+    Reisende, die ohne die richtigen Überprüfungen buchen, stoßen häufig auf Probleme, die schwer zu lösen sind, sobald sie sich bereits im Land befinden: Fahrer, die kaum Englisch sprechen, Fahrzeuge, die nicht dem Angebot entsprechen, oder Schlussrechnungen, die nichts mit dem ursprünglichen Angebot zu tun haben.
+  </p>
+
+  <p>
+    Die gute Nachricht: Die meisten dieser Probleme sind vollständig vermeidbar. Die folgende Checkliste umfasst die sieben wichtigsten Punkte, die Sie vor der Anzahlung überprüfen sollten.
+  </p>
+
+
+  <h2>Die 7-Punkte-Buchungs-Checkliste</h2>
+
+
+  <h3>1. Staatlich ausgestellter Touristenfahrerschein</h3>
+
+  <p>
+    In Sri Lanka sind Fahrer, die Touristen befördern, gesetzlich verpflichtet, einen <strong>Touristenfahrerschein</strong> der Sri Lanka Tourism Development Authority (SLTDA) zu besitzen. Dieser unterscheidet sich von einem normalen Führerschein und erfordert, dass der Fahrer Hintergrundüberprüfungen und eine formelle Prüfung besteht.
+  </p>
+
+  <p>
+    Bitten Sie immer darum, dieses Dokument zu sehen – oder bestätigen Sie, dass der Anbieter es auf Anfrage vorlegen kann.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article3_inline_driver_documents-BAPwfrwKMWXB99P7opnpye.webp"
+      alt="Sri-lankischer Fahrer hält einen offiziellen SLTDA-Touristenfahrerschein"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      Ein gültiger SLTDA-Touristenfahrerschein ist die Grundvoraussetzung für jeden Fahrer, der internationale Touristen befördert.
+    </figcaption>
+  </figure>
+
+
+  <h3>2. Haftpflichtversicherung</h3>
+
+  <p>
+    Bestätigen Sie, dass das Fahrzeug eine gültige Haftpflichtversicherung besitzt. Obwohl eine grundlegende Haftpflichtversicherung in Sri Lanka gesetzlich vorgeschrieben ist, variiert der Deckungsumfang.
+  </p>
+
+  <p>
+    Seriöse Anbieter verfügen über eine umfassende Versicherung, die Passagiere im Falle eines Unfalls abdeckt. Fragen Sie ausdrücklich, ob die Passagierhaftpflicht inbegriffen ist.
+  </p>
+
+
+  <h3>3. Englischkenntnisse des Fahrers</h3>
+
+  <p>
+    Dies ist einer der am häufigsten übersehenen Faktoren – und einer der wirkungsvollsten für Ihr tägliches Reiseerlebnis. Ein Fahrer, der kein Englisch sprechen kann, erschwert es, den Reiseplan anzupassen, Fragen zu lokalen Sehenswürdigkeiten zu stellen oder unerwartete Situationen zu bewältigen.
+  </p>
+
+  <p>
+    Senden Sie bei der Anfrage eine Nachricht auf Englisch und beurteilen Sie die Antwort direkt. Ein professioneller Anbieter antwortet prompt in klarem Englisch.
+  </p>
+
+
+  <h3>4. Fahrzeugzustand und -typ</h3>
+
+  <p>
+    Fragen Sie nach dem konkreten Fahrzeug, das Ihrer Reise zugewiesen wird, nicht nur nach einer Kategorie. Bestätigen Sie das ungefähre Alter des Fahrzeugs und ob eine funktionierende Klimaanlage vorhanden ist – in Sri Lankas Hitze unerlässlich.
+  </p>
+
+  <p>
+    Für Gruppen ab vier Personen ist ein <strong>japanischer KDH Hi-Ace Van</strong> die Standardwahl, der großzügigen Gepäckraum und eine erhöhte Sitzposition bietet. Für Paare oder Alleinreisende ist eine <strong>japanische Kompaktlimousine</strong> komfortabel und wirtschaftlicher.
+  </p>
+
+  <p>
+    Für größere Gruppen oder Familien mit Kleinkindern bietet ein <strong>luxuriöser japanischer MPV</strong> mit Kapitänssitzen den höchsten Komfort.
+  </p>
+
+  <p>
+    Eine vollständige Übersicht der verfügbaren Fahrzeugtypen finden Sie auf unserer <a href="/#vehicles" class="article-internal-link">Fahrzeugseite</a>.
+  </p>
+
+
+  <h3>5. Was im Preis inbegriffen ist (und was nicht)</h3>
+
+  <p>
+    Fordern Sie immer eine schriftliche Aufschlüsselung dessen an, was der angebotene Preis beinhaltet. Wichtige Fragen:
+  </p>
+
+  <ul>
+    <li>Ist Kraftstoff inbegriffen oder wird er separat berechnet?</li>
+    <li>Sind Autobahnmaut und Parkgebühren enthalten?</li>
+    <li>Ist die Unterkunft des Fahrers bei mehrtägigen Reisen inbegriffen?</li>
+    <li>Gibt es Kilometerbegrenzungen, die zu Mehrkosten führen könnten?</li>
+    <li>Sind Eintrittsgebühren für Nationalparks oder Kulturstätten enthalten?</li>
+  </ul>
+
+  <p>
+    Bei SLTCS sind alle Preise <strong>Pauschalpreise inklusive Steuern</strong>. Kraftstoff, Mautgebühren und Fahrerunterkunft sind im angebotenen Preis für Standardreiserouten enthalten.
+  </p>
+
+  <p>
+    Es gibt keine versteckten Kilometergebühren. Die einzigen möglichen Zusatzkosten sind Eintrittsgebühren für bestimmte Sehenswürdigkeiten, die direkt vor Ort bezahlt werden.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/KxvXVEQKpifZSATp3iPeHv/article3_de_daily_rate_infographic-iXBTaR58XFdAkt9CYeN5Uf.webp"
+      alt="Was Ihr Tagessatz beinhaltet – 5 Standardleistungen im Sri Lanka Privaten Fahrer Charter"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      Was Ihr Tagessatz beinhaltet – Fahrzeug &amp; Kraftstoff, staatlich lizenzierter Fahrer, englische Kommunikation, flexibles Reiseprogramm und keine versteckten Kosten.
+    </figcaption>
+  </figure>
+
+
+  <h3>6. Stornierungsbedingungen und Änderungsmöglichkeiten</h3>
+
+  <p>
+    Reisepläne ändern sich. Bestätigen Sie vor der Buchung die Richtlinien des Anbieters zu Stornierungen, Datumsänderungen und Reiseplanänderungen. Ein seriöser Service wird klare, schriftliche Bedingungen haben.
+  </p>
+
+  <p>
+    Seien Sie vorsichtig bei Anbietern, die eine vollständige Vorauszahlung ohne Stornierungsflexibilität verlangen – dies ist ein häufiges Warnsignal im günstigeren Marktsegment.
+  </p>
+
+
+  <h3>7. Bewertungen von verifizierten Reisenden</h3>
+
+  <p>
+    Suchen Sie nach Bewertungen auf unabhängigen Plattformen – Google, TripAdvisor oder Reiseforen – anstatt sich ausschließlich auf Erfahrungsberichte auf der eigenen Website des Anbieters zu verlassen. Achten Sie auf Kommentare zu Pünktlichkeit, Kommunikation und ob der Endpreis dem Angebot entsprach.
+  </p>
+
+  <p>
+    Unsere <a href="/voice" class="article-internal-link">Gästestimmen-Seite</a> enthält verifizierte Bewertungen von Reisenden, die ihre Reisen mit SLTCS abgeschlossen haben.
+  </p>
+
+
+  <h2>Was kostet die Fahrermiete in Sri Lanka wirklich?</h2>
+
+  <p>
+    Die Preise für die Privatfahrermiete in Sri Lanka variieren erheblich je nach Anbieter, Qualifikationsniveau des Fahrers, Fahrzeugtyp und Reisedauer.
+  </p>
+
+  <p>
+    Die folgende Tabelle zeigt die aktuellen Pauschalpreise von SLTCS (USD, inklusive Steuern) für die häufigsten Reisedauern.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article3_inline_price_comparison-NK55A8E3tNmu4CLUCpkSPM.webp"
+      alt="Fahrer und zwei Reisende besprechen eine Sri-Lanka-Reiseroute und Preise auf einem Tablet neben einem weißen japanischen Minivan, Berge im Hintergrund"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      Transparente Pauschalpreise, die von der ersten Anfrage an auf Englisch besprochen werden – keine Überraschungen am Ende der Reise.
+    </figcaption>
+  </figure>
+
+
+  <h3>SLTCS Preisübersicht (2026)</h3>
+
+  <!-- PRICE_TABLE_PLACEHOLDER -->
+
+
+  <h3>Die drei Pläne im Überblick</h3>
+
+  <p>
+    SLTCS bietet drei Servicestufen an, jede für einen anderen Reisestil geeignet. Klicken Sie auf einen Plan, um mehr zu erfahren.
+  </p>
+
+  <!-- PLAN_CARDS_PLACEHOLDER -->
+
+
+  <h2>Warnsignale, auf die Sie achten sollten</h2>
+
+  <p>
+    Nicht jeder günstige Preis ist ein gutes Angebot. Die folgenden Muster sind häufige Warnsignale beim Vergleich von Fahrerservices in Sri Lanka:
+  </p>
+
+  <div class="a3-redflag-grid">
+    <div class="a3-redflag-card">
+      <div class="a3-redflag-icon">⚠</div>
+      <div class="a3-redflag-body">
+        <div class="a3-redflag-title">Kilometerbasierte Preisgestaltung</div>
+        <div class="a3-redflag-desc">Einige Anbieter bewerben einen günstigen Tagessatz, berechnen aber Kilometergebühren über ein festgelegtes Limit hinaus. Fahrer haben bekanntermaßen überhöhte Entfernungen gemeldet, was zu Schlussrechnungen führt, die weit über dem ursprünglichen Angebot liegen.</div>
+      </div>
+    </div>
+    <div class="a3-redflag-card">
+      <div class="a3-redflag-icon">⚠</div>
+      <div class="a3-redflag-body">
+        <div class="a3-redflag-title">Kein englischer Support bei der Anfrage</div>
+        <div class="a3-redflag-desc">Wenn der Anbieter vor der Buchung nicht klar auf Englisch kommunizieren kann, wird sich dies nicht verbessern, sobald Sie im Land sind.</div>
+      </div>
+    </div>
+    <div class="a3-redflag-card">
+      <div class="a3-redflag-icon">⚠</div>
+      <div class="a3-redflag-body">
+        <div class="a3-redflag-title">Druck, Geschäfte oder Restaurants zu besuchen</div>
+        <div class="a3-redflag-desc">Einige Fahrer erhalten Provisionen von bestimmten Einrichtungen und leiten Ihre Reiseroute entsprechend um. Dies ist ein bekanntes Problem im Tourismussektor Sri Lankas.</div>
+      </div>
+    </div>
+    <div class="a3-redflag-card">
+      <div class="a3-redflag-icon">⚠</div>
+      <div class="a3-redflag-body">
+        <div class="a3-redflag-title">Keine schriftliche Bestätigung</div>
+        <div class="a3-redflag-desc">Jeder seriöse Anbieter stellt ein schriftliches Angebot mit aufgeschlüsselten Leistungen zur Verfügung. Mündliche Vereinbarungen lassen Ihnen keinen Spielraum, wenn der Service nicht den Erwartungen entspricht.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="a3-quote-box">
+    <h2 class="a3-quote-heading">So erhalten Sie ein genaues Angebot</h2>
+    <p class="a3-quote-lead">
+      Der zuverlässigste Weg, einen genauen Preis für Ihre spezifische Reise zu erhalten, ist, Ihre Reiseroute – auch eine grobe – direkt mit dem Anbieter zu teilen. Bei SLTCS erstellen wir kostenlose, personalisierte Schätzungen auf Englisch basierend auf Ihren Reisedaten, Gruppengröße, bevorzugtem Fahrzeug und den Zielen, die Sie besuchen möchten.
+    </p>
+    <p class="a3-quote-lead">
+      Es besteht keine Verpflichtung zur Buchung und kein Druck, sich zu entscheiden, bevor Sie bereit sind.
+    </p>
+    <div class="a3-quote-steps">
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">1</div>
+        <div class="a3-quote-step-text">Teilen Sie Ihre Reisedaten &amp; Gruppengröße mit</div>
+      </div>
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">2</div>
+        <div class="a3-quote-step-text">Nennen Sie Ihr bevorzugtes Fahrzeug &amp; Ihre Ziele</div>
+      </div>
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">3</div>
+        <div class="a3-quote-step-text">Erhalten Sie innerhalb von 24 Stunden eine detaillierte Schätzung</div>
+      </div>
+    </div>
+    <a href="/#contact" class="article-cta-btn">Kostenloses Angebot anfordern</a>
+  </div>
+
+</article>
+`,
+  },
+  // ─── Artikel 010: Van-Miete mit Fahrer für Familien und Kleingruppen ─────────
+  {
+    id: "010",
+    slug: "van-miete-fahrer-sri-lanka-familien-kleingruppen",
+    category: "familien-gruppenreisen",
+    title: "Van-Miete mit Fahrer in Sri Lanka für Familien und Kleingruppen",
+    excerpt:
+      "Reisen Sie mit Kindern, Großeltern oder einer Gruppe von Freunden? Ein privater Van mit einem engagierten Fahrer ist die komfortabelste und praktischste Art, Sri Lanka gemeinsam zu erkunden. Hier erfahren Sie alles, was Sie wissen müssen.",
+    coverImage: "/manus-storage/review_smith_3ba6750f.jpeg",
+    publishedAt: "2026-06-05",
+    readingTime: 10,
+    tags: ["Familienreise", "Gruppenreise", "Van-Miete", "Sri Lanka", "Privatfahrer"],
+    hreflang: {
+      en: "https://en.srilanka-charter.com/information/family-group-travel/van-hire-driver-sri-lanka-families-small-groups",
+    },
+    seo: {
+      metaTitle: "Van-Miete mit Fahrer in Sri Lanka für Familien & Kleingruppen (2026) | SLTCS",
+      metaDescription:
+        "Beste Option für Familien & Gruppen in Sri Lanka: privater Van mit engagiertem Fahrer. Kindersichere Fahrzeuge, Gepäckraum, flexible Reiserouten. Transparente Preise ab 270 $. Buchen Sie mit SLTCS.",
+      keywords: [
+        "Van-Miete Sri Lanka Familie",
+        "Sri Lanka Gruppenreise Privatfahrer",
+        "Familienauto mieten Sri Lanka",
+        "Privater Van Fahrer Sri Lanka",
+        "Sri Lanka Reise mit Kindern",
+        "Gruppencharterservice Sri Lanka",
+        "Sri Lanka Minivan mieten mit Fahrer",
+        "Sri Lanka Familienreise Privatfahrer",
+      ],
+    },
+    content: `
+<article class="article-body">
+
+  <p class="article-lead">
+    Sri Lanka ist eines der lohnendsten Reiseziele in Asien für Familien- und Gruppenreisen – doch bequem mit mehreren Passagieren, Kinderwagen, Gepäck und unterschiedlichen Energieniveaus unterwegs zu sein, erfordert das richtige Fahrzeug und den richtigen Fahrer.
+  </p>
+
+  <p class="article-lead">
+    Ein privater Van-Charter mit einem engagierten englischsprachigen Fahrer löst all diese Herausforderungen mit einer einzigen Buchung.
+  </p>
+
+  <img
+    src="/manus-storage/review1_r_family_eranga_a3545b4c.png"
+    alt="Familienurlauber mit ihrem Privatfahrer in Sri Lanka"
+    class="article-inline-img"
+  />
+
+
+  <h2>Warum ein privater Van die beste Wahl für Familien und Gruppen ist</h2>
+
+  <p>
+    Öffentliche Verkehrsmittel in Sri Lanka – Busse und Züge – können für Alleinreisende oder abenteuerlustigen Paare ein wunderbares Erlebnis sein, sind aber für Familien oder Gruppen ab vier Personen selten praktisch.
+  </p>
+
+  <p>
+    Gepäckraum ist begrenzt, Klimaanlagen sind unzuverlässig, und die Koordination mehrerer Passagiere bei Umstiegen fügt jeder Reise erheblichen Stress hinzu.
+  </p>
+
+  <p>
+    Ein privater Van-Charter eliminiert all diese Reibungspunkte. Ihre Gruppe reist gemeinsam in einem einzigen klimatisierten Fahrzeug, Abfahrten erfolgen nach Ihrem Zeitplan, und der Fahrer übernimmt alle Navigation und Logistik.
+  </p>
+
+  <p>
+    Es gibt keine Anschlüsse zu verpassen, keine Warteschlangen zu bewältigen und keine Fremden in Ihrem persönlichen Raum.
+  </p>
+
+
+  <h3>Was macht einen Van zum richtigen Fahrzeug für Gruppen?</h3>
+
+  <p>
+    Das Standardfahrzeug für Gruppenreisen in Sri Lanka ist der <strong>japanische KDH Hi-Ace Van</strong> – ein Hochdach-Minibus, der bequem bis zu sechs Passagiere befördert, mit großzügigem Gepäckraum im Heck.
+  </p>
+
+  <p>
+    Für größere Gruppen bis zu neun Personen bietet ein <strong>luxuriöser japanischer MPV</strong> mit Kapitänssitzen den höchsten Komfort auf längeren Fahrten.
+  </p>
+
+  <p>
+    Beide Fahrzeugtypen bieten erhöhte Sitzpositionen – ideal für die Beobachtung von Wildtieren, Reisfeldern und Küstenlandschaften – und die erhöhte Kabine hält den Innenraum in Sri Lankas tropischer Hitze kühler als eine Standard-Limousine.
+  </p>
+
+  <p>
+    Für Familien mit Kleinkindern erleichtern der Einstieg und die breiten Schiebetüren das Ein- und Aussteigen mit Kindersitzen oder Kinderwagen.
+  </p>
+
+  <p>
+    Eine vollständige Übersicht aller verfügbaren Fahrzeugtypen und ihrer Passagierkapazitäten finden Sie auf unserer <a href="/vehicles" class="article-link">Fahrzeugseite</a>.
+  </p>
+
+
+  <h2>Die 7 größten Vorteile für Familien- und Gruppenreisende</h2>
+
+  <div class="a10-advantage-grid">
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">01</div>
+      <div class="a10-advantage-title">Tür-zu-Tür-Service</div>
+      <div class="a10-advantage-desc">Ihr Fahrer holt Sie in der Ankunftshalle des Flughafens ab und bringt Sie zu jedem Hoteleingang. Keine Transfers, keine Taxis, kein Navigieren in unbekannten Straßen mit Gepäck.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">02</div>
+      <div class="a10-advantage-title">Flexible Reiseroute</div>
+      <div class="a10-advantage-desc">Halten Sie an, wann immer die Kinder eine Pause brauchen, ändern Sie die Pläne, wenn jemand müde ist, oder fügen Sie einen ungeplanten Strandaufenthalt hinzu. Die Reiseroute passt sich Ihrer Gruppe an – nicht umgekehrt.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">03</div>
+      <div class="a10-advantage-title">Gepäckraum</div>
+      <div class="a10-advantage-desc">Der Laderaum des KDH-Vans fasst große Koffer, Kinderwagen und Sportausrüstung problemlos – ein erheblicher Vorteil gegenüber kleineren Fahrzeugen oder gemeinsamen Transfers.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">04</div>
+      <div class="a10-advantage-title">Kindersicherheit</div>
+      <div class="a10-advantage-desc">SLTCS-Fahrer sind erfahren mit Familiengruppen und fahren besonders vorsichtig auf Bergstraßen und Küstenautobahnen. Kindersitze können auf Anfrage arrangiert werden.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">05</div>
+      <div class="a10-advantage-title">Englischsprachiger Fahrer</div>
+      <div class="a10-advantage-desc">Jeder SLTCS-Fahrer kommuniziert klar auf Englisch – unerlässlich für Familien, die Ernährungsanforderungen, medizinische Bedürfnisse erklären oder einfach eine Restaurantempfehlung einholen möchten.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">06</div>
+      <div class="a10-advantage-title">Pauschalpreise</div>
+      <div class="a10-advantage-desc">Alle SLTCS-Preise sind fest und inklusive Steuern. Kraftstoff, Mautgebühren und Fahrerunterkunft sind enthalten. Es gibt keine Kilometergebühren oder Überraschungen am Reiseende – besonders wichtig bei der Kostenteilung in einer Gruppe.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">07</div>
+      <div class="a10-advantage-title">Lokales Wissen</div>
+      <div class="a10-advantage-desc">Ein guter Fahrer kennt die besten familienfreundlichen Restaurants, die ruhigsten Zeiten für beliebte Sehenswürdigkeiten und die Abkürzungen, die lange Fahrtage überschaubar machen. Dieses Wissen ist unbezahlbar, wenn Sie mit Kindern oder älteren Passagieren reisen.</div>
+    </div>
+  </div>
+
+
+  <h2>Van-Mietpreise für Familien und Gruppen (2026)</h2>
+
+  <p>
+    Die Van-Mietpreise bei SLTCS sind Pauschalpreise inklusive Steuern. Die folgende Tabelle zeigt Richtwerte für die häufigsten Reisedauern.
+  </p>
+
+  <p>
+    Alle Preise sind in USD; Angebote sind auch in <strong>GBP, EUR und AUD</strong> erhältlich.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Dauer</th>
+          <th>Bronze (Van)<br/><span style="font-weight:400;font-size:0.8em;">Trainee-Fahrer</span></th>
+          <th>Silber (Van)<br/><span style="font-weight:400;font-size:0.8em;">Touristenfahrer / Chauffeur Guide</span></th>
+          <th>Gold (Van)<br/><span style="font-weight:400;font-size:0.8em;">Chauffeur Guide (Bestbewertet)</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2 Tage</td><td>USD 180</td><td>USD 220</td><td>USD 280</td></tr>
+        <tr><td>3 Tage</td><td>USD 255</td><td>USD 315</td><td>USD 400</td></tr>
+        <tr><td>5 Tage</td><td>USD 395</td><td>USD 490</td><td>USD 625</td></tr>
+        <tr><td>7 Tage</td><td>USD 525</td><td>USD 650</td><td>USD 830</td></tr>
+        <tr><td>10 Tage</td><td>USD 720</td><td>USD 895</td><td>USD 1.140</td></tr>
+        <tr><td>14 Tage</td><td>USD 980</td><td>USD 1.215</td><td>USD 1.550</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="font-size:0.82rem;color:#9a9080;margin-top:-8px;">
+    Preise sind Richtwerte und abhängig von der Reiseroute. Für ein personalisiertes Angebot besuchen Sie die <a href="/price" class="article-link">Preisseite</a> oder <a href="/#contact" class="article-link">kontaktieren Sie uns direkt</a>.
+  </p>
+
+  <p>
+    Für Gruppen von sechs bis neun Passagieren ist der <strong>Große Van</strong> (luxuriöser japanischer MPV) zu einem etwas höheren Preis erhältlich. Vollständige Preise für alle Fahrzeugtypen und Dauern finden Sie auf unserer <a href="/price" class="article-link">Preisseite</a>.
+  </p>
+
+
+  <h2>Den richtigen Serviceplan für Ihre Gruppe wählen</h2>
+
+  <p>
+    SLTCS bietet drei Servicestufen an. Für Familien und Gruppen hängt die Wahl des Plans oft von der Art des Erlebnisses ab, das Sie suchen:
+  </p>
+
+  <div class="a10-plan-row">
+    <div class="a10-plan-card a10-plan-bronze">
+      <div class="a10-plan-label">BRONZE</div>
+      <div class="a10-plan-name">Bestes Preis-Leistungs-Verhältnis</div>
+      <div class="a10-plan-driver">Trainee-Fahrer</div>
+      <p class="a10-plan-desc">Ein zuverlässiger, staatlich lizenzierter Fahrer für Gruppen, die selbstständig navigieren können. Ideal für Wiederholungsbesucher in Sri Lanka oder Reisende mit einer festen Reiseroute, die keinen Reiseführer-Kommentar benötigen.</p>
+    </div>
+    <div class="a10-plan-card a10-plan-silver">
+      <div class="a10-plan-badge">★ BELIEBTESTE WAHL</div>
+      <div class="a10-plan-label">SILBER</div>
+      <div class="a10-plan-name">Beliebteste Wahl</div>
+      <div class="a10-plan-driver">Bestbewerteter Touristenfahrer oder Chauffeur Guide</div>
+      <p class="a10-plan-desc">Die beliebteste Wahl für Familien. Ihr Fahrer begleitet Sie an Sehenswürdigkeiten, bietet Reiseführer-Kommentar und koordiniert Safari- und Aktivitätsarrangements. Empfohlen für Erstbesucher und Familien mit Kindern.</p>
+    </div>
+    <div class="a10-plan-card a10-plan-gold">
+      <div class="a10-plan-label">GOLD</div>
+      <div class="a10-plan-name">Premium-Service</div>
+      <div class="a10-plan-driver">Chauffeur Guide (Bestbewertet)</div>
+      <p class="a10-plan-desc">Vollständige Reiserouten-Begleitung mit einem hochbewerteten Chauffeur Guide. Duales Unterstützungssystem während der gesamten Reise. Empfohlen für Mehrgenerationen-Familien, Gruppen mit älteren Passagieren oder Reisende, die das höchste Maß an persönlicher Betreuung wünschen.</p>
+    </div>
+  </div>
+
+  <p>Für einen vollständigen Vergleich aller drei Pläne besuchen Sie unsere <a href="/plans" class="article-link">Pläne-Seite</a>.</p>
+
+
+  <h2>Was Familien und Gruppen über das Reisen mit SLTCS sagen</h2>
+
+  <p>Die folgenden Bewertungen stammen von Familien und Gruppen, die ihre Reisen mit SLTCS-Fahrern abgeschlossen haben.</p>
+
+  <div class="a10-review-grid">
+    <div class="a10-review-card">
+      <div class="a10-review-photo-wrap">
+        <img src="/manus-storage/review_smith_3ba6750f.jpeg" alt="Familie K mit Fahrer Smith" class="a10-review-photo" />
+      </div>
+      <div class="a10-review-body">
+        <div class="a10-review-stars">★★★★★</div>
+        <div class="a10-review-quote">„Smiths ruhige Professionalität und echte Herzlichkeit machten unseren Familienurlaub wirklich außergewöhnlich."</div>
+        <div class="a10-review-meta">Familie K · 5 Passagiere · Colombo – Ella – Yala – Mirissa</div>
+        <p class="a10-review-text">Wir reisten als Familie von fünf Personen – darunter zwei Kleinkinder und eine Großmutter – und Smith bewältigte jede logistische Herausforderung mit ruhiger Effizienz und einem ständigen Lächeln. Sein Wissen über den Yala-Nationalpark war herausragend – wir sahen Leoparden, Elefanten und Krokodile an einem einzigen Morgen.</p>
+      </div>
+    </div>
+    <div class="a10-review-card">
+      <div class="a10-review-photo-wrap">
+        <img src="/manus-storage/review_lasith_family_ae2d2464.jpeg" alt="Familie W mit Fahrer Lasith" class="a10-review-photo" />
+      </div>
+      <div class="a10-review-body">
+        <div class="a10-review-stars">★★★★★</div>
+        <div class="a10-review-quote">„Lasith war unendlich geduldig mit unseren Kindern und ließ jeden Moment der Reise mühelos erscheinen."</div>
+        <div class="a10-review-meta">Familie W · 3 Passagiere · Colombo – Sigiriya – Kandy – Galle</div>
+        <p class="a10-review-text">Seine herzliche Art mit den Kindern beruhigte uns alle, und sein klares Englisch bedeutete, dass nie etwas in der Übersetzung verloren ging. Pünktlich, professionell und immer einen Schritt voraus.</p>
+      </div>
+    </div>
+    <div class="a10-review-card">
+      <div class="a10-review-photo-wrap">
+        <img src="/manus-storage/review_dfamily_chamil_9214e24c.png" alt="Familie D mit Fahrer Chamil" class="a10-review-photo" />
+      </div>
+      <div class="a10-review-body">
+        <div class="a10-review-stars">★★★★★</div>
+        <div class="a10-review-quote">„Chamils Herzlichkeit, schnelles Denken und natürliche Aufmerksamkeit gewannen jedes Mitglied unserer Familie."</div>
+        <div class="a10-review-meta">Familie D · 3 Generationen · Sigiriya – Kandy – Colombo</div>
+        <p class="a10-review-text">Wir reisten als drei Generationen – Großeltern, Eltern und ein Kind. Chamil sammelte ständig die neuesten Informationen über Straßenverhältnisse und Sicherheit, und seine Aufmerksamkeit gegenüber unserem Kind war besonders rührend.</p>
+      </div>
+    </div>
+  </div>
+
+  <p>Lesen Sie weitere verifizierte Bewertungen auf unserer <a href="/voice" class="article-link">Gästestimmen-Seite</a>.</p>
+
+  <img
+    src="/manus-storage/review1_r_family_eranga_a3545b4c.png"
+    alt="Familie R erkundet Sri Lanka mit ihrem Privatfahrer"
+    class="article-inline-img"
+  />
+
+
+  <h2>Praktische Tipps für Familien und Gruppen</h2>
+
+
+  <h3>Reisen mit Kleinkindern</h3>
+
+  <p>
+    Sri Lankas Straßen variieren erheblich in der Qualität – glatte Schnellstraßen verbinden die großen Städte, aber Bergstrecken und Landstraßen können kurvenreich und holprig sein. Für Säuglinge und Kleinkinder wird ein Kindersitz dringend empfohlen.
+  </p>
+
+  <p>
+    SLTCS kann auf Anfrage einen geeigneten Sitz arrangieren; bitte erwähnen Sie dies bei Ihrer Anfrage.
+  </p>
+
+  <p>
+    Planen Sie bei längeren Fahrtagen alle zwei bis drei Stunden Raststopps ein. Die meisten Fahrer kennen die besten Raststätten – schattige Bereiche mit sauberen Einrichtungen und kalten Getränken.
+  </p>
+
+  <p>
+    Die Hochlandrouten profitieren besonders von einem frühen Start, um die Nachmittagshitze zu vermeiden und das Morgenlicht optimal zu nutzen.
+  </p>
+
+
+  <h3>Reisen mit älteren Passagieren</h3>
+
+  <p>
+    Für Gruppen, die ältere Passagiere einschließen, ist der <strong>Gold-Plan</strong> mit einem Chauffeur Guide die geeignetste Wahl. Diese Fahrer sind erfahren darin, das Tempo der Reiseroute an alle Energieniveaus anzupassen.
+  </p>
+
+  <p>
+    Das duale Unterstützungssystem stellt sicher, dass kein Passagier zu irgendeinem Zeitpunkt der Reise ohne Hilfe ist.
+  </p>
+
+  <p>
+    Die erhöhte Sitzposition des KDH-Vans kann einen Aufstieg beim Einsteigen erfordern – wenn Mobilität ein Problem darstellt, könnte der Luxus-MPV mit niedrigerem Einstieg und Kapitänssitzen komfortabler sein.
+  </p>
+
+  <p>
+    Bitte erwähnen Sie etwaige Mobilitätsanforderungen bei Ihrer Anfrage.
+  </p>
+
+
+  <h3>Kosten auf eine Gruppe aufteilen</h3>
+
+  <p>
+    Einer der bedeutendsten Vorteile eines privaten Van-Charters für Gruppen ist der Preis-pro-Person-Wert. Die folgende Tabelle zeigt, wie die Kosten pro Person sinken, wenn die Gruppengröße zunimmt, am Beispiel des Silber-Van-7-Tage-Tarifs:
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Gruppengröße</th>
+          <th>Gesamt (Silber Van, 7 Tage)</th>
+          <th>Kosten pro Person</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2 Passagiere</td><td>USD 650</td><td>USD 325</td></tr>
+        <tr><td>3 Passagiere</td><td>USD 650</td><td>USD 217</td></tr>
+        <tr><td>4 Passagiere</td><td>USD 650</td><td>USD 163</td></tr>
+        <tr><td>5 Passagiere</td><td>USD 650</td><td>USD 130</td></tr>
+        <tr><td>6 Passagiere</td><td>USD 650</td><td>USD 108</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="font-size:0.82rem;color:#9a9080;margin-top:-8px;">Basierend auf dem Richtwert Silber Van 7-Tage-Tarif. Tatsächliche Preise können je nach Reiseroute variieren.</p>
+
+
+  <h2>Wie Sie einen Van-Charter für Ihre Gruppe buchen</h2>
+
+  <div class="a3-quote-box">
+    <h3 class="a3-quote-heading">Kostenloses, unverbindliches Angebot erhalten</h3>
+    <p class="a3-quote-lead">
+      Der einfachste Weg, das richtige Fahrzeug und den richtigen Plan für Ihre Gruppe zu bestätigen, ist, Ihre Reisedaten, Gruppengröße und eine grobe Reiseroute mit uns zu teilen. Wir erstellen eine personalisierte Schätzung auf Englisch – ohne Buchungsverpflichtung und ohne Druck, sich zu entscheiden, bevor Sie bereit sind.
+    </p>
+    <div class="a3-quote-steps">
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">1</div>
+        <div class="a3-quote-step-text">Teilen Sie Reisedaten, Gruppengröße &amp; Ziele mit</div>
+      </div>
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">2</div>
+        <div class="a3-quote-step-text">Wählen Sie Ihr bevorzugtes Fahrzeug &amp; Ihren Serviceplan</div>
+      </div>
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">3</div>
+        <div class="a3-quote-step-text">Erhalten Sie innerhalb von 24 Stunden eine detaillierte Schätzung</div>
+      </div>
+    </div>
+    <a href="/#contact" class="article-cta-btn">Kostenloses Angebot anfordern</a>
+  </div>
+
+</article>
+`,
+  },
+  // ─── Artikel mi-4n5d: Sri Lanka 4 Nächte / 5 Tage Reiseroute ────────────────
+  {
+    id: "mi-4n5d",
+    slug: "sri-lanka-4-naechte-5-tage-reiseroute",
+    category: "beispielreiserouten",
+    title: "Sri Lanka 4 Nächte / 5 Tage Reiseroute: Kulturhöhepunkte mit Privatfahrer",
+    excerpt: "Eine kompakte, aber lohnende 5-tägige Privatfahrer-Tour durch Sigiriya, Kandy, Nuwara Eliya und Galle – perfekt für Erstbesucher mit knappem Zeitplan.",
+    coverImage: "/manus-storage/slide2_sigiriya_b8468f12.jpg",
+    publishedAt: "2026-06-05",
+    readingTime: 8,
+    tags: ["4 Nächte 5 Tage", "Sigiriya", "Kandy", "Galle", "Privatfahrer", "Erstbesucher"],
+    hreflang: {
+      en: "https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-4-nights-5-days-itinerary",
+    },
+    seo: {
+      metaTitle: "Sri Lanka 4 Nächte 5 Tage Reiseroute: Kulturhöhepunkte mit Privatfahrer (2026) | SLTCS",
+      metaDescription: "Erkunden Sie Sri Lankas beste Highlights in 5 Tagen mit einem Privatfahrer. Sigiriya-Felsen, Kandy-Tempel, Nuwara Eliya Teeland & Galle Fort – vollständig privater, flexibler Charter ab 270 $.",
+      keywords: [
+        "Sri Lanka 4 Nächte 5 Tage Reiseroute",
+        "Sri Lanka 5 Tage Tour Privatfahrer",
+        "Sri Lanka Kurztrip Reiseroute",
+        "Sigiriya Kandy Galle Privatfahrer",
+        "Sri Lanka Kulturhöhepunkte Tour",
+        "Sri Lanka 5 Tage Privatcharterservice",
+      ],
+    },
+    content: `
+<article class="article-body">
+
+  <img
+    src="/manus-storage/slide2_sigiriya_b8468f12.jpg"
+    alt="Luftaufnahme der Sigiriya-Felsfestung, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+
+  <h2>Überblick: 4 Nächte / 5 Tage Kulturhöhepunkte</h2>
+
+  <p>
+    Diese 5-tägige Privatfahrer-Reiseroute ist für Erstbesucher konzipiert, die das Beste von Sri Lanka erleben möchten, ohne sich gehetzt zu fühlen. In fünf Tagen besuchen Sie vier der berühmtesten UNESCO-Welterbestätten der Insel, reisen durch atemberaubende Hochlandlandschaften und erreichen die historische Südküste.
+  </p>
+
+  <p>
+    All das in der Bequemlichkeit eines vollständig privaten, klimatisierten Fahrzeugs mit einem engagierten Fahrer.
+  </p>
+
+  <p>
+    Alle SLTCS-Reiserouten sind von Natur aus flexibel. Wenn Sie länger in Sigiriya verweilen, einen Stopp überspringen oder einen spontanen Umweg hinzufügen möchten, wird Ihr Fahrer sich anpassen.
+  </p>
+
+  <p>
+    Dieser Plan ist ein Ausgangspunkt, kein starrer Zeitplan.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Detail</th>
+          <th>Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Dauer</td><td>5 Tage / 4 Nächte</td></tr>
+        <tr><td>Schwerpunkt</td><td>Kulturhöhepunkte</td></tr>
+        <tr><td>Hauptziele</td><td>Sigiriya, Kandy, Nuwara Eliya, Galle</td></tr>
+        <tr><td>Ideal für</td><td>Erstbesucher mit knappem Zeitplan</td></tr>
+        <tr><td>Start- / Endpunkt</td><td>Flughafen Colombo (BIA)</td></tr>
+        <tr><td>Empfohlener Plan</td><td><a href="/plans" class="article-link">Silber oder Gold</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <h2>Tagesplan</h2>
+
+
+  <h3>Tag 1 — Ankunft → Sigiriya</h3>
+
+  <p>
+    Ankunft am Bandaranaike International Airport (BIA) in Colombo. Ihr Fahrer erwartet Sie in der Ankunftshalle mit einem Namensschild.
+  </p>
+
+  <p>
+    Fahrt nach Norden in die Sigiriya-Region (ca. 3–4 Stunden), mit einem Zwischenstopp am <strong>Dambulla-Höhlentempel</strong> – einem UNESCO-Welterbe mit fünf Höhlenschreinen, die mit über 150 Buddha-Statuen und antiken Wandmalereien geschmückt sind. Check-in im Hotel in der Sigiriya- oder Kandalama-Region.
+  </p>
+
+
+  <h3>Tag 2 — Sigiriya-Felsfestung</h3>
+
+  <p>
+    Beginnen Sie den Tag mit einem frühmorgendlichen Aufstieg zur <strong>Sigiriya-Felsfestung</strong> (UNESCO), einer der außergewöhnlichsten archäologischen Stätten Asiens. Die königliche Zitadelle aus dem 5. Jahrhundert erhebt sich 200 Meter über den umliegenden Dschungel, und vom Gipfel bietet sich ein Panoramablick über die Ebenen.
+  </p>
+
+  <p>
+    Planen Sie 2,5–3 Stunden für den vollständigen Auf- und Abstieg ein.
+  </p>
+
+  <img
+    src="/manus-storage/sigiriya_top_driver_guests_4n5d_e9dfe478.jpeg"
+    alt="SLTCS-Fahrer mit Gästen auf dem Gipfel der Sigiriya-Felsfestung, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <p>
+    Am Nachmittag genießen Sie optional eine Jeep-Safari im <strong>Minneriya-Nationalpark</strong>, bekannt für seine saisonalen Elefantenversammlungen – eine der größten der Welt. Rückkehr zum Hotel für den Abend.
+  </p>
+
+  <div class="article-highlight-box">
+    <h4>🚙 Private Jeep-Safari – Arrangiert von SLTCS</h4>
+    <p>
+      SLTCS kann eine <strong>vollständig private Jeep-Safari</strong> für Ihren Minneriya- oder Yala-Besuch arrangieren. Im Gegensatz zu gemeinsamen Gruppensafaris ist Ihr privater Jeep ausschließlich für Ihre Gruppe reserviert – keine Fremden, kein fester Zeitplan.
+    </p>
+    <p>
+      Was das SLTCS-Erlebnis wirklich auszeichnet, ist, dass <strong>Ihr engagierter Fahrer im Jeep mitfahren kann</strong> und während der gesamten Safari Echtzeit-Kommentare zu Wildtieren, Lebensräumen und Parkgeschichte gibt. So profitieren Sie von einem zertifizierten Parkführer und Ihrem vertrauten SLTCS-Fahrer in einem nahtlosen Erlebnis.
+    </p>
+    <p>
+      Interessiert an einer privaten Jeep-Safari? <a href="/#contact" class="article-link">Kontaktieren Sie uns</a> bei Ihrer Anfrage, und wir werden es in Ihr personalisiertes Angebot aufnehmen.
+    </p>
+  </div>
+
+  <img
+    src="/manus-storage/itinerary_5n6d_sigiriya_top_24b584a1.jpg"
+    alt="Private Jeep-Safari arrangiert von SLTCS – Gäste in einem Safari-Jeep in Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <img
+    src="/manus-storage/safari_jeep_yala_group_08928221.jpeg"
+    alt="Gruppe genießt eine private Jeep-Safari im Yala-Nationalpark, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+
+  <h3>Tag 3 — Kandy: Tempel des Heiligen Zahns</h3>
+
+  <p>
+    Fahrt nach <strong>Kandy</strong> (ca. 2,5 Stunden), mit einem Zwischenstopp in einem traditionellen Gewürzgarten in Matale. Besuch des <strong>Tempels der Heiligen Zahnreliquie</strong> (UNESCO), der heiligsten buddhistischen Stätte Sri Lankas, die eine Reliquie des Buddha beherbergt.
+  </p>
+
+  <p>
+    Am Abend besuchen Sie eine Kandyan-Kulturtanzaufführung – eine lebhafte Vorführung traditioneller Trommeln und kostümierter Tänzer.
+  </p>
+
+
+  <h3>Tag 4 — Nuwara Eliya → Galle</h3>
+
+  <p>
+    Abfahrt von Kandy für eine malerische Fahrt durch rollende <strong>Teeplantagen</strong> nach Nuwara Eliya – Sri Lankas „Kleines England", gelegen auf 1.868 Metern über dem Meeresspiegel. Stopp in einer Teefabrik für eine geführte Tour und Verkostung.
+  </p>
+
+  <p>
+    Weiterfahrt südwärts durch das Hochland und hinunter zur Küste, Ankunft am <strong>Galle Fort</strong> (UNESCO) an der Südküste am späten Nachmittag.
+  </p>
+
+  <img
+    src="/manus-storage/slide5_galle_8aced38c.jpg"
+    alt="Galle Fort holländische Kolonialwälle und Leuchtturm, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+
+  <h3>Tag 5 — Galle Fort → Abreise</h3>
+
+  <p>
+    Verbringen Sie den Morgen mit der Erkundung von <strong>Galle Fort</strong> – einer bemerkenswert gut erhaltenen holländischen Kolonialfestung aus dem 17. Jahrhundert. Spazieren Sie auf den Wällen, stöbern Sie in den Boutiquen und Galerien innerhalb der Festungsmauern und genießen Sie einen Kaffee mit Blick auf den Indischen Ozean.
+  </p>
+
+  <p>
+    Ihr Fahrer bringt Sie dann zum Flughafen Colombo für Ihren Abflug.
+  </p>
+
+
+  <h2>Was in dieser Reiseroute enthalten ist</h2>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Leistung</th>
+          <th>Enthalten</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Privates klimatisiertes Fahrzeug</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Engagierter Fahrer für alle 5 Tage</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Flughafenabholung und -rücktransfer</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Flexible Reiseroutenanpassungen</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Hotelbuchungen</td><td class="val-limited">Nicht enthalten (wir können empfehlen)</td></tr>
+        <tr><td>Eintrittsgebühren für Sehenswürdigkeiten</td><td class="val-limited">Nicht enthalten (separat bezahlt)</td></tr>
+        <tr><td>Mahlzeiten</td><td class="val-limited">Nicht enthalten</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <h2>Empfohlene SLTCS-Pläne</h2>
+
+  <p>
+    Für eine 5-tägige Kulturreiseroute empfehlen wir den <a href="/plans" class="article-link">Silber-Plan</a> (Bestbewerteter Touristenfahrer oder Chauffeur Guide) oder den <a href="/plans" class="article-link">Gold-Plan</a> (engagierter Chauffeur Guide mit einem zweiten Unterstützungsfahrer).
+  </p>
+
+  <p>
+    Ein Chauffeur Guide wird Ihr Erlebnis in Sigiriya, Kandy und Galle erheblich bereichern, indem er zertifizierten Kulturkommentar an jeder Stätte bietet.
+  </p>
+
+  <p>
+    Sehen Sie unsere vollständige <a href="/price" class="article-link">Preisseite</a> für transparente Tarife, oder <a href="/#contact" class="article-link">senden Sie eine kostenlose Anfrage</a>, und wir erstellen innerhalb von 24 Stunden ein personalisiertes Angebot.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-title">Bereit, Ihre 5-Tage-Sri-Lanka-Tour zu buchen?</div>
+    <div class="article-cta-desc">Teilen Sie uns Ihre Reisedaten und Gruppengröße mit. Wir antworten innerhalb von 24 Stunden mit einem maßgeschneiderten Angebot.</div>
+    <a href="/#contact" class="article-cta-btn">Kostenloses Angebot anfordern</a>
+  </div>
+
+</article>
+`,
+  },
+
 ];
 
 // ─── Helper Functions ─────────────────────────────────────────────────────────

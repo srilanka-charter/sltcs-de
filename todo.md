@@ -81,3 +81,11 @@
 - [x] index.cssに記事ページ用スタイルを追加する（article-list・article-detail・article-toc等）
 - [x] index.cssのCSS重複・不完全ブロックを修正する
 - [x] ビルド確認（エラー0件）
+
+## 2026年6月5日公開 3記事追加
+
+- [x] 「Was Ihr Tagessatz beinhaltet」ドイツ語版インフォグラフィックを生成する
+- [x] 記事003: fahrermiete-sri-lanka-kosten-sicherheit-checkliste（Kosten & Buchungsratgeber）を追加する
+- [x] 記事010: van-miete-fahrer-sri-lanka-familien-kleingruppen（Familien- & Gruppenreisen）を追加する
+- [x] 記事mi-4n5d: sri-lanka-4-naechte-5-tage-reiseroute（Beispielreiserouten）を追加する
+- [x] TypeScriptエラー0件・ビルド確認
