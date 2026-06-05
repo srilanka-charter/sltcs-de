@@ -1791,6 +1791,12 @@ export const ARTICLES: Article[] = [
   <p>
     Beginnen Sie den Tag mit einem frühmorgendlichen Aufstieg zur <strong>Sigiriya-Felsfestung</strong> (UNESCO), einer der außergewöhnlichsten archäologischen Stätten Asiens. Die königliche Zitadelle aus dem 5. Jahrhundert erhebt sich 200 Meter über den umliegenden Dschungel, und vom Gipfel bietet sich ein Panoramablick über die Ebenen.
   </p>
+  <img
+    src="/manus-storage/sigiriya_top_driver_guests_4n5d_e9dfe478_66674563.jpeg"
+    alt="SLTCS-Fahrer mit Gästen auf dem Gipfel der Sigiriya-Felsfestung, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
 
   <p>
     Planen Sie 2,5–3 Stunden für den vollständigen Auf- und Abstieg ein.
