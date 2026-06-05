@@ -2254,13 +2254,12 @@ footer {
 
 /* ─── Article 10 – Advantage Grid ────────────────────────────────────────────── */
 .a10-advantage-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 28px 0 40px; max-width: 100%; box-sizing: border-box; }
-.a10-advantage-card { display: flex; gap: 16px; align-items: flex-start; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.18); border-radius: 10px; padding: 20px; transition: border-color 0.2s, background 0.2s; }
+.a10-advantage-card { display: flex; flex-direction: column; gap: 6px; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.18); border-radius: 10px; padding: 20px; transition: border-color 0.2s, background 0.2s; max-width: 100%; box-sizing: border-box; overflow: hidden; }
 .a10-advantage-card:hover { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.35); }
-.a10-advantage-num { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: rgba(201,168,76,0.5); line-height: 1; flex-shrink: 0; min-width: 36px; }
-.a10-advantage-title { font-size: 0.9rem; font-weight: 700; color: #e8d5b0; margin-bottom: 6px; }
-.a10-advantage-desc { font-size: 0.83rem; color: #9a9080; line-height: 1.65; }
+.a10-advantage-num { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: rgba(201,168,76,0.5); line-height: 1; }
+.a10-advantage-title { font-size: 0.95rem; font-weight: 700; color: #e8d5b0; margin-bottom: 4px; }
+.a10-advantage-desc { font-size: 0.85rem; color: #9a9080; line-height: 1.65; word-break: break-word; overflow-wrap: break-word; }
 @media (max-width: 640px) { .a10-advantage-grid { grid-template-columns: 1fr; } }
-.a10-advantage-card { max-width: 100%; box-sizing: border-box; }
 
 /* ─── Article 10 – Plan Row ──────────────────────────────────────────────────── */
 .a10-plan-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0 32px; max-width: 100%; box-sizing: border-box; }
