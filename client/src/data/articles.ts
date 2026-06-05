@@ -1820,13 +1820,6 @@ export const ARTICLES: Article[] = [
   </div>
 
   <img
-    src="/manus-storage/itinerary_5n6d_sigiriya_top_24b584a1_a7e9aad7.jpg"
-    alt="Private Jeep-Safari arrangiert von SLTCS – Gäste in einem Safari-Jeep in Sri Lanka"
-    class="article-inline-img"
-    loading="lazy"
-  />
-
-  <img
     src="/manus-storage/safari_jeep_yala_group_08928221_c1ba467c.jpeg"
     alt="Gruppe genießt eine private Jeep-Safari im Yala-Nationalpark, Sri Lanka"
     class="article-inline-img"
