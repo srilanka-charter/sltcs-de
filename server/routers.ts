@@ -21,6 +21,7 @@ async function sendEnquiryEmail(data: {
   vehicle: string;
   currency?: string;
   notes?: string;
+  replyTo?: string;
 }) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -66,6 +67,7 @@ async function sendEnquiryEmail(data: {
   await transporter.sendMail({
     from: `"SLTCS Enquiry System" <${process.env.GMAIL_USER ?? "srilanka.41032@gmail.com"}>`,
     to: "srilanka.41032@gmail.com, contact@gohellolanka.com",
+    replyTo: data.replyTo ?? data.email,
     subject: `[SLTCS-DE] New Enquiry from ${data.name} (${countryDisplay})`,
     html,
   });
@@ -110,7 +112,7 @@ export const appRouter = router({
 
         // 1. Send email via Gmail SMTP
         try {
-          await sendEnquiryEmail(input);
+          await sendEnquiryEmail({ ...input, replyTo: input.email });
           console.log("[Enquiry] Email sent successfully to srilanka.41032@gmail.com and contact@gohellolanka.com");
         } catch (err) {
           console.error("[Enquiry] Failed to send email:", err);
