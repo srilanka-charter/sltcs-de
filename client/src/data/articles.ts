@@ -1914,6 +1914,649 @@ export const ARTICLES: Article[] = [
 `,
   },
 
+  // ─── 記事7: 5泊6日旅程 ─────────────────────────────────────────────────────────
+  {
+    id: "mi-5n6d",
+    slug: "sri-lanka-5-naechte-6-tage-reiseroute",
+    category: "beispielreiserouten",
+    title: "Sri Lanka 5 Nächte / 6 Tage Reiseroute: Kultur & Natur mit privatem Fahrer",
+    excerpt: "Eine ausgewogene 6-Tage-Privatfahrer-Tour, die Kulturstätten, Hochlandlandschaften und Wildlife-Safari verbindet — ideal für Paare und kleine Gruppen.",
+    coverImage: "/manus-storage/5n6d_cover_tea_train_6155a2b8.jpg",
+    publishedAt: "2026-06-06",
+    readingTime: 9,
+    tags: ["5 Nächte 6 Tage", "Sigiriya", "Kandy", "Ella", "Yala", "Privater Fahrer", "Paare"],
+    seo: {
+      metaTitle: "Sri Lanka 5 Nächte 6 Tage Reiseroute: Kultur & Natur mit privatem Fahrer (2026) | SLTCS",
+      metaDescription: "Die perfekte 6-Tage-Sri-Lanka-Reiseroute mit privatem Fahrer: Sigiriya, Kandy, Ella Nine Arches Bridge, Yala-Nationalpark-Safari & Galle Fort. Vollständig privater Charter ab 270 $.",
+      keywords: [
+        "sri lanka 5 nächte 6 tage reiseroute",
+        "sri lanka 6 tage tour privater fahrer",
+        "sigiriya ella yala privater fahrer",
+        "sri lanka kultur natur tour",
+        "sri lanka 6 tage privatreise",
+        "sri lanka reiseroute 2026",
+      ],
+    },
+    hreflang: {
+      en: "https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-5-nights-6-days-itinerary",
+    },
+    content: `
+<article class="article-body">
+
+  <img
+    src="/manus-storage/5n6d_cover_tea_train_6155a2b8.jpg"
+    alt="Malerische Zugfahrt durch das Teehochland von Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h2>Überblick: 5 Nächte / 6 Tage Kultur & Natur</h2>
+
+  <img
+    src="/manus-storage/5n6d_route_map_e0c39412.png"
+    alt="Sri Lanka 5 Nächte 6 Tage Reiseroute — Illustrierte Karte"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <p>
+    Diese 6-tägige Privatfahrer-Reiseroute bietet die ideale Balance zwischen kultureller Erkundung und Naturerlebnis. Sie besteigen Sigiriya, erkunden die heilige Stadt Kandy, reisen durch das Teehochland nach Ella, unternehmen eine ganztägige Wildlife-Safari im Yala-Nationalpark und schließen mit dem historischen Galle Fort ab — alles in einem vollständig privaten Fahrzeug mit einem engagierten Fahrer.
+  </p>
+
+  <p>
+    Dieser Plan ist besonders beliebt bei Paaren und kleinen Gruppen, die sowohl die kulturelle Tiefe als auch die natürliche Schönheit Sri Lankas erleben möchten, ohne sich gehetzt zu fühlen.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Details</th>
+          <th>Informationen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Dauer</td><td>6 Tage / 5 Nächte</td></tr>
+        <tr><td>Schwerpunkt</td><td>Kultur & Natur</td></tr>
+        <tr><td>Hauptziele</td><td>Sigiriya, Kandy, Ella, Yala, Galle</td></tr>
+        <tr><td>Ideal für</td><td>Paare &amp; kleine Gruppen</td></tr>
+        <tr><td>Start- / Endpunkt</td><td>Colombo Flughafen (BIA)</td></tr>
+        <tr><td>Empfohlener Plan</td><td><a href="/angebote" class="article-link">Silber oder Gold</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Tagesplan</h2>
+
+  <h3>Tag 1 — Ankunft → Sigiriya</h3>
+
+  <p>
+    Ankunft am Colombo Flughafen. Ihr Fahrer empfängt Sie bei der Ankunft und bringt Sie nach Norden in die Sigiriya-Region (ca. 3–4 Stunden), mit einem Zwischenstopp am <strong>Dambulla-Felsentempel</strong> (UNESCO).
+  </p>
+
+  <p>
+    Check-in in Ihrem Hotel in der Sigiriya- oder Kandalama-Region.
+  </p>
+
+  <h3>Tag 2 — Sigiriya-Felsen & Wildlife-Safari</h3>
+
+  <p>
+    Besteigen Sie am Morgen die <strong>Sigiriya-Felsenfestung</strong> (UNESCO) — planen Sie 2,5–3 Stunden für den vollständigen Auf- und Abstieg ein.
+  </p>
+
+  <p>
+    Unternehmen Sie am Nachmittag eine Jeep-Safari im <strong>Minneriya- oder Kaudulla-Nationalpark</strong>, wo Sie große Herden wilder Elefanten rund um die alten Stauseen beobachten können.
+  </p>
+
+  <img
+    src="/manus-storage/5n6d_sigiriya_top_4fb3ee71.jpg"
+    alt="Fahrer und Gäste auf dem Gipfel der Sigiriya-Felsenfestung, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Tag 3 — Kandy Sightseeing</h3>
+
+  <p>
+    Fahrt nach <strong>Kandy</strong> über den Matale-Gewürzgarten. Besuch des <strong>Tempels des Heiligen Zahns</strong> (UNESCO) und der wunderschönen <strong>Peradeniya Botanischen Gärten</strong>, die über 4.000 Pflanzenarten beherbergen, darunter eine berühmte Allee königlicher Palmen.
+  </p>
+
+  <p>
+    Abend zur freien Verfügung in der Stadt Kandy.
+  </p>
+
+  <h3>Tag 4 — Nuwara Eliya & Ella</h3>
+
+  <p>
+    Fahrt durch das atemberaubende <strong>Teehochland</strong> nach Nuwara Eliya. Besuch einer Teefabrik und Genuss eines High Tea mit Blick über die Plantage.
+  </p>
+
+  <p>
+    Weiterfahrt nach <strong>Ella</strong> — ein charmantes Bergdorf, bekannt für die <strong>Nine Arches Bridge</strong>, ein Viadukt aus der Kolonialzeit inmitten von Dschungel und Teeterrassen. Übernachtung in Ella.
+  </p>
+
+  <img
+    src="/manus-storage/5n6d_ella_bridge_7ad91152.jpg"
+    alt="Nine Arches Bridge in Ella, Sri Lanka, umgeben von Teeterrassen"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Tag 5 — Yala-Nationalpark-Safari</h3>
+
+  <p>
+    Transfer in die Yala-Region (ca. 2 Stunden von Ella). Verbringen Sie den ganzen Tag auf einer <strong>Jeep-Safari im Yala-Nationalpark</strong> — Sri Lankas berühmtestes Wildreservat und Heimat der weltweit höchsten Leopardendichte.
+  </p>
+
+  <p>
+    Halten Sie auch Ausschau nach Elefanten, Lippenbären, Krokodilen und Hunderten von Vogelarten. Übernachtung in der Nähe von Yala oder Tissamaharama.
+  </p>
+
+  <img
+    src="/manus-storage/5n6d_family_safari_0f95f02f.jpg"
+    alt="Familie auf einer Jeep-Safari im Yala-Nationalpark, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Tag 6 — Galle Fort → Abreise</h3>
+
+  <p>
+    Fahrt zum <strong>Galle Fort</strong> (UNESCO) an der Südküste. Verbringen Sie den Morgen damit, die holländischen Kolonialwälle, Boutiquen und Meeresblicke zu erkunden.
+  </p>
+
+  <p>
+    Ihr Fahrer bringt Sie dann zum Colombo Flughafen zur Abreise.
+  </p>
+
+  <h2>Was ist in dieser Reiseroute enthalten?</h2>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Leistung</th>
+          <th>Enthalten</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Privates klimatisiertes Fahrzeug</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Engagierter Fahrer für alle 6 Tage</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Flughafentransfer (Ankunft & Abreise)</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Flexible Reiserouten-Anpassungen</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Hotelbuchungen</td><td class="val-limited">Nicht enthalten (wir können empfehlen)</td></tr>
+        <tr><td>Yala-Jeep-Safari-Gebühr</td><td class="val-limited">Nicht enthalten (separat zu zahlen)</td></tr>
+        <tr><td>Mahlzeiten</td><td class="val-limited">Nicht enthalten</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Empfohlene SLTCS-Pakete</h2>
+
+  <p>
+    Für eine 6-tägige Kultur-und-Natur-Reiseroute empfehlen wir das <a href="/angebote" class="article-link">Silber-Paket</a> oder das <a href="/angebote" class="article-link">Gold-Paket</a>.
+  </p>
+
+  <p>
+    Ein Chauffeur-Guide-Fahrer im Gold-Paket bietet zertifizierten Kommentar in Sigiriya, Kandy und Galle und kann bei der Koordination Ihrer Yala-Safari-Logistik helfen.
+  </p>
+
+  <p>
+    Sehen Sie unsere <a href="/preis" class="article-link">Preisseite</a> für transparente Preise, oder <a href="/#contact" class="article-link">senden Sie eine kostenlose Anfrage</a> für ein individuelles Angebot.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-title">Bereit, Ihre 6-Tage-Sri-Lanka-Tour zu buchen?</div>
+    <div class="article-cta-desc">Teilen Sie uns Ihre Reisedaten und Gruppengröße mit. Wir antworten innerhalb von 24 Stunden mit einem maßgeschneiderten Angebot.</div>
+    <a href="/#contact" class="article-cta-btn">Kostenloses Angebot anfordern</a>
+  </div>
+
+</article>
+`,
+  },
+
+  // ─── 記事8: 6泊7日旅程 ─────────────────────────────────────────────────────────
+  {
+    id: "mi-6n7d",
+    slug: "sri-lanka-6-naechte-7-tage-reiseroute",
+    category: "beispielreiserouten",
+    title: "Sri Lanka 6 Nächte / 7 Tage Reiseroute: Gesamtinsel-Erlebnis mit privatem Fahrer",
+    excerpt: "Eine umfassende 7-tägige Privatfahrer-Tour durch das Kulturdreieck, Kandy, Teehochland, Ella, Yala und Galle — ideal für Familien und gründliche Entdecker.",
+    coverImage: "/manus-storage/6n7d_cover_kandy_3fde5c15.jpg",
+    publishedAt: "2026-06-06",
+    readingTime: 10,
+    tags: ["6 Nächte 7 Tage", "Sigiriya", "Polonnaruwa", "Kandy", "Ella", "Yala", "Galle", "Familien"],
+    seo: {
+      metaTitle: "Sri Lanka 6 Nächte 7 Tage Reiseroute: Gesamtinsel-Erlebnis mit privatem Fahrer (2026) | SLTCS",
+      metaDescription: "Die ultimative 7-tägige Sri-Lanka-Privatfahrer-Reiseroute: Sigiriya, Polonnaruwa, Kandy, Nuwara-Eliya-Teehochland, Ella, Yala-Safari & Galle. Gesamtinsel-Erlebnis ab 270 $.",
+      keywords: [
+        "sri lanka 6 nächte 7 tage reiseroute",
+        "sri lanka 7 tage tour privater fahrer",
+        "sri lanka gesamtinsel tour",
+        "sigiriya polonnaruwa kandy ella yala galle",
+        "sri lanka 7 tage privatreise",
+        "sri lanka reiseroute 2026 privater fahrer",
+      ],
+    },
+    hreflang: {
+      en: "https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-6-nights-7-days-itinerary",
+    },
+    content: `
+<article class="article-body">
+
+  <img
+    src="/manus-storage/6n7d_cover_kandy_3fde5c15.jpg"
+    alt="Tempel des Heiligen Zahns in Kandy, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h2>Überblick: 6 Nächte / 7 Tage Gesamtinsel-Erlebnis</h2>
+
+  <p>
+    Diese 7-tägige Privatfahrer-Reiseroute ist die beliebteste Wahl für Familien und Reisende, die eine gründliche Einführung in Sri Lanka wünschen.
+  </p>
+
+  <p>
+    In sieben Tagen erkunden Sie das antike Kulturdreieck, die heilige Stadt Kandy, das dramatische Teehochland, das malerische Dorf Ella, den wildreichen Yala-Nationalpark und das historische Galle Fort — ein wirklich vollständiges Inselerlebnis.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Details</th>
+          <th>Informationen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Dauer</td><td>7 Tage / 6 Nächte</td></tr>
+        <tr><td>Schwerpunkt</td><td>Gesamtinsel-Erlebnis</td></tr>
+        <tr><td>Hauptziele</td><td>Sigiriya, Polonnaruwa, Kandy, Nuwara Eliya, Ella, Yala, Galle</td></tr>
+        <tr><td>Ideal für</td><td>Familien &amp; gründliche Entdecker</td></tr>
+        <tr><td>Start- / Endpunkt</td><td>Colombo Flughafen (BIA)</td></tr>
+        <tr><td>Empfohlener Plan</td><td><a href="/angebote" class="article-link">Silber oder Gold</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Tagesplan</h2>
+
+  <h3>Tag 1 — Ankunft → Kulturdreieck</h3>
+
+  <p>
+    Ankunft am Colombo Flughafen. Fahrt nach Norden über den <strong>Dambulla-Felsentempel</strong> (UNESCO) in die Sigiriya- oder Kandalama-Region (ca. 3–4 Stunden).
+  </p>
+
+  <p>
+    Check-in in Ihrem Hotel.
+  </p>
+
+  <h3>Tag 2 — Sigiriya & Polonnaruwa</h3>
+
+  <p>
+    Besteigen Sie am Morgen die <strong>Sigiriya-Felsenfestung</strong> (UNESCO). Fahrt am Nachmittag zur antiken Stadt <strong>Polonnaruwa</strong> (UNESCO) — eine bemerkenswert gut erhaltene mittelalterliche Hauptstadt mit Tempeln, Palästen und riesigen Buddha-Statuen.
+  </p>
+
+  <p>
+    Rückkehr zum Hotel.
+  </p>
+
+  <img
+    src="/manus-storage/6n7d_sigiriya_top_ed33a202.jpg"
+    alt="SLTCS-Fahrer und Gäste auf dem Gipfel der Sigiriya-Felsenfestung, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Tag 3 — Kandy</h3>
+
+  <p>
+    Fahrt nach <strong>Kandy</strong> über einen Gewürzgarten in Matale. Besuch des <strong>Tempels des Heiligen Zahns</strong> (UNESCO) und Genuss einer traditionellen Kandyan-Tanzvorstellung am Abend.
+  </p>
+
+  <img
+    src="/manus-storage/6n7d_kandy_temple_8cdd874c.jpg"
+    alt="Tempel des Heiligen Zahns bei Sonnenuntergang beleuchtet, Kandy, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Tag 4 — Nuwara Eliya: Teehochland</h3>
+
+  <p>
+    Malerische Bergfahrt nach <strong>Nuwara Eliya</strong> durch sanft geschwungene Teeplantagen. Genießen Sie ein Teepflück-Erlebnis und High Tea in einem Plantagen-Hotel aus der Kolonialzeit.
+  </p>
+
+  <p>
+    Erkunden Sie die charmante Stadt, die wegen ihres kühlen Klimas und ihrer britischen Kolonialarchitektur oft „Klein-England" genannt wird.
+  </p>
+
+  <img
+    src="/manus-storage/6n7d_nuwara_eliya_tea_310d79a9.jpeg"
+    alt="SLTCS-Fahrer mit Gästen auf einer Teeplantage in Nuwara Eliya, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Tag 5 — Ella & Nine Arches Bridge</h3>
+
+  <p>
+    Fahrt nach <strong>Ella</strong> und Fahrt (oder Fotografieren) mit dem ikonischen Teeland-Zug. Besuch der <strong>Nine Arches Bridge</strong> und Wanderung zum <strong>Little Adam's Peak</strong> für Panoramablicke über das Tal.
+  </p>
+
+  <p>
+    Übernachtung in Ella.
+  </p>
+
+  <img
+    src="/manus-storage/6n7d_ella_bridge_62b9caf6.jpg"
+    alt="SLTCS-Fahrer und Gäste an der Nine Arches Bridge, Ella, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Tag 6 — Yala-Nationalpark-Safari</h3>
+
+  <p>
+    Ganztägige Jeep-Safari im <strong>Yala-Nationalpark</strong> — Sri Lankas erstklassiges Wildreservat. Halten Sie Ausschau nach Leoparden, Elefanten, Lippenbären, Krokodilen und über 200 Vogelarten.
+  </p>
+
+  <p>
+    Übernachtung in der Nähe von Yala oder Tissamaharama.
+  </p>
+
+  <div class="article-highlight-box">
+    <h4>🚙 Private Jeep-Safari — Organisiert von SLTCS</h4>
+    <p>
+      SLTCS kann eine <strong>vollständig private Jeep-Safari</strong> für Ihren Yala-Besuch arrangieren. Im Gegensatz zu geteilten Gruppensafaris ist Ihr privater Jeep exklusiv für Ihre Gruppe reserviert — keine Fremden, kein fester Zeitplan.
+    </p>
+    <p>
+      Was das SLTCS-Erlebnis wirklich auszeichnet, ist, dass <strong>Ihr engagierter Fahrer im Jeep mitfahren kann</strong> und während der gesamten Safari Echtzeit-Kommentare zu Wildtieren, Lebensräumen und der Parkgeschichte gibt. So profitieren Sie sowohl von einem zertifizierten Park-Tracker als auch von Ihrem vertrauten SLTCS-Fahrer in einem nahtlosen Erlebnis.
+    </p>
+    <p>
+      Interesse an einer privaten Jeep-Safari? <a href="/#contact" class="article-link">Kontaktieren Sie uns</a> bei Ihrer Anfrage, und wir fügen sie Ihrem individuellen Angebot hinzu.
+    </p>
+  </div>
+
+  <img
+    src="/manus-storage/6n7d_yala_jeep_d27f8847.jpg"
+    alt="Private Jeep-Safari im Yala-Nationalpark, Sri Lanka — organisiert von SLTCS"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Tag 7 — Galle Fort → Abreise</h3>
+
+  <p>
+    Morgenbesuch im <strong>Galle Fort</strong> (UNESCO) — spazieren Sie auf den Wällen, erkunden Sie die Boutique-Gassen und genießen Sie einen letzten Kaffee mit Meerblick. Optionaler Stopp am <strong>Strand von Mirissa</strong>.
+  </p>
+
+  <p>
+    Transfer zum Colombo Flughafen zur Abreise.
+  </p>
+
+  <h2>Was ist in dieser Reiseroute enthalten?</h2>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Leistung</th>
+          <th>Enthalten</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Privates klimatisiertes Fahrzeug</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Engagierter Fahrer für alle 7 Tage</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Flughafentransfer (Ankunft & Abreise)</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Flexible Reiserouten-Anpassungen</td><td class="val-yes">Ja</td></tr>
+        <tr><td>Hotelbuchungen</td><td class="val-limited">Nicht enthalten (wir können empfehlen)</td></tr>
+        <tr><td>Yala-Jeep-Safari-Gebühr</td><td class="val-limited">Nicht enthalten (separat zu zahlen)</td></tr>
+        <tr><td>Mahlzeiten</td><td class="val-limited">Nicht enthalten</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Empfohlene SLTCS-Pakete</h2>
+
+  <p>
+    Für eine 7-tägige Gesamtinsel-Reiseroute empfehlen wir das <a href="/angebote" class="article-link">Silber-Paket</a> oder das <a href="/angebote" class="article-link">Gold-Paket</a>.
+  </p>
+
+  <p>
+    Das Gold-Paket beinhaltet einen engagierten Chauffeur-Guide-Fahrer sowie einen zweiten Support-Fahrer — ideal für Familien mit Kindern oder Reisende, die maximale Flexibilität und kulturelle Tiefe wünschen.
+  </p>
+
+  <p>
+    Sehen Sie unsere <a href="/preis" class="article-link">Preisseite</a>, oder <a href="/#contact" class="article-link">senden Sie eine kostenlose Anfrage</a> für ein individuelles Angebot.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-title">Bereit, Ihre 7-Tage-Sri-Lanka-Tour zu buchen?</div>
+    <div class="article-cta-desc">Teilen Sie uns Ihre Reisedaten und Gruppengröße mit. Wir antworten innerhalb von 24 Stunden mit einem maßgeschneiderten Angebot.</div>
+    <a href="/#contact" class="article-cta-btn">Kostenloses Angebot anfordern</a>
+  </div>
+
+</article>
+`,
+  },
+
+  // ─── 記事9: 5〜7日文化三角地帯 ────────────────────────────────────────────────────
+  {
+    id: "mi-cultural",
+    slug: "sri-lanka-5-7-tage-kulturdreieck-reiseroute",
+    category: "beispielreiserouten",
+    title: "Sri Lanka 5–7 Tage Kulturdreieck-Reiseroute: UNESCO-Welterbe-Fokus",
+    excerpt: "Eine intensive 5- bis 7-tägige Privatfahrer-Tour durch Sri Lankas UNESCO-Kulturdreieck — Sigiriya, Anuradhapura, Polonnaruwa und Kandy.",
+    coverImage: "/manus-storage/ct_cover_sigiriya_8f6e6c3e.jpg",
+    publishedAt: "2026-06-06",
+    readingTime: 10,
+    tags: ["Kulturdreieck", "UNESCO", "Sigiriya", "Anuradhapura", "Polonnaruwa", "Kandy", "Geschichte"],
+    seo: {
+      metaTitle: "Sri Lanka Kulturdreieck Reiseroute 5–7 Tage: UNESCO-Welterbe mit privatem Fahrer (2026) | SLTCS",
+      metaDescription: "Erkunden Sie Sri Lankas UNESCO-Welterbe-Kulturdreieck in 5–7 Tagen mit einem privaten Fahrer. Sigiriya, Anuradhapura, Polonnaruwa & Kandy — intensiver Kulturerbe-Fokus. Vollständig privat ab 270 $.",
+      keywords: [
+        "sri lanka kulturdreieck reiseroute",
+        "sri lanka unesco welterbe tour",
+        "sigiriya anuradhapura polonnaruwa tour",
+        "privater fahrer kulturdreieck sri lanka",
+        "sri lanka 5 7 tage kulturreise",
+        "sri lanka welterbestätten privater fahrer",
+      ],
+    },
+    hreflang: {
+      en: "https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-5-7-days-cultural-triangle-itinerary",
+    },
+    content: `
+<article class="article-body">
+
+  <img
+    src="/manus-storage/ct_cover_sigiriya_8f6e6c3e.jpg"
+    alt="Sigiriya-Felsenfestung — Herzstück von Sri Lankas Kulturdreieck"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h2>Überblick: 5–7 Tage Kulturdreieck-Fokus</h2>
+
+  <p>
+    Sri Lankas Kulturdreieck ist eine Region im nord-zentralen Teil der Insel, die eine außergewöhnliche Konzentration von UNESCO-Welterbestätten beherbergt — antike Hauptstädte, Felsenfestungen, heilige Tempel und Höhlenheiligtümer, die zusammen die Geschichte von über 2.000 Jahren singhalesischer Zivilisation erzählen.
+  </p>
+
+  <p>
+    Diese Reiseroute ist für Geschichts- und Kulturbegeisterte konzipiert, die diese Stätten eingehend erkunden möchten, anstatt sie zu überfliegen.
+  </p>
+
+  <p>
+    Der Plan kann in 5 Tagen in einem moderaten Tempo absolviert werden, oder auf 7 Tage für ein entspannteres und gründlicheres Erlebnis ausgedehnt werden. Ein <a href="/information/privater-fahrer-ratgeber/chauffeur-guide-sri-lanka-fahrer-vs-reisefuehrer" class="article-link">Chauffeur-Guide-Fahrer</a> wird für diese Reiseroute dringend empfohlen, da der historische Kontext an jeder Stätte das Erlebnis erheblich bereichert.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Details</th>
+          <th>Informationen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Dauer</td><td>5–7 Tage</td></tr>
+        <tr><td>Schwerpunkt</td><td>UNESCO-Welterbestätten & Safari</td></tr>
+        <tr><td>Hauptziele</td><td>Sigiriya, Anuradhapura, Polonnaruwa, Kandy</td></tr>
+        <tr><td>Ideal für</td><td>Geschichts- &amp; Kulturbegeisterte</td></tr>
+        <tr><td>Start- / Endpunkt</td><td>Colombo Flughafen (BIA)</td></tr>
+        <tr><td>Empfohlener Plan</td><td><a href="/angebote" class="article-link">Silber oder Gold</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Die UNESCO-Welterbestätten des Kulturdreiecks</h2>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Stätte</th>
+          <th>UNESCO-Status</th>
+          <th>Highlights</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Sigiriya</strong></td><td class="val-yes">Welterbestätte</td><td>Felsenfestung aus dem 5. Jahrhundert, Fresken, Wassergärten</td></tr>
+        <tr><td><strong>Dambulla-Felsentempel</strong></td><td class="val-yes">Welterbestätte</td><td>5 Höhlentempel, 150+ Buddha-Statuen, antike Wandmalereien</td></tr>
+        <tr><td><strong>Anuradhapura</strong></td><td class="val-yes">Welterbestätte</td><td>Sri Lankas erste antike Hauptstadt, heiliger Bodhi-Baum, Stupas</td></tr>
+        <tr><td><strong>Polonnaruwa</strong></td><td class="val-yes">Welterbestätte</td><td>Mittelalterliche Hauptstadt, Gal-Vihara-Buddha-Statuen, Paläste</td></tr>
+        <tr><td><strong>Kandy</strong></td><td class="val-yes">Welterbestätte</td><td>Tempel des Heiligen Zahns, Kandyan-Tanz</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Tagesplan</h2>
+
+  <h3>Tag 1 — Flughafen → Dambulla-Felsentempel → Sigiriya</h3>
+
+  <p>
+    Abfahrt vom Colombo Flughafen (ca. 3–4 Stunden Fahrt). Unterwegs Besuch des <strong>Dambulla-Felsentempels</strong> — eine beeindruckende UNESCO-Welterbestätte, die in einen Fels gehauen wurde und fünf Höhlentempel mit über 150 Buddha-Statuen und antiken Wandmalereien beherbergt.
+  </p>
+
+  <p>
+    Check-in im Heritance Kandalama, einem von Geoffrey Bawa entworfenen architektonischen Meisterwerk inmitten von Wald und See.
+  </p>
+
+  <h3>Tag 2 — Sigiriya-Felsenfestung & Minneriya-Safari</h3>
+
+  <p>
+    Frühmorgendliche Besteigung des <strong>Sigiriya-Felsens</strong> (UNESCO) — planen Sie 2,5–3 Stunden für die Rundtour ein. Der Gipfel bietet außergewöhnliche Ausblicke, und der Aufstieg führt an den berühmten Fresken aus dem 5. Jahrhundert und der Spiegelwand vorbei.
+  </p>
+
+  <img
+    src="/manus-storage/ct_sigiriya_guests_13d97a7e.jpeg"
+    alt="SLTCS-Fahrer mit Gästen auf dem Gipfel der Sigiriya-Felsenfestung, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <p>
+    Unternehmen Sie am Nachmittag eine Jeep-Safari im <strong>Minneriya-Nationalpark</strong>, bekannt für seine Elefantenversammlungen. Rückkehr zum Hotel.
+  </p>
+
+  <img
+    src="/manus-storage/ct_safari_wilpatthu_97b712b8.jpeg"
+    alt="Private Jeep-Safari organisiert von SLTCS — Gäste in einem Safari-Jeep in Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <img
+    src="/manus-storage/ct_safari_yala_4e5f6b7b.jpeg"
+    alt="Gruppe auf einer privaten Jeep-Safari in Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <div class="article-highlight-box">
+    <h4>🚙 Private Jeep-Safari — Organisiert von SLTCS</h4>
+    <p>
+      SLTCS kann eine <strong>vollständig private Jeep-Safari</strong> für Ihren Minneriya- oder Yala-Besuch arrangieren. Im Gegensatz zu geteilten Gruppensafaris ist Ihr privater Jeep exklusiv für Ihre Gruppe reserviert — keine Fremden, kein fester Zeitplan.
+    </p>
+    <p>
+      Was das SLTCS-Erlebnis wirklich auszeichnet, ist, dass <strong>Ihr engagierter Fahrer im Jeep mitfahren kann</strong> und während der gesamten Safari Echtzeit-Kommentare zu Wildtieren, Lebensräumen und der Parkgeschichte gibt. So profitieren Sie sowohl von einem zertifizierten Park-Tracker als auch von Ihrem vertrauten SLTCS-Fahrer in einem nahtlosen Erlebnis.
+    </p>
+    <p>
+      Interesse an einer privaten Jeep-Safari? <a href="/#contact" class="article-link">Kontaktieren Sie uns</a> bei Ihrer Anfrage, und wir fügen sie Ihrem individuellen Angebot hinzu.
+    </p>
+  </div>
+
+  <h3>Tag 3 — Antike Hauptstadt Anuradhapura</h3>
+
+  <p>
+    Erkunden Sie die weitläufigen UNESCO-gelisteten Ruinen von <strong>Anuradhapura</strong> — Sri Lankas erste antike Hauptstadt, gegründet im 4. Jahrhundert v. Chr. Besuchen Sie den heiligen <strong>Sri Maha Bodhi</strong> (der älteste dokumentierte Baum der Welt, gewachsen aus einem Ableger des ursprünglichen Bodhi-Baums, unter dem der Buddha die Erleuchtung erlangte), die <strong>Ruwanwelisaya-Stupa</strong> und die Jetavanaramaya.
+  </p>
+
+  <p>
+    Planen Sie einen ganzen Tag für diese weitläufige Stätte ein.
+  </p>
+
+  <h3>Tag 4 — Polonnaruwa & Pidurangala-Felsen</h3>
+
+  <p>
+    Optionaler Morgenaufstieg auf den <strong>Pidurangala-Felsen</strong> für spektakuläre Ausblicke auf Sigiriya von oben.
+  </p>
+
+  <p>
+    Dann erkunden Sie die mittelalterliche Stadt <strong>Polonnaruwa</strong> (UNESCO) — bemerkenswert gut erhaltene Tempel, Paläste und der berühmte <strong>Gal Vihara</strong>-Felsentempel mit seinen kolossalen Buddha-Statuen, die direkt in die Granitwand gehauen wurden.
+  </p>
+
+  <h3>Tag 5 — Kandy über Gewürzgarten</h3>
+
+  <p>
+    Fahrt nach <strong>Kandy</strong> über einen traditionellen Gewürzgarten in Matale. Besuch des <strong>Tempels des Heiligen Zahns</strong> (UNESCO) und Genuss einer Kandyan-Kulturtanzvorstellung am Abend.
+  </p>
+
+  <img
+    src="/manus-storage/ct_kandy_temple_f6fe5f6e.jpg"
+    alt="Tempel des Heiligen Zahns bei Sonnenuntergang, Kandy, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Tag 6 — Colombo Sightseeing & Ayurveda (Optionale Verlängerung)</h3>
+
+  <p>
+    Für Reisende, die auf 6 oder 7 Tage verlängern: Erkunden Sie Colombos Kolonialarchitektur, den lebhaften Pettah-Markt und den Gangaramaya-Tempel. Optional: Check-in in einem Ayurveda-Hotel in Negombo zur Entspannung vor der Abreise.
+  </p>
+
+  <h3>Tag 7 — Transfer zum Flughafen</h3>
+
+  <p>
+    Letzter Morgen zur freien Verfügung. Transfer zum Colombo Flughafen (BIA) für Ihren Heimflug.
+  </p>
+
+  <h2>Empfohlene SLTCS-Pakete</h2>
+
+  <p>
+    Für eine Kulturdreieck-Reiseroute empfehlen wir das <a href="/angebote" class="article-link">Silber-Paket</a> oder das <a href="/angebote" class="article-link">Gold-Paket</a>.
+  </p>
+
+  <p>
+    Das Gold-Paket mit einem engagierten Chauffeur-Guide-Fahrer ist für diese Reiseroute besonders gut geeignet — die Tiefe des historischen und archäologischen Wissens, die erforderlich ist, um Anuradhapura und Polonnaruwa vollständig zu schätzen, macht einen qualifizierten Reiseführer unschätzbar wertvoll. Weitere Informationen finden Sie in unserem <a href="/information/privater-fahrer-ratgeber/chauffeur-guide-sri-lanka-fahrer-vs-reisefuehrer" class="article-link">Chauffeur-Guide-Fahrer-Ratgeber</a>.
+  </p>
+
+  <p>
+    Sehen Sie unsere <a href="/preis" class="article-link">Preisseite</a>, oder <a href="/#contact" class="article-link">senden Sie eine kostenlose Anfrage</a> für ein individuelles Angebot.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-title">Sri Lankas antikes Erbe erkunden</div>
+    <div class="article-cta-desc">Teilen Sie uns Ihre Reisedaten und Interessen mit. Wir erstellen eine maßgeschneiderte Kulturdreieck-Reiseroute und ein Angebot innerhalb von 24 Stunden.</div>
+    <a href="/#contact" class="article-cta-btn">Kostenloses Angebot anfordern</a>
+  </div>
+
+</article>
+`,
+  },
+
 ];
 
 // ─── Helper Functions ─────────────────────────────────────────────────────────

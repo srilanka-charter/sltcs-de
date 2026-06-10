@@ -99,3 +99,12 @@
 ## バグ修正（2026-06-05報告②）
 
 - [x] Van-Miete記事の「6つの利点」カードが右端で見切れる問題を修正する（縦積みレイアウトに変更）
+
+## 2026年6月6日公開 3記事追加
+
+- [x] 記事mi-5n6d: sri-lanka-5-naechte-6-tage-reiseroute（Beispielreiserouten）をドイツ語訳して追加する
+- [x] 記事mi-6n7d: sri-lanka-6-naechte-7-tage-reiseroute（Beispielreiserouten）をドイツ語訳して追加する
+- [x] 記事mi-cultural: sri-lanka-5-7-tage-kulturdreieck-reiseroute（Beispielreiserouten）をドイツ語訳して追加する
+- [x] 3記事で使用する画像16枚をstorageにアップロードする
+- [x] SiteNavbar.tsxのBEISPIELREISENプルダウンのリンクを実際のURLに更新する（デスクトップ＆モバイル）
+- [x] TypeScriptエラー0件・ビルド確認

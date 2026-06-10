@@ -60,9 +60,9 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
             {dropdownOpen && (
               <div className="nav-dropdown-menu">
                 <a href="/information/beispielreiserouten/sri-lanka-4-naechte-5-tage-reiseroute">4 Nächte / 5 Tage</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nächte / 6 Tage</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nächte / 7 Tage</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 bis 7 Tage – Kulturelles Dreieck</a>
+                <a href="/information/beispielreiserouten/sri-lanka-5-naechte-6-tage-reiseroute">5 Nächte / 6 Tage</a>
+                <a href="/information/beispielreiserouten/sri-lanka-6-naechte-7-tage-reiseroute">6 Nächte / 7 Tage</a>
+                <a href="/information/beispielreiserouten/sri-lanka-5-7-tage-kulturdreieck-reiseroute">5–7 Tage – Kulturelles Dreieck</a>
                 <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Tage bis 2 Wochen – Klassischer Plan</a>
               </div>
             )}
@@ -125,9 +125,9 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
             {mobileItineraryOpen && (
               <div className="mobile-accordion-body">
                 <a href="/information/beispielreiserouten/sri-lanka-4-naechte-5-tage-reiseroute">4 Nächte / 5 Tage</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nächte / 6 Tage</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nächte / 7 Tage</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Tage – Kulturelles Dreieck</a>
+                <a href="/information/beispielreiserouten/sri-lanka-5-naechte-6-tage-reiseroute">5 Nächte / 6 Tage</a>
+                <a href="/information/beispielreiserouten/sri-lanka-6-naechte-7-tage-reiseroute">6 Nächte / 7 Tage</a>
+                <a href="/information/beispielreiserouten/sri-lanka-5-7-tage-kulturdreieck-reiseroute">5–7 Tage – Kulturelles Dreieck</a>
                 <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Tage bis 2 Wochen – Klassisch</a>
               </div>
             )}
