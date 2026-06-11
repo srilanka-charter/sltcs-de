@@ -24,6 +24,8 @@ export interface Article {
   };
   hreflang?: {
     en?: string;
+    fr?: string;
+    es?: string;
   };
 }
 
