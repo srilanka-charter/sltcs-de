@@ -213,18 +213,24 @@ export default function ArticleDetail() {
     // hreflang alternate links
     const existingHreflang = document.querySelectorAll('link[hreflang]');
     existingHreflang.forEach(el => el.remove());
-    if (article.hreflang?.en) {
-      const hreflangEn = document.createElement('link');
-      hreflangEn.rel = 'alternate';
-      hreflangEn.setAttribute('hreflang', 'en');
-      hreflangEn.href = article.hreflang.en;
-      document.head.appendChild(hreflangEn);
-    }
+    // de (self)
     const hreflangDe = document.createElement('link');
     hreflangDe.rel = 'alternate';
     hreflangDe.setAttribute('hreflang', 'de');
     hreflangDe.href = `https://de.srilanka-charter.com/information/${article.category}/${article.slug}`;
     document.head.appendChild(hreflangDe);
+    // en / fr / es cross-links
+    const hreflangLangs: Array<'en' | 'fr' | 'es'> = ['en', 'fr', 'es'];
+    hreflangLangs.forEach((lang) => {
+      const url = (article.hreflang as Record<string, string> | undefined)?.[lang];
+      if (url) {
+        const link = document.createElement('link');
+        link.rel = 'alternate';
+        link.setAttribute('hreflang', lang);
+        link.href = url;
+        document.head.appendChild(link);
+      }
+    });
 
     // Article JSON-LD
     const articleJsonLd = {

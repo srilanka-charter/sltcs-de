@@ -99,6 +99,8 @@ export const ARTICLES: Article[] = [
     },
     hreflang: {
       en: "https://en.srilanka-charter.com/information/private-driver-guide/sri-lanka-private-driver-how-to-hire",
+      fr: "https://fr.srilanka-charter.com/information/guide-chauffeur-prive/sri-lanka-chauffeur-prive-comment-louer",
+      es: "https://es.srilanka-charter.com/information/conductor-privado-guia/como-contratar-conductor-privado-sri-lanka",
     },
     content: `
 <article class="article-body">
@@ -389,6 +391,8 @@ export const ARTICLES: Article[] = [
     },
     hreflang: {
       en: "https://en.srilanka-charter.com/information/private-driver-guide/sri-lanka-car-hire-with-driver-complete-guide",
+      fr: "https://fr.srilanka-charter.com/information/guide-chauffeur-prive/sri-lanka-location-voiture-avec-chauffeur-guide-complet",
+      es: "https://es.srilanka-charter.com/information/conductor-privado-guia/alquiler-coche-conductor-sri-lanka-guia-completa",
     },
     content: `
 <article class="article-body">
@@ -675,6 +679,8 @@ export const ARTICLES: Article[] = [
     },
     hreflang: {
       en: "https://en.srilanka-charter.com/information/private-driver-guide/chauffeur-guide-sri-lanka-driver-vs-tourist-guide",
+      fr: "https://fr.srilanka-charter.com/information/guide-chauffeur-prive/chauffeur-guide-sri-lanka-conducteur-vs-guide-touristique",
+      es: "https://es.srilanka-charter.com/information/conductor-privado-guia/chofer-guia-sri-lanka-conductor-vs-guia-turistico",
     },
     content: `
 <article class="article-body">
@@ -1069,6 +1075,8 @@ export const ARTICLES: Article[] = [
     ],
     hreflang: {
       en: "https://en.srilanka-charter.com/information/cost-booking-guide/driver-hire-sri-lanka-costs-safety-checklist",
+      fr: "https://fr.srilanka-charter.com/information/guide-cout-reservation/location-chauffeur-sri-lanka-couts-securite-checklist",
+      es: "https://es.srilanka-charter.com/information/costes-reserva/contratar-conductor-sri-lanka-costes-seguridad-checklist",
     },
     seo: {
       metaTitle: "Fahrermiete Sri Lanka: Kosten, Sicherheit & Buchungs-Checkliste (2026) | SLTCS",
@@ -1364,6 +1372,8 @@ export const ARTICLES: Article[] = [
     tags: ["Familienreise", "Gruppenreise", "Van-Miete", "Sri Lanka", "Privatfahrer"],
     hreflang: {
       en: "https://en.srilanka-charter.com/information/family-group-travel/van-hire-driver-sri-lanka-families-small-groups",
+      fr: "https://fr.srilanka-charter.com/information/voyage-famille-groupe/location-van-chauffeur-sri-lanka-familles-petits-groupes",
+      es: "https://es.srilanka-charter.com/information/viajes-familia-grupos/alquiler-furgoneta-conductor-sri-lanka-familias-grupos",
     },
     seo: {
       metaTitle: "Van-Miete mit Fahrer in Sri Lanka für Familien & Kleingruppen (2026) | SLTCS",
@@ -1710,6 +1720,8 @@ export const ARTICLES: Article[] = [
     tags: ["4 Nächte 5 Tage", "Sigiriya", "Kandy", "Galle", "Privatfahrer", "Erstbesucher"],
     hreflang: {
       en: "https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-4-nights-5-days-itinerary",
+      fr: "https://fr.srilanka-charter.com/information/itineraires/sri-lanka-itineraire-4-nuits-5-jours",
+      es: "https://es.srilanka-charter.com/information/itinerarios/itinerario-sri-lanka-4-noches-5-dias",
     },
     seo: {
       metaTitle: "Sri Lanka 4 Nächte 5 Tage Reiseroute: Kulturhöhepunkte mit Privatfahrer (2026) | SLTCS",
@@ -1939,6 +1951,8 @@ export const ARTICLES: Article[] = [
     },
     hreflang: {
       en: "https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-5-nights-6-days-itinerary",
+      fr: "https://fr.srilanka-charter.com/information/itineraires/sri-lanka-itineraire-5-nuits-6-jours",
+      es: "https://es.srilanka-charter.com/information/itinerarios/itinerario-sri-lanka-5-noches-6-dias",
     },
     content: `
 <article class="article-body">
@@ -2140,6 +2154,8 @@ export const ARTICLES: Article[] = [
     },
     hreflang: {
       en: "https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-6-nights-7-days-itinerary",
+      fr: "https://fr.srilanka-charter.com/information/itineraires/sri-lanka-itineraire-6-nuits-7-jours",
+      es: "https://es.srilanka-charter.com/information/itinerarios/itinerario-sri-lanka-6-noches-7-dias",
     },
     content: `
 <article class="article-body">
@@ -2367,6 +2383,8 @@ export const ARTICLES: Article[] = [
     },
     hreflang: {
       en: "https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-5-7-days-cultural-triangle-itinerary",
+      fr: "https://fr.srilanka-charter.com/information/itineraires/sri-lanka-itineraire-5-7-jours-triangle-culturel",
+      es: "https://es.srilanka-charter.com/information/itinerarios/ruta-triangulo-cultural-sri-lanka",
     },
     content: `
 <article class="article-body">
@@ -2580,6 +2598,11 @@ export const ARTICLES: Article[] = [
         "sri lanka privater fahrer 10 tage",
         "sri lanka komplette rundreise 2026",
       ],
+    },
+    hreflang: {
+      en: "https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-10-days-2-weeks-itinerary",
+      fr: "https://fr.srilanka-charter.com/information/itineraires/sri-lanka-itineraire-10-jours-2-semaines",
+      es: "https://es.srilanka-charter.com/information/itinerarios/itinerario-sri-lanka-10-dias-2-semanas",
     },
     content: `
 <article class="article-body">
