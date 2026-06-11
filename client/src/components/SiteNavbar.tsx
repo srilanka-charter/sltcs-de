@@ -8,9 +8,7 @@ interface SiteNavbarProps {
 export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [infoOpen, setInfoOpen] = useState(false);
-  const [langOpen, setLangOpen] = useState(false);
+
   const [mobileItineraryOpen, setMobileItineraryOpen] = useState(false);
   const [mobileInfoOpen, setMobileInfoOpen] = useState(false);
   const [mobileLangOpen, setMobileLangOpen] = useState(false);
@@ -55,28 +53,24 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
               PLÄNE
             </a>
           </li>
-          <li className="nav-dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
+          <li className="nav-dropdown">
             <button>BEISPIELREISEN</button>
-            {dropdownOpen && (
-              <div className="nav-dropdown-menu">
-                <a href="/information/beispielreiserouten/sri-lanka-4-naechte-5-tage-reiseroute">4 Nächte / 5 Tage</a>
-                <a href="/information/beispielreiserouten/sri-lanka-5-naechte-6-tage-reiseroute">5 Nächte / 6 Tage</a>
-                <a href="/information/beispielreiserouten/sri-lanka-6-naechte-7-tage-reiseroute">6 Nächte / 7 Tage</a>
-                <a href="/information/beispielreiserouten/sri-lanka-5-7-tage-kulturdreieck-reiseroute">5–7 Tage – Kulturelles Dreieck</a>
-                <a href="/information/beispielreiserouten/sri-lanka-10-tage-2-wochen-reiseroute">10 Tage bis 2 Wochen – Klassischer Plan</a>
-              </div>
-            )}
+            <div className="nav-dropdown-menu">
+              <a href="/information/beispielreiserouten/sri-lanka-4-naechte-5-tage-reiseroute">4 Nächte / 5 Tage</a>
+              <a href="/information/beispielreiserouten/sri-lanka-5-naechte-6-tage-reiseroute">5 Nächte / 6 Tage</a>
+              <a href="/information/beispielreiserouten/sri-lanka-6-naechte-7-tage-reiseroute">6 Nächte / 7 Tage</a>
+              <a href="/information/beispielreiserouten/sri-lanka-5-7-tage-kulturdreieck-reiseroute">5–7 Tage – Kulturelles Dreieck</a>
+              <a href="/information/beispielreiserouten/sri-lanka-10-tage-2-wochen-reiseroute">10 Tage bis 2 Wochen – Klassischer Plan</a>
+            </div>
           </li>
           <li><a href="/price">PREIS</a></li>
-          <li className="nav-dropdown" onMouseEnter={() => setInfoOpen(true)} onMouseLeave={() => setInfoOpen(false)}>
+          <li className="nav-dropdown">
             <button>INFORMATION</button>
-            {infoOpen && (
-              <div className="nav-dropdown-menu">
-                <a href="/information/privater-fahrer-ratgeber">Privater Fahrer – Ratgeber</a>
-                <a href="/information/kosten-buchungsratgeber">Kosten &amp; Buchungsratgeber</a>
-                <a href="/information/familien-gruppenreisen">Familien- &amp; Gruppenreisen</a>
-              </div>
-            )}
+            <div className="nav-dropdown-menu">
+              <a href="/information/privater-fahrer-ratgeber">Privater Fahrer – Ratgeber</a>
+              <a href="/information/kosten-buchungsratgeber">Kosten &amp; Buchungsratgeber</a>
+              <a href="/information/familien-gruppenreisen">Familien- &amp; Gruppenreisen</a>
+            </div>
           </li>
           <li>
             <a href={mode === "home" ? "#contact" : "/#contact"}
@@ -85,22 +79,20 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
             </a>
           </li>
           <li><a href="/faq">FAQ</a></li>
-          <li className="nav-dropdown nav-lang-dropdown" onMouseEnter={() => setLangOpen(true)} onMouseLeave={() => setLangOpen(false)}>
+          <li className="nav-dropdown nav-lang-dropdown">
             <button style={{ display: "flex", alignItems: "center", gap: "4px" }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="10"/>
                 <line x1="2" y1="12" x2="22" y2="12"/>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/>
               </svg>
               DE
             </button>
-            {langOpen && (
-              <div className="nav-dropdown-menu">
-                {LANGUAGES.map((lang) => (
-                  <a key={lang.label} href={lang.url}>{lang.label}</a>
-                ))}
-              </div>
-            )}
+            <div className="nav-dropdown-menu">
+              {LANGUAGES.map((lang) => (
+                <a key={lang.label} href={lang.url}>{lang.label}</a>
+              ))}
+            </div>
           </li>
         </ul>
         <button className="hamburger" aria-label="Menü" onClick={() => setMobileOpen(!mobileOpen)}>
