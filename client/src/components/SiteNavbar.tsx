@@ -63,7 +63,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
                 <a href="/information/beispielreiserouten/sri-lanka-5-naechte-6-tage-reiseroute">5 Nächte / 6 Tage</a>
                 <a href="/information/beispielreiserouten/sri-lanka-6-naechte-7-tage-reiseroute">6 Nächte / 7 Tage</a>
                 <a href="/information/beispielreiserouten/sri-lanka-5-7-tage-kulturdreieck-reiseroute">5–7 Tage – Kulturelles Dreieck</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Tage bis 2 Wochen – Klassischer Plan</a>
+                <a href="/information/beispielreiserouten/sri-lanka-10-tage-2-wochen-reiseroute">10 Tage bis 2 Wochen – Klassischer Plan</a>
               </div>
             )}
           </li>
@@ -128,7 +128,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
                 <a href="/information/beispielreiserouten/sri-lanka-5-naechte-6-tage-reiseroute">5 Nächte / 6 Tage</a>
                 <a href="/information/beispielreiserouten/sri-lanka-6-naechte-7-tage-reiseroute">6 Nächte / 7 Tage</a>
                 <a href="/information/beispielreiserouten/sri-lanka-5-7-tage-kulturdreieck-reiseroute">5–7 Tage – Kulturelles Dreieck</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Tage bis 2 Wochen – Klassisch</a>
+                <a href="/information/beispielreiserouten/sri-lanka-10-tage-2-wochen-reiseroute">10 Tage bis 2 Wochen – Klassisch</a>
               </div>
             )}
           </div>

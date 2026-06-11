@@ -2557,6 +2557,255 @@ export const ARTICLES: Article[] = [
 `,
   },
 
+  // ─── 記事 mi-10d2w: 10 Tage bis 2 Wochen – Klassischer Plan ───────────────────
+  {
+    id: "mi-10d2w",
+    slug: "sri-lanka-10-tage-2-wochen-reiseroute",
+    title: "Sri Lanka 10 Tage bis 2 Wochen Reiseroute: Klassischer Erstreise-Plan mit privatem Fahrer (2026)",
+    excerpt: "Die vollständige Sri Lanka Mietwagen-Reiseroute für Erstbesucher: 10–14 Tage durch Sigiriya, Kandy, Tee-Hochland, Ella, Yala-Safari, Galle und Strand – vollständig privat ab 270 USD.",
+    category: "beispielreiserouten",
+    coverImage: "/manus-storage/hero_van_srilanka_706f8966_0773b741.jpg",
+    publishedAt: "2026-06-07",
+    readingTime: 12,
+    tags: ["10 Tage", "2 Wochen", "Klassischer Plan", "Sigiriya", "Kandy", "Ella", "Yala", "Galle", "Strand"],
+    seo: {
+      metaTitle: "Sri Lanka 10 Tage bis 2 Wochen Reiseroute: Klassischer Erstreise-Plan mit privatem Fahrer (2026) | SLTCS",
+      metaDescription: "Die vollständige Sri Lanka Mietwagen-Reiseroute für Erstbesucher: 10–14 Tage durch Sigiriya, Kandy, Tee-Zug, Ella, Yala-Safari, Galle & Strand. Vollständig privat ab 270 USD.",
+      keywords: [
+        "sri lanka 10 tage reiseroute",
+        "sri lanka 2 wochen reiseroute",
+        "sri lanka 14 tage tour privater fahrer",
+        "sri lanka klassische reiseroute",
+        "sri lanka erstbesucher reiseroute",
+        "sri lanka privater fahrer 10 tage",
+        "sri lanka komplette rundreise 2026",
+      ],
+    },
+    content: `
+<article class="article-body">
+  <img
+    src="/manus-storage/hero_van_srilanka_706f8966_0773b741.jpg"
+    alt="Privater Fahrer-Van auf einer malerischen Sri Lanka Straße bei Sonnenuntergang"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <nav class="article-toc">
+    <div class="article-toc-title">Inhaltsverzeichnis</div>
+    <ol class="article-toc-list">
+      <li><a href="#tag1">Tag 1 — Flughafen → Anuradhapura → Sigiriya</a></li>
+      <li><a href="#tag2">Tag 2 — Sigiriya Felsen &amp; Minneriya Jeep-Safari</a></li>
+      <li><a href="#tag3">Tag 3 — Kandy: Gewürzgarten &amp; Tempel</a></li>
+      <li><a href="#tag4">Tag 4 — Nuwara Eliya: Tee-Hochland</a></li>
+      <li><a href="#tag5">Tag 5 — Malerischer Tee-Zug → Neun-Bögen-Brücke → Ella</a></li>
+      <li><a href="#tag6">Tag 6 — Ella Sightseeing → Yala</a></li>
+      <li><a href="#tag7">Tag 7 — Yala Nationalpark Safari → Mirissa Strand</a></li>
+      <li><a href="#tag8">Tag 8 — Galle Fort &amp; Strandtag</a></li>
+      <li><a href="#tag9">Tag 9 — Negombo: Ayurveda &amp; Erholung</a></li>
+      <li><a href="#tag10">Tag 10 — Colombo Sightseeing → Flughafen</a></li>
+    </ol>
+  </nav>
+
+  <h2>Überblick: 10 Tage bis 2 Wochen – Klassischer Erstreise-Plan</h2>
+
+  <img
+    src="/manus-storage/itinerary_10days_route_map_a68b9a7c_66e80177.png"
+    alt="10-Tage Sri Lanka Reiseroute – Illustrierte Routenkarte"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <p>
+    Dies ist die Reiseroute, die wir Erstbesuchern am häufigsten empfehlen, wenn sie genug Zeit haben, Sri Lanka richtig zu erleben.
+  </p>
+
+  <p>
+    In 10 bis 14 Tagen reisen Sie vom antiken Kulturdreieck durch die heilige Stadt Kandy, hinauf ins dramatische Tee-Hochland, weiter in den wildreichen Süden und schließlich an die Strände der Südküste – alles in einem vollständig privaten Fahrzeug mit einem engagierten Fahrer.
+  </p>
+
+  <p>
+    Dieser Plan kann in 10 Tagen in einem angenehmen Tempo absolviert werden oder auf 14 Tage ausgedehnt werden, indem Sie zusätzliche Nächte an Ihren Lieblingsorten verbringen, eine Ayurveda-Kur einplanen oder weitere Ziele wie Trincomalee an der Ostküste erkunden.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Detail</th>
+          <th>Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Dauer</td><td>10–14 Tage</td></tr>
+        <tr><td>Schwerpunkt</td><td>Komplettes Inselerlebnis</td></tr>
+        <tr><td>Hauptziele</td><td>Sigiriya, Kandy, Tee-Zug, Ella, Yala, Galle, Strand</td></tr>
+        <tr><td>Ideal für</td><td>Erstbesucher, die das volle Sri Lanka-Erlebnis möchten</td></tr>
+        <tr><td>Start / Endpunkt</td><td>Colombo Flughafen (BIA)</td></tr>
+        <tr><td>Empfohlener Plan</td><td><a href="/plans" class="article-link">Gold-Plan</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Tagesplan</h2>
+
+  <h3 id="tag1">Tag 1 — Flughafen → Anuradhapura → Sigiriya</h3>
+
+  <p>
+    Abfahrt vom Colombo Flughafen oder Negombo. Fahrt nach Norden zur antiken Hauptstadt <strong>Anuradhapura</strong> (ca. 3,5–4 Stunden).
+  </p>
+
+  <p>
+    Erkunden Sie das UNESCO-Weltkulturerbe – den heiligen <strong>Sri Maha Bodhi</strong> (der älteste dokumentierte Baum der Welt), die große <strong>Ruwanwelisaya Stupa</strong> und die weitläufigen antiken Ruinen dieser 2.500 Jahre alten Stadt.
+  </p>
+
+  <p>
+    Weiterfahrt in die Sigiriya-Region (ca. 1,5 Stunden) und Check-in im Hotel.
+  </p>
+
+  <h3 id="tag2">Tag 2 — Sigiriya Felsen &amp; Minneriya Jeep-Safari</h3>
+
+  <p>
+    Morgens Besteigung der <strong>Sigiriya Felsfestung</strong> (UNESCO) – planen Sie 2,5–3 Stunden für den vollständigen Auf- und Abstieg ein, mit den antiken Wassergärten, den berühmten Fresken der himmlischen Jungfrauen und dem atemberaubenden Panoramablick vom Gipfelplateau.
+  </p>
+
+  <p>
+    Nachmittags Fahrt zum <strong>Minneriya Nationalpark</strong> für eine aufregende Jeep-Safari. Minneriya ist bekannt für <em>The Gathering</em> – eines der größten Wildtierschauspiele Asiens, bei dem sich Hunderte wilder Elefanten um den antiken Stausee versammeln.
+  </p>
+
+  <p>
+    Übernachtung in Sigiriya.
+  </p>
+
+  <h3 id="tag3">Tag 3 — Kandy: Gewürzgarten &amp; Tempel</h3>
+
+  <p>
+    Fahrt nach <strong>Kandy</strong> über einen Gewürzgarten in Matale (ca. 3 Stunden). Besuch der <strong>Geragama Teefabrik</strong> und des <strong>Tempels des Heiligen Zahns</strong> (UNESCO).
+  </p>
+
+  <p>
+    Abends Kandyanische Tanzvorführung.
+  </p>
+
+  <h3 id="tag4">Tag 4 — Nuwara Eliya: Tee-Hochland</h3>
+
+  <p>
+    Malerische Bergfahrt nach <strong>Nuwara Eliya</strong> durch sanft geschwungene Teeplantagen. Teepflück-Erlebnis und High Tea in einem kolonialen Plantagen-Hotel.
+  </p>
+
+  <p>
+    Erkunden Sie die charmante Stadt, die als „Klein-England" bekannt ist.
+  </p>
+
+  <h3 id="tag5">Tag 5 — Malerischer Tee-Zug → Neun-Bögen-Brücke → Ella</h3>
+
+  <p>
+    Besteigen Sie den ikonischen <strong>Tee-Landzug</strong> für eine atemberaubende Fahrt durch neblige Berge. Fotografieren Sie die berühmte <strong>Neun-Bögen-Brücke</strong>.
+  </p>
+
+  <p>
+    Ankunft in <strong>Ella</strong>.
+  </p>
+
+  <img
+    src="/manus-storage/dest_ella_bd8060fc_650ef0e1.jpg"
+    alt="Neun-Bögen-Brücke in Ella, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3 id="tag6">Tag 6 — Ella Sightseeing → Yala</h3>
+
+  <p>
+    Morgendliche Wanderung zum <strong>Kleinen Adams Peak</strong> und Ella Rock für Panoramablicke. Nachmittags Transfer in die Yala-Region (ca. 2 Stunden).
+  </p>
+
+  <p>
+    Check-in in einer Safari-Lodge.
+  </p>
+
+  <h3 id="tag7">Tag 7 — Yala Nationalpark Safari → Mirissa Strand</h3>
+
+  <p>
+    Frühmorgendliche Jeep-Safari im <strong>Yala Nationalpark</strong> – Sri Lankas bekanntester Wildtierpark mit der weltweit höchsten Leopardendichte.
+  </p>
+
+  <p>
+    Nachmittags Transfer zum Strandort <strong>Mirissa</strong>.
+  </p>
+
+  <img
+    src="/manus-storage/itinerary_10days_bentota_0c5979d4.webp"
+    alt="Bentota Strandresort aus der Vogelperspektive, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3 id="tag8">Tag 8 — Galle Fort &amp; Strandtag</h3>
+
+  <p>
+    Morgens Besuch des UNESCO-gelisteten <strong>Galle Forts</strong> – holländische Kolonialwälle, Boutique-Shops und Meeresblick. Nachmittags Freizeit am Mirissa-Strand.
+  </p>
+
+  <p>
+    Optional: Walbeobachtung (saisonal: November–April).
+  </p>
+
+  <h3 id="tag9">Tag 9 — Negombo: Ayurveda &amp; Erholung</h3>
+
+  <p>
+    Transfer nach <strong>Negombo</strong> an der Westküste (ca. 3–4 Stunden). Check-in in einem Ayurveda-Hotel für traditionelle Behandlungen und Entspannung vor Ihrer Abreise.
+  </p>
+
+  <h3 id="tag10">Tag 10 — Colombo Sightseeing → Flughafen</h3>
+
+  <p>
+    Morgendliche Erkundung von <strong>Colombo</strong> – Gangaramaya-Tempel, Pettah-Markt und das lebhafte Galle Face Green. Transfer zum Colombo Flughafen (BIA) für Ihren Abflug.
+  </p>
+
+  <h2>Optionale Verlängerungen (Tage 11–14)</h2>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Verlängerung</th>
+          <th>Dauer</th>
+          <th>Highlights</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Trincomalee Ostküste</td><td>2–3 Tage</td><td>Unberührte Strände, Pigeon Island Schnorcheln, Walbeobachtung</td></tr>
+        <tr><td>Polonnaruwa Vertiefung</td><td>1 Tag</td><td>Mittelalterliche Hauptstadt, Gal Vihara Felsentempel, antike Stauseen</td></tr>
+        <tr><td>Ayurveda-Kur</td><td>2–4 Tage</td><td>Traditionelle Behandlungen, Yoga, Entspannung vor der Abreise</td></tr>
+        <tr><td>Jaffna (Hoher Norden)</td><td>2–3 Tage</td><td>Tamilische Kultur, Nallur Kandaswamy Tempel, einzigartige Küche</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Empfohlene SLTCS-Pläne</h2>
+
+  <p>
+    Für eine 10- bis 14-tägige Reiseroute empfehlen wir dringend den <a href="/plans" class="article-link">Gold-Plan</a> – ein engagierter Chauffeur-Guide-Fahrer mit einem zweiten Unterstützungsfahrer.
+  </p>
+
+  <p>
+    Auf einer längeren Reise wird der Wert eines sachkundigen, zertifizierten Guides, der jedes Ziel zum Leben erwecken kann, noch deutlicher. Der zweite Unterstützungsfahrer sorgt zudem für maximale Flexibilität und Sicherheit an längeren Reisetagen.
+  </p>
+
+  <p>
+    Sehen Sie unsere <a href="/preis" class="article-link">Preisseite</a> für transparente Tarife, oder <a href="/#contact" class="article-link">senden Sie eine kostenlose Anfrage</a> für ein individuelles Angebot, das auf Ihre genauen Daten und Gruppengröße zugeschnitten ist.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-title">Planen Sie Ihre Traumreise durch Sri Lanka</div>
+    <div class="article-cta-desc">Teilen Sie uns Ihre Reisedaten und Gruppengröße mit. Wir antworten mit einer maßgeschneiderten 10–14-Tage-Reiseroute und einem Angebot innerhalb von 24 Stunden.</div>
+    <a href="/#contact" class="article-cta-btn">Kostenloses Angebot anfordern</a>
+  </div>
+
+</article>
+`,
+  },
+
 ];
 
 // ─── Helper Functions ─────────────────────────────────────────────────────────

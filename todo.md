@@ -108,3 +108,10 @@
 - [x] 3記事で使用する画像16枚をstorageにアップロードする
 - [x] SiteNavbar.tsxのBEISPIELREISENプルダウンのリンクを実際のURLに更新する（デスクトップ＆モバイル）
 - [x] TypeScriptエラー0件・ビルド確認
+
+## 2026年6月7日公開 1記事追加
+
+- [x] 記事mi-10d2w: sri-lanka-10-tage-2-wochen-reiseroute（Beispielreiserouten）をドイツ語訳して追加する
+- [x] 記事で使用する画像4枚をstorageにアップロードする
+- [x] SiteNavbar.tsxのBEISPIELREISENプルダウンの「10 Tage bis 2 Wochen」リンクを実際のURLに更新する（デスクトップ＆モバイル）
+- [x] TypeScriptエラー0件・ビルド確認
