@@ -2620,3 +2620,93 @@ footer {
   .article-highlight-box h4 { font-size: 0.97rem; }
   .article-highlight-box p { font-size: 0.88rem; }
 }
+
+
+/* --- Season Table (Monatsübersicht) --- */
+.season-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0 0 1.25rem;
+}
+.sl-peak   { color: rgb(232, 201, 106); }
+.sl-shoulder { color: rgb(154, 191, 130); }
+.sl-monsoon  { color: rgb(122, 170, 212); }
+.sl-improving { color: rgb(200, 200, 200); }
+.season-table-wrap {
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: 12px;
+  margin: 0 0 2em;
+  overflow-x: auto;
+}
+.season-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Inter, sans-serif;
+  font-size: 0.87rem;
+}
+.season-table thead tr {
+  background: linear-gradient(135deg, rgb(30, 26, 14), rgb(37, 32, 16));
+  border-bottom: 2px solid rgba(201, 168, 76, 0.5);
+}
+.season-table th {
+  color: rgb(201, 168, 76);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  padding: 12px 14px;
+  font-size: 0.73rem;
+  font-weight: 700;
+}
+.season-table th.st-month-col {
+  text-align: left;
+  min-width: 52px;
+  padding-left: 18px;
+}
+.st-row { transition: background 0.15s; }
+.st-row:nth-child(even) { background: rgba(255, 255, 255, 0.02); }
+.st-row:hover { background: rgba(201, 168, 76, 0.05); }
+.st-row:not(:last-child) td { border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+.st-month {
+  color: rgb(232, 224, 208);
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  padding: 10px 10px 10px 18px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.season-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 10px;
+}
+.st-badge {
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+.st-peak {
+  color: rgb(232, 201, 106);
+  background: rgba(201, 168, 76, 0.18);
+  border: 1px solid rgba(201, 168, 76, 0.4);
+}
+.st-shoulder {
+  color: rgb(154, 191, 130);
+  background: rgba(154, 191, 130, 0.14);
+  border: 1px solid rgba(154, 191, 130, 0.35);
+}
+.st-monsoon {
+  color: rgb(122, 170, 212);
+  background: rgba(90, 140, 200, 0.14);
+  border: 1px solid rgba(122, 170, 212, 0.3);
+}
+.st-improving {
+  color: rgb(200, 200, 200);
+  background: rgba(200, 200, 200, 0.1);
+  border: 1px solid rgba(200, 200, 200, 0.25);
+}
