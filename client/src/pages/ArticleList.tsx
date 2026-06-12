@@ -81,6 +81,39 @@ function ArticleCard({
 
 // ─── Article List Page ────────────────────────────────────────────────────────
 
+// ─── Category-to-hreflang mapping ────────────────────────────────────────────
+const CATEGORY_HREFLANG: Record<string, Record<string, string>> = {
+  "privater-fahrer-ratgeber": {
+    de: "https://de.srilanka-charter.com/information/privater-fahrer-ratgeber",
+    en: "https://en.srilanka-charter.com/information/private-driver-guide",
+    fr: "https://fr.srilanka-charter.com/information/guide-chauffeur-prive",
+    es: "https://es.srilanka-charter.com/information/guia-conductor-privado",
+  },
+  "kosten-buchungsratgeber": {
+    de: "https://de.srilanka-charter.com/information/kosten-buchungsratgeber",
+    en: "https://en.srilanka-charter.com/information/cost-booking-guide",
+    fr: "https://fr.srilanka-charter.com/information/guide-cout-reservation",
+    es: "https://es.srilanka-charter.com/information/guia-costes-reserva",
+  },
+  "familien-gruppenreisen": {
+    de: "https://de.srilanka-charter.com/information/familien-gruppenreisen",
+    en: "https://en.srilanka-charter.com/information/family-group-travel",
+    fr: "https://fr.srilanka-charter.com/information/voyage-famille-groupe",
+    es: "https://es.srilanka-charter.com/information/viajes-familia-grupos",
+  },
+  "reise-tipps-sicherheit": {
+    de: "https://de.srilanka-charter.com/information/reise-tipps-sicherheit",
+    en: "https://en.srilanka-charter.com/information/travel-tips-safety",
+    fr: "https://fr.srilanka-charter.com/information/conseils-securite",
+  },
+  "beispielreiserouten": {
+    de: "https://de.srilanka-charter.com/information/beispielreiserouten",
+    en: "https://en.srilanka-charter.com/information/model-itinerary",
+    fr: "https://fr.srilanka-charter.com/information/itineraires",
+    es: "https://es.srilanka-charter.com/information/itinerarios",
+  },
+};
+
 export default function ArticleList() {
   const params = useParams<{ category: string }>();
   const categorySlug = params.category as ArticleCategory;
@@ -89,6 +122,72 @@ export default function ArticleList() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [categorySlug]);
+
+  // SEO head injection for category listing pages
+  useEffect(() => {
+    if (!categoryMeta) return;
+
+    const categoryTitles: Record<string, string> = {
+      "privater-fahrer-ratgeber": "Sri Lanka Privater Fahrer Ratgeber: Expertentipps (2026) | SLTCS",
+      "kosten-buchungsratgeber": "Sri Lanka Fahrer Mietkosten & Buchungsratgeber (2026) | SLTCS",
+      "familien-gruppenreisen": "Sri Lanka Familien- & Gruppenreisen mit Privatfahrer (2026) | SLTCS",
+      "reise-tipps-sicherheit": "Sri Lanka Reise-Tipps & Sicherheitsratgeber (2026) | SLTCS",
+      "beispielreiserouten": "Sri Lanka Privatfahrer Reiserouten: 4 Nächte bis 2 Wochen (2026) | SLTCS",
+    };
+    const categoryDescriptions: Record<string, string> = {
+      "privater-fahrer-ratgeber": "Expertenratgeber für die Buchung eines Privatfahrers in Sri Lanka — Qualifikationen, Kosten und sichere Buchung.",
+      "kosten-buchungsratgeber": "Transparente Preisübersichten und Buchungs-Checklisten für Privatfahrer in Sri Lanka. Bronze ab 270$, Silber ab 310$, Gold ab 350$ für 2 Tage.",
+      "familien-gruppenreisen": "Praktische Tipps für Familien, Gruppen und Paare auf Reisen in Sri Lanka mit Privatfahrer.",
+      "reise-tipps-sicherheit": "Ehrliche, praktische Tipps zur Straßensicherheit und Transportmöglichkeiten in Sri Lanka.",
+      "beispielreiserouten": "Tagesweise Reiserouten mit Privatfahrer in Sri Lanka — von 4 Nächten bis 2 Wochen.",
+    };
+
+    const title = categoryTitles[categorySlug] || `${categoryMeta.label} | SLTCS`;
+    const description = categoryDescriptions[categorySlug] || categoryMeta.description;
+    const canonicalUrl = `https://de.srilanka-charter.com${categoryMeta.path}`;
+
+    const prevTitle = document.title;
+    document.title = title;
+
+    const setMeta = (name: string, content: string) => {
+      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+      if (!el) { el = document.createElement("meta"); el.name = name; document.head.appendChild(el); }
+      el.content = content;
+    };
+
+    const prevDesc = (document.querySelector('meta[name="description"]') as HTMLMetaElement)?.content || "";
+    setMeta("description", description);
+
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    const prevCanonical = canonical?.href || "https://de.srilanka-charter.com/";
+    if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
+    canonical.href = canonicalUrl;
+
+    // ─ hreflang ──────────────────────────────────────────────────────────────────
+    const hreflangMap = CATEGORY_HREFLANG[categorySlug] || {};
+    const hreflangData = Object.entries(hreflangMap).map(([lang, href]) => ({ hreflang: lang, href }));
+    if (hreflangData.length > 0) {
+      hreflangData.push({ hreflang: "x-default", href: hreflangMap["en"] || canonicalUrl });
+    }
+    const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
+    existingHreflangs.forEach((el) => el.remove());
+    const addedHreflangs: HTMLLinkElement[] = [];
+    hreflangData.forEach(({ hreflang, href }) => {
+      const link = document.createElement("link");
+      link.rel = "alternate";
+      link.setAttribute("hreflang", hreflang);
+      link.href = href;
+      document.head.appendChild(link);
+      addedHreflangs.push(link);
+    });
+
+    return () => {
+      document.title = prevTitle;
+      (document.querySelector('meta[name="description"]') as HTMLMetaElement | null)?.setAttribute("content", prevDesc);
+      canonical!.href = prevCanonical;
+      addedHreflangs.forEach((el) => el.remove());
+    };
+  }, [categorySlug, categoryMeta]);
 
   if (!categoryMeta) {
     return (
