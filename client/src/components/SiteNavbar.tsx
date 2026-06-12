@@ -70,6 +70,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
               <a href="/information/privater-fahrer-ratgeber">Privater Fahrer – Ratgeber</a>
               <a href="/information/kosten-buchungsratgeber">Kosten &amp; Buchungsratgeber</a>
               <a href="/information/familien-gruppenreisen">Familien- &amp; Gruppenreisen</a>
+              <a href="/information/reise-tipps-sicherheit">Reisetipps &amp; Sicherheit</a>
             </div>
           </li>
           <li>
@@ -142,6 +143,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
                 <a href="/information/privater-fahrer-ratgeber">Privater Fahrer – Ratgeber</a>
                 <a href="/information/kosten-buchungsratgeber">Kosten &amp; Buchungsratgeber</a>
                 <a href="/information/familien-gruppenreisen">Familien- &amp; Gruppenreisen</a>
+                <a href="/information/reise-tipps-sicherheit">Reisetipps &amp; Sicherheit</a>
               </div>
             )}
           </div>

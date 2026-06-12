@@ -27,6 +27,10 @@ export interface Article {
     fr?: string;
     es?: string;
   };
+  faqItems?: {
+    q: string;
+    a: string;
+  }[];
 }
 
 // ─── Category Metadata ────────────────────────────────────────────────────────
@@ -2827,6 +2831,339 @@ export const ARTICLES: Article[] = [
     <a href="/#contact" class="article-cta-btn">Kostenloses Angebot anfordern</a>
   </div>
 
+</article>
+`,
+  },
+
+  // ─── Artikel: Beste Reisezeit Sri Lanka ─────────────────────────────────────
+  {
+    id: "article-beste-reisezeit-sri-lanka",
+    slug: "beste-reisezeit-sri-lanka",
+    category: "reise-tipps-sicherheit",
+    title: "Beste Reisezeit für Sri Lanka: Monatlicher Wetterführer",
+    excerpt:
+      "Sri Lanka ist ein Ganzjahresziel – aber der ideale Reisezeitpunkt hängt davon ab, wohin Sie reisen möchten. Dieser Leitfaden erklärt die zwei Monsunzeiten, die besten Monate für Strände, Wildlifesafaris und das Kulturdreieck, damit Sie Ihre Reise mit Zuversicht planen können.",
+    coverImage: "/manus-storage/best_time_beach_sunset_3bbe3707.jpg",
+    publishedAt: "2026-06-13",
+    readingTime: 10,
+    tags: ["Sri Lanka", "Reiseplanung", "Wetter", "Beste Reisezeit", "Monsun"],
+    seo: {
+      metaTitle: "Beste Reisezeit für Sri Lanka: Monatlicher Wetterführer (2026) | SLTCS",
+      metaDescription:
+        "Wann ist die beste Reisezeit für Sri Lanka? Dieser Leitfaden 2026 erklärt die zwei Monsunzeiten, das Wetter Monat für Monat und die besten Zeiten für Strände, Safaris und das Kulturdreieck. Planen Sie Ihre perfekte Reise mit einem privaten Fahrer.",
+      keywords: [
+        "beste reisezeit sri lanka",
+        "sri lanka wetter nach monat",
+        "sri lanka monsunzeit",
+        "sri lanka regenzeit",
+        "wann nach sri lanka reisen",
+        "sri lanka hochsaison",
+        "sri lanka reisewetter",
+        "sri lanka strandurlaub saison",
+        "sri lanka yala safari beste zeit",
+        "sri lanka kulturdreieck wetter",
+      ],
+    },
+    hreflang: {
+      en: "https://en.srilanka-charter.com/information/travel-tips-safety/best-time-to-visit-sri-lanka",
+    },
+    faqItems: [
+      {
+        q: "Was ist der absolut beste Monat für eine Sri-Lanka-Reise?",
+        a: "Januar und Februar gelten allgemein als die besten Monate. Die West- und Südküste befinden sich in der Hochsaison, das Kulturdreieck ist am besten zugänglich und das Hochland ist klar und kühl. Wenn Sie nur einmal reisen können, planen Sie Ihre Reise für Januar oder Februar.",
+      },
+      {
+        q: "Lohnt sich eine Reise nach Sri Lanka während der Monsunzeit?",
+        a: "Ja – mit der richtigen Planung. Der Yala-Monsun (Mai–September) betrifft die West- und Südküste, aber die Ostküste ist in diesen Monaten ausgezeichnet. Die Preise sind niedriger, weniger Touristen sind unterwegs und die Landschaft ist üppig und grün. Viele erfahrene Reisende bevorzugen die Schulter- und Monsunzeiten gerade wegen der ruhigeren Atmosphäre.",
+      },
+      {
+        q: "Regnet es während des Monsuns jeden Tag?",
+        a: "Normalerweise nicht. Monsunregen in Sri Lanka fällt eher in kurzen, intensiven Schauern – oft am späten Nachmittag – als als ganztägiger Nieselregen. Die meisten Morgen sind klar, und Sightseeing ist problemlos möglich. Ein privater Fahrer kann Ihnen helfen, Ihren Tagesablauf an die Wetterbedingungen anzupassen.",
+      },
+      {
+        q: "Wann ist die beste Zeit, um Elefanten in Sri Lanka zu sehen?",
+        a: "Das berühmte Elefantentreffen im Minneriya-Nationalpark findet von Juni bis September statt, wenn sich Hunderte von Elefanten am Stausee versammeln. Der Yala-Nationalpark lässt sich am besten von Februar bis Juli besuchen, wenn die Wasserquellen versiegen und Elefanten, Leoparden und andere Wildtiere sich an den verbliebenen Tümpeln konzentrieren.",
+      },
+      {
+        q: "Was ist die beste Reisezeit für das Kulturdreieck (Sigiriya, Anuradhapura)?",
+        a: "Das Kulturdreieck liegt in Sri Lankas Trockenzone und ist ganzjährig zugänglich, aber die angenehmsten Bedingungen herrschen von Dezember bis April. Die Temperaturen können von Mai bis September sehr hoch sein, daher werden frühmorgendliche Besuche empfohlen, wenn Sie in diesen Monaten reisen.",
+      },
+      {
+        q: "Ist Dezember eine gute Reisezeit für Sri Lanka?",
+        a: "Ja. Dezember markiert den Beginn der Hochsaison für die West- und Südküste. Das Wetter verbessert sich nach der ersten Woche rasch, und ab Mitte Dezember sind die Bedingungen ausgezeichnet. Es ist auch der Beginn der Pilgersaison auf den Adam's Peak. Buchen Sie Unterkünfte weit im Voraus, da der Dezember – besonders rund um Weihnachten und Neujahr – sehr beliebt ist.",
+      },
+    ],
+    content: `
+<article class="article-body">
+  <p class="article-lead">
+    Sri Lanka ist eines der wenigen Reiseziele in Asien, bei dem die Frage „Wann sollte ich reisen?" keine eindeutige Antwort hat – und das ist eigentlich eine gute Nachricht.
+  </p>
+
+  <p class="article-lead">
+    Dank zweier unterschiedlicher Monsunzeiten auf gegenüberliegenden Seiten der Insel bietet Sri Lanka jeden Monat irgendwo ausgezeichnetes Wetter. Der Schlüssel liegt darin zu wissen, welche Küste und welche Region je nach Reisezeitpunkt zu priorisieren ist.
+  </p>
+
+  <p>
+    Dieser Leitfaden schlüsselt Sri Lankas Klima nach Monaten auf, erklärt die zwei Monsunzeiten und hilft Ihnen, die beste Zeit für Strände, Wildlifesafaris, Wanderungen im Hochland und kulturelle Sehenswürdigkeiten zu wählen – egal ob Sie einen Winterurlaub oder ein Sommerabenteuer planen.
+  </p>
+
+
+  <h2 id="two-monsoons">Die zwei Monsunzeiten Sri Lankas verstehen</h2>
+
+  <p>
+    Sri Lankas Wetter wird von zwei Monsunzeiten bestimmt, die verschiedene Teile der Insel zu unterschiedlichen Jahreszeiten beeinflussen. Dies zu verstehen ist die Grundlage für jede Reiseplanung.
+  </p>
+
+
+  <h3>Der Yala-Monsun (Südwestmonsun): Mai bis September</h3>
+
+  <p>
+    Der Yala-Monsun kommt aus dem Südwesten und bringt starke Niederschläge an die <strong>Westküste, Südküste und das Hochland</strong> – einschließlich Colombo, Galle, Mirissa, Bentota, Ella und Nuwara Eliya. Dies ist die Nebensaison für diese Regionen, mit hoher Luftfeuchtigkeit und häufigen Nachmittagsgewittern.
+  </p>
+
+  <p>
+    Derselbe Monsun lässt jedoch die <strong>Ostküste und den Norden</strong> weitgehend trocken und sonnig. Trincomalee, Arugam Bay und Nilaveli genießen in diesen Monaten ihr bestes Wetter und sind ideale Reiseziele für einen Besuch von Mai bis September.
+  </p>
+
+
+  <h3>Der Maha-Monsun (Nordostmonsun): Oktober bis Januar</h3>
+
+  <p>
+    Der Maha-Monsun kommt aus dem Nordosten und kehrt das Muster um. Er bringt Regen an die <strong>Ostküste und den Norden</strong>, während die <strong>West- und Südküste in ihre Trockenzeit eintreten</strong>. Ab Ende November sind die Strände der Westküste auf ihrem Höhepunkt – klarer Himmel, ruhige See und warme Temperaturen.
+  </p>
+
+  <p>
+    Oktober ist ein Zwischenmonsunmonat und kann kurze, heftige Schauer über die gesamte Insel bringen. Ab Mitte November verbessern sich die Bedingungen rasch, und Dezember bis März gilt weithin als die Hauptsaison für Sri Lanka insgesamt.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="/manus-storage/best_time_climate_calendar_9e51377d.webp"
+      alt="Sri Lanka Wetterkalender nach Monat – West- vs. Ostküste Hoch- und Monsunzeiten"
+      class="article-img"
+      loading="lazy"
+    />
+    <figcaption>Sri Lankas zwei Monsunzeiten bedeuten, dass irgendwo auf der Insel immer ausgezeichnetes Wetter herrscht.</figcaption>
+  </figure>
+
+
+  <h2 id="peak-season">Hochsaison: Dezember bis März</h2>
+
+  <p>
+    Dies ist die beliebteste Reisezeit für Sri Lanka und aus gutem Grund. Die West- und Südküste – Bentota, Mirissa, Unawatuna, Weligama, Galle – genießen trockenes, sonniges Wetter mit Temperaturen zwischen 28 und 32 °C.
+  </p>
+
+  <p>
+    Das Kulturdreieck (Sigiriya, Anuradhapura, Polonnaruwa) ist ebenfalls am zugänglichsten, mit niedrigen Regenwahrscheinlichkeiten und angenehmen Morgentemperaturen für Sightseeing. Das Hochland ist klar und kühl, ideal für die Zugfahrt von Kandy nach Ella.
+  </p>
+
+
+  <h3>Praktische Tipps für die Hochsaison</h3>
+
+  <p>
+    Rechnen Sie mit höheren Hotelpreisen, belebteren Straßen und mehr Konkurrenz um beliebte Unterkünfte. Frühzeitiges Buchen – insbesondere für Dezember und Januar – wird dringend empfohlen.
+  </p>
+
+  <p>
+    Ein privater Fahrer-Charter ist in der Hochsaison besonders wertvoll, da er den Stress des überfüllten öffentlichen Nahverkehrs beseitigt und Ihnen die Flexibilität gibt, früh aufzubrechen und die Mittagshitze zu meiden.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="/manus-storage/best_time_sigiriya_4e793e8d.jpg"
+      alt="Luftaufnahme der Sigiriya-Felsfestung – am besten in Sri Lankas Trockenzeit von Dezember bis April zu besuchen"
+      class="article-img"
+      loading="lazy"
+    />
+    <figcaption>Die Sigiriya-Felsfestung lässt sich am besten zwischen Dezember und April besuchen, wenn trockene Bedingungen den Aufstieg angenehm machen und die Aussicht am klarsten ist.</figcaption>
+  </figure>
+
+
+  <h2 id="shoulder-season">Zwischensaison: April und Oktober–November</h2>
+
+  <p>
+    April ist ein Übergangsmonat. Der Yala-Monsun ist noch nicht eingetroffen, sodass die West- und Südküste noch vernünftiges Wetter genießen – obwohl die Luftfeuchtigkeit zunimmt. Es ist eine gute Reisezeit, wenn Sie Hochsaisongedränge und -preise vermeiden möchten und trotzdem die Südküstenstrände und das Kulturdreieck genießen wollen.
+  </p>
+
+  <p>
+    Oktober und November sind ähnlich übergangsartig. Oktober kann inselweit unberechenbar sein, aber ab Mitte November trocknet die Westküste aus und die Atmosphäre ist spürbar frischer. Reisende in der Zwischensaison finden oft die beste Kombination aus gutem Wetter, niedrigeren Preisen und weniger Touristenmassen.
+  </p>
+
+
+  <h2 id="east-coast">Ostküste: Am besten von April bis September</h2>
+
+  <p>
+    Während der Rest Sri Lankas mit dem Yala-Monsun umgeht, ist die <strong>Ostküste auf ihrem absoluten Höhepunkt</strong>. Trincomalee bietet im Juni und Juli einige der schönsten Strände Asiens. Arugam Bay wird ab Mai zu einem weltklasse Surf-Ziel. Nilaveli und Passekudah sind ideal zum Schnorcheln und Tauchen.
+  </p>
+
+  <p>
+    Die Ostküste ist weniger entwickelt als der Süden, was weniger Touristen, niedrigere Preise und ein authentischeres Erlebnis bedeutet. Wenn Sie zwischen Mai und September reisen, empfiehlt es sich sehr, die Ostküste in Ihre Reiseroute einzubauen.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="/manus-storage/best_time_elephants_yala_0eaf2a99.jpg"
+      alt="Wilde Elefanten im Minneriya-Nationalpark, Sri Lanka – am besten von Juni bis September während des Gatherings zu besuchen"
+      class="article-img"
+      loading="lazy"
+    />
+    <figcaption>Das berühmte Elefantentreffen im Minneriya-Nationalpark findet von Juni bis September statt – eines der größten Wildtierschauspiele Asiens.</figcaption>
+  </figure>
+
+
+  <h2 id="hill-country">Hochland: Ganzjährig, aber am besten Januar–März</h2>
+
+  <p>
+    Ella, Nuwara Eliya und das Teehochland liegen auf einer Höhe und haben ihr eigenes Mikroklima. Die Temperaturen sind ganzjährig kühler (15–22 °C), und die Landschaft ist unabhängig von der Jahreszeit üppig. Das Hochland ist jedoch von <strong>Januar bis März</strong> am angenehmsten, wenn die Niederschläge am geringsten sind und die Bergblicke am klarsten.
+  </p>
+
+  <p>
+    Die berühmte Zugfahrt von Kandy nach Ella – eine der malerischsten Bahnstrecken der Welt – kann zu jeder Jahreszeit genossen werden, aber die Aussichten über die Teeplantagen sind in der Trockenzeit am dramatischsten, wenn sich der Morgennebel bis zum Vormittag lichtet.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="/manus-storage/best_time_tea_plantation_464753d9.jpg"
+      alt="Teeplantagen-Landschaft in Nuwara Eliya – Sri Lankas Hochland von Januar bis März am schönsten"
+      class="article-img"
+      loading="lazy"
+    />
+    <figcaption>Die Teehochlagen von Nuwara Eliya sind von Januar bis März am fotogensten, wenn klarer Himmel die gesamte Terrassenlandschaft der Plantagen enthüllt.</figcaption>
+  </figure>
+
+
+  <h2 id="month-by-month">Monatsübersicht</h2>
+
+  <div class="season-legend">
+    <span class="sl-badge sl-peak">● Hochsaison</span>
+    <span class="sl-badge sl-shoulder">● Zwischensaison</span>
+    <span class="sl-badge sl-monsoon">● Monsun / Nebensaison</span>
+    <span class="sl-badge sl-improving">● Verbessernd</span>
+  </div>
+  <div class="season-table-wrap">
+    <table class="season-table">
+      <thead>
+        <tr>
+          <th class="st-month-col">Monat</th>
+          <th>West- &amp; Südküste</th>
+          <th>Ostküste</th>
+          <th>Hochland</th>
+          <th>Kulturdreieck</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="st-row">
+          <td class="st-month">Jan</td>
+          <td><span class="st-badge st-peak">Hochsaison ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-peak">Beste Zeit ★★★</span></td>
+          <td><span class="st-badge st-peak">Beste Zeit ★★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Feb</td>
+          <td><span class="st-badge st-peak">Hochsaison ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-peak">Beste Zeit ★★★</span></td>
+          <td><span class="st-badge st-peak">Beste Zeit ★★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Mär</td>
+          <td><span class="st-badge st-peak">Hochsaison ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-peak">Beste Zeit ★★★</span></td>
+          <td><span class="st-badge st-peak">Gut ★★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Apr</td>
+          <td><span class="st-badge st-shoulder">Zwischensaison ★★</span></td>
+          <td><span class="st-badge st-improving">Verbessernd</span></td>
+          <td><span class="st-badge st-shoulder">Gut ★★</span></td>
+          <td><span class="st-badge st-shoulder">Gut ★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Mai</td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-peak">Hochsaison ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-shoulder">Trockenzone OK</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Jun</td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-peak">Hochsaison ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-shoulder">Trockenzone OK</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Jul</td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-peak">Hochsaison ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-shoulder">Trockenzone OK</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Aug</td>
+          <td><span class="st-badge st-improving">Verbessernd</span></td>
+          <td><span class="st-badge st-peak">Hochsaison ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-shoulder">Trockenzone OK</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Sep</td>
+          <td><span class="st-badge st-shoulder">Zwischensaison ★★</span></td>
+          <td><span class="st-badge st-peak">Hochsaison ★★★</span></td>
+          <td><span class="st-badge st-improving">Verbessernd</span></td>
+          <td><span class="st-badge st-shoulder">Gut ★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Okt</td>
+          <td><span class="st-badge st-shoulder">Zwischensaison ★★</span></td>
+          <td><span class="st-badge st-shoulder">Zwischensaison ★★</span></td>
+          <td><span class="st-badge st-shoulder">Gemischt ★★</span></td>
+          <td><span class="st-badge st-shoulder">Gemischt ★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Nov</td>
+          <td><span class="st-badge st-shoulder">Zwischensaison ★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-shoulder">Gut ★★</span></td>
+          <td><span class="st-badge st-shoulder">Gut ★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Dez</td>
+          <td><span class="st-badge st-peak">Hochsaison ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsun</span></td>
+          <td><span class="st-badge st-shoulder">Gut ★★</span></td>
+          <td><span class="st-badge st-peak">Beste Zeit ★★★</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <h2 id="private-driver-advantage">Warum ein privater Fahrer in jeder Saison sinnvoll ist</h2>
+
+  <p>
+    Einer der praktischsten Vorteile einer Sri-Lanka-Reise mit einem privaten Fahrer ist die Möglichkeit, Ihre Reiseroute in Echtzeit an das Wetter anzupassen. Wenn ein Strand unerwarteten Regen erlebt, kann Ihr Fahrer ein alternatives Ziel im Landesinneren vorschlagen.
+  </p>
+
+  <p>
+    Wenn eine Bergstraße frei ist und das Licht perfekt ist, können Sie so lange anhalten, wie Sie möchten. Der öffentliche Nahverkehr in Sri Lanka – Busse und Züge – folgt festen Routen und Fahrplänen. Ein privater Charter gibt Ihnen die Freiheit, zwischen der Westküste, dem Hochland, dem Kulturdreieck und der Ostküste in einer Reihenfolge zu wechseln, die für Ihre Reisedaten geografisch und meteorologisch sinnvoll ist.
+  </p>
+
+  <p>
+    SLTCS-Fahrer sind erfahren darin, alle Regionen der Insel in allen Jahreszeiten zu navigieren. Ob Sie in der Hochsaison reisen oder die Ostküste im Juli erkunden – Ihr Fahrer kennt die Straßen, die Bedingungen und die besten Alternativen, wenn Pläne geändert werden müssen.
+  </p>
+
+  <div class="article-cta-box">
+    <div class="article-cta-icon">🗓️</div>
+    <div class="article-cta-content">
+      <div class="article-cta-title">Planen Sie Ihre Reise nach dem besten Wetter</div>
+      <div class="article-cta-text">Teilen Sie uns Ihre Reisedaten und bevorzugten Regionen mit, und wir schlagen Ihnen die ideale Reiseroute für die Saison vor. Kostenlose Anfrage, unverbindlich.</div>
+      <a href="/#contact" class="article-cta-btn">Kostenlose Reiserouten-Empfehlung erhalten</a>
+    </div>
+  </div>
+  <!-- FAQ_ACCORDION -->
 </article>
 `,
   },
