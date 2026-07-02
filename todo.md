@@ -115,3 +115,25 @@
 - [x] 記事で使用する画像4枚をstorageにアップロードする
 - [x] SiteNavbar.tsxのBEISPIELREISENプルダウンの「10 Tage bis 2 Wochen」リンクを実際のURLに更新する（デスクトップ＆モバイル）
 - [x] TypeScriptエラー0件・ビルド確認
+
+## SEO監査対応（2026-07-02）
+
+### 最優先：インデックス可能性の修正
+- [x] `client/public/robots.txt` を作成する（User-agent: * / Allow: / / Disallow: /thanks / Sitemap: URL）
+- [x] `client/public/sitemap.xml` のハッシュフラグメントURLを実際のルートURLに置き換える（/#plans, /#courses 等を削除し /price, /faq, /information/... を追加）
+- [x] `client/src/hooks/useSEO.ts` を新規作成する（title/description/canonical/OGP/JSON-LD/noindexを一元管理するフック）
+- [x] `server/_core/vite.ts` のExpressキャッチオール前にルート別メタタグ注入ロジックを追加する（SSRプリレンダリング）
+- [x] `client/index.html` のGoogle Fontsを `media="print" onload="this.media='all'"` で非同期読み込みに変更する
+
+### 各ページのSEO実装をuseSEOフックに移行
+- [x] `Pricing.tsx` の `useEffect` SEO実装を `useSEO` フックに置き換える（Service + Offer JSON-LD追加）
+- [x] `FAQ.tsx` の `useEffect` SEO実装を `useSEO` フックに置き換える（FAQPage JSON-LD追加）
+- [x] `ArticleDetail.tsx` の `useEffect` SEO実装を `useSEO` フックに置き換える（Article JSON-LD追加）
+- [x] `ArticleList.tsx` の `useEffect` SEO実装を `useSEO` フックに置き換える
+- [x] `Home.tsx` に `useSEO` を追加する（LocalBusiness JSON-LD追加）
+- [x] `Thanks.tsx` に `useSEO({ noindex: true })` を追加する
+- [x] `NotFound.tsx` に `useSEO({ noindex: true })` を追加する
+
+### TypeScript確認・チェックポイント
+- [x] TypeScriptエラー0件確認
+- [x] チェックポイント保存

@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useMemo } from "react";
 import SiteNavbar from "@/components/SiteNavbar";
+import { useSEO } from "@/hooks/useSEO";
 
 // ─── Price Data ───────────────────────────────────────────────────────────────
 type VehicleKey = "sedan" | "van" | "bigvan";
@@ -338,152 +339,70 @@ function PlanCard({
 export default function Pricing() {
   const [currency, setCurrency] = useState<CurrencyKey>("USD");
 
-  // ─── SEO: title, meta description, canonical, hreflang, JSON-LD ──────────────
-  useEffect(() => {
-    // ─ Title ─────────────────────────────────────────────────────────────────────
-    const prevTitle = document.title;
-    document.title = "Sri Lanka Mietwagen mit Fahrer – Preise & Pauschaltarife | SLTCS";
-
-    // ─ Meta description ──────────────────────────────────────────────────────────
-    let metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement("meta");
-      metaDesc.name = "description";
-      document.head.appendChild(metaDesc);
-    }
-    const prevDesc = metaDesc.content;
-    metaDesc.content =
-      "Sri Lanka Mietwagen mit Fahrer – Pauschaltarife ohne versteckte Kosten. Bronze, Silber & Gold ab $270. Limousine, Van & Großer Van. Jetzt kostenlos anfragen.";
-
-    // ─ Canonical ─────────────────────────────────────────────────────────────────
-    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-    const prevCanonical = canonical?.href ?? "";
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = "https://de.srilanka-charter.com/price";
-
-    // ─ hreflang ──────────────────────────────────────────────────────────────────
-    const hreflangData = [
-      { hreflang: "de", href: "https://de.srilanka-charter.com/price" },
-      { hreflang: "en", href: "https://en.srilanka-charter.com/price" },
-      { hreflang: "fr", href: "https://fr.srilanka-charter.com/price" },
-      { hreflang: "es", href: "https://es.srilanka-charter.com/price" },
-      { hreflang: "ru", href: "https://ru.srilanka-charter.com/price" },
-      { hreflang: "nl", href: "https://nl.srilanka-charter.com/price" },
-      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/price" },
-      { hreflang: "ms", href: "https://ms.srilanka-charter.com/price" },
-      { hreflang: "sv", href: "https://sv.srilanka-charter.com/price" },
-      { hreflang: "x-default", href: "https://en.srilanka-charter.com/price" },
-    ];
-    // Remove existing hreflang links (homepage ones from index.html)
-    const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
-    existingHreflangs.forEach((el) => el.remove());
-    // Add /price-specific hreflang links
-    const addedHreflangs: HTMLLinkElement[] = [];
-    hreflangData.forEach(({ hreflang, href }) => {
-      const link = document.createElement("link");
-      link.rel = "alternate";
-      link.setAttribute("hreflang", hreflang);
-      link.href = href;
-      document.head.appendChild(link);
-      addedHreflangs.push(link);
-    });
-
-    // ─ JSON-LD ───────────────────────────────────────────────────────────────────
-    const jsonLd = {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      name: "Sri Lanka Mietwagen mit privatem Fahrer",
-      description:
-        "Vollständig privater Mietwagenservice in Sri Lanka mit englischsprachigem Fahrer. Drei Pläne: Bronze, Silber, Gold.",
-      url: "https://de.srilanka-charter.com/price",
-      brand: {
-        "@type": "Brand",
-        name: "SLTCS – Sri Lanka Mietwagen mit privatem Fahrer",
-      },
-      offers: [
-        {
-          "@type": "Offer",
-          name: "Bronze-Plan – Limousine (2 Tage)",
+  const priceJsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Sri Lanka Mietwagen mit privatem Fahrer",
+    description:
+      "Vollständig privater Mietwagenservice in Sri Lanka mit englischsprachigem Fahrer. Drei Pläne: Bronze, Silber, Gold.",
+    url: "https://de.srilanka-charter.com/price",
+    brand: {
+      "@type": "Brand",
+      name: "SLTCS – Sri Lanka Mietwagen mit privatem Fahrer",
+    },
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Bronze-Plan – Limousine (2 Tage)",
+        price: "270",
+        priceCurrency: "USD",
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
           price: "270",
           priceCurrency: "USD",
-          priceSpecification: {
-            "@type": "UnitPriceSpecification",
-            price: "270",
-            priceCurrency: "USD",
-            unitText: "2 Tage",
-          },
-          availability: "https://schema.org/InStock",
-          url: "https://de.srilanka-charter.com/price",
+          unitText: "2 Tage",
         },
-        {
-          "@type": "Offer",
-          name: "Silber-Plan – Limousine (2 Tage)",
+        availability: "https://schema.org/InStock",
+        url: "https://de.srilanka-charter.com/price",
+      },
+      {
+        "@type": "Offer",
+        name: "Silber-Plan – Limousine (2 Tage)",
+        price: "310",
+        priceCurrency: "USD",
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
           price: "310",
           priceCurrency: "USD",
-          priceSpecification: {
-            "@type": "UnitPriceSpecification",
-            price: "310",
-            priceCurrency: "USD",
-            unitText: "2 Tage",
-          },
-          availability: "https://schema.org/InStock",
-          url: "https://de.srilanka-charter.com/price",
+          unitText: "2 Tage",
         },
-        {
-          "@type": "Offer",
-          name: "Gold-Plan – Limousine (2 Tage)",
+        availability: "https://schema.org/InStock",
+        url: "https://de.srilanka-charter.com/price",
+      },
+      {
+        "@type": "Offer",
+        name: "Gold-Plan – Limousine (2 Tage)",
+        price: "350",
+        priceCurrency: "USD",
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
           price: "350",
           priceCurrency: "USD",
-          priceSpecification: {
-            "@type": "UnitPriceSpecification",
-            price: "350",
-            priceCurrency: "USD",
-            unitText: "2 Tage",
-          },
-          availability: "https://schema.org/InStock",
-          url: "https://de.srilanka-charter.com/price",
+          unitText: "2 Tage",
         },
-      ],
-    };
+        availability: "https://schema.org/InStock",
+        url: "https://de.srilanka-charter.com/price",
+      },
+    ],
+  }), []);
 
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.id = "price-jsonld";
-    script.textContent = JSON.stringify(jsonLd);
-    document.head.appendChild(script);
-
-    return () => {
-      document.title = prevTitle;
-      metaDesc!.content = prevDesc;
-      if (canonical) canonical.href = prevCanonical;
-      // Restore homepage hreflang links
-      addedHreflangs.forEach((el) => el.remove());
-      const homepageHreflangs = [
-        { hreflang: "de", href: "https://de.srilanka-charter.com/" },
-        { hreflang: "en", href: "https://en.srilanka-charter.com/" },
-        { hreflang: "fr", href: "https://fr.srilanka-charter.com/" },
-        { hreflang: "es", href: "https://es.srilanka-charter.com/" },
-        { hreflang: "ru", href: "https://ru.srilanka-charter.com/" },
-        { hreflang: "nl", href: "https://nl.srilanka-charter.com/" },
-        { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/" },
-        { hreflang: "ms", href: "https://ms.srilanka-charter.com/" },
-        { hreflang: "sv", href: "https://sv.srilanka-charter.com/" },
-        { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
-      ];
-      homepageHreflangs.forEach(({ hreflang, href }) => {
-        const link = document.createElement("link");
-        link.rel = "alternate";
-        link.setAttribute("hreflang", hreflang);
-        link.href = href;
-        document.head.appendChild(link);
-      });
-      document.getElementById("price-jsonld")?.remove();
-    };
-  }, []);
+  useSEO({
+    title: "Sri Lanka Mietwagen mit Fahrer – Preise & Pauschaltarife | SLTCS",
+    description: "Sri Lanka Mietwagen mit Fahrer – Pauschaltarife ohne versteckte Kosten. Bronze, Silber & Gold ab $270. Limousine, Van & Großer Van. Jetzt kostenlos anfragen.",
+    path: "/price",
+    jsonLdList: [priceJsonLd],
+    jsonLdIdPrefix: "price",
+  });
 
   const scrollToContact = () => {
     window.location.href = "/#contact";

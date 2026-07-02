@@ -2,9 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Home } from "lucide-react";
 import { useLocation } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function NotFound() {
   const [, setLocation] = useLocation();
+
+  useSEO({
+    title: "404 – Seite nicht gefunden | SLTCS",
+    description: "Die angeforderte Seite wurde nicht gefunden.",
+    path: "/404",
+    noindex: true,
+  });
 
   const handleGoHome = () => {
     setLocation("/");

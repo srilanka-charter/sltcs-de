@@ -7,7 +7,8 @@
  * - Full-bleed hero slideshow, tabbed itineraries, contact form
  */
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
+import { useSEO } from "@/hooks/useSEO";
 import { trpc } from "@/lib/trpc";
 import { useLocation } from "wouter";
 
@@ -1348,42 +1349,29 @@ function FloatingCTA() {
   );
 }
 
-// ─── Main Page ────────────────────────────────────────────────────────────────
+// ─── Main Page ────────────────────────────────────────────────────────────────────────────────
 export default function Home() {
-  useEffect(() => {
-    // ─ Canonical ─────────────────────────────────────────────────────────────────
-    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-    const prevCanonical = canonical?.href ?? '';
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.rel = 'canonical';
-      document.head.appendChild(canonical);
-    }
-    canonical.href = "https://de.srilanka-charter.com/";
-    // ─ hreflang ──────────────────────────────────────────────────────────────────
-    const hreflangData = [
-      { hreflang: "de", href: "https://de.srilanka-charter.com/" },
-      { hreflang: "en", href: "https://en.srilanka-charter.com/" },
-      { hreflang: "fr", href: "https://fr.srilanka-charter.com/" },
-      { hreflang: "es", href: "https://es.srilanka-charter.com/" },
-      { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
-    ];
-    const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
-    existingHreflangs.forEach((el) => el.remove());
-    const addedHreflangs: HTMLLinkElement[] = [];
-    hreflangData.forEach(({ hreflang, href }) => {
-      const link = document.createElement('link');
-      link.rel = 'alternate';
-      link.setAttribute('hreflang', hreflang);
-      link.href = href;
-      document.head.appendChild(link);
-      addedHreflangs.push(link);
-    });
-    return () => {
-      addedHreflangs.forEach((el) => el.remove());
-      if (canonical) canonical.href = prevCanonical;
-    };
-  }, []);
+  const homeJsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "SLTCS – Sri Lanka Mietwagen mit privatem Fahrer",
+    description: "Privater Mietwagenservice in Sri Lanka mit englischsprachigem Fahrer. Transparente Pauschaltarife, keine versteckten Kosten.",
+    url: "https://de.srilanka-charter.com/",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "LK",
+    },
+    priceRange: "$$$",
+    image: "https://de.srilanka-charter.com/favicon-192.png",
+  }), []);
+
+  useSEO({
+    title: "Sri Lanka Mietwagen mit privatem Fahrer | SLTCS",
+    description: "Sri Lanka Mietwagen mit privatem Fahrer – Pauschaltarife ohne versteckte Kosten. Englischsprachiger Fahrer, Limousine, Van & Großer Van. Jetzt kostenlos anfragen.",
+    path: "/",
+    jsonLdList: [homeJsonLd],
+    jsonLdIdPrefix: "home",
+  });
 
   return (
     <div style={{ margin: 0, padding: 0 }}>

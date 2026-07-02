@@ -8,6 +8,7 @@ import { useParams, Link } from "wouter";
 import { getArticleBySlug, CATEGORIES, getArticlesByCategory, type ArticleCategory } from "@/data/articles";
 import { useEffect, useMemo } from "react";
 import SiteNavbar from "@/components/SiteNavbar";
+import { useSEO } from "@/hooks/useSEO";
 
 // ─── TOC Utilities ────────────────────────────────────────────────────────────
 
@@ -146,94 +147,10 @@ export default function ArticleDetail() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [params.slug]);
 
-  // Update document title and meta for SEO
-  useEffect(() => {
-    if (!article) return;
-    document.title = article.seo.metaTitle;
-
-    let metaDesc = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
-    if (!metaDesc) {
-      metaDesc = document.createElement("meta");
-      metaDesc.name = "description";
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.content = article.seo.metaDescription;
-
-    let metaKw = document.querySelector('meta[name="keywords"]') as HTMLMetaElement | null;
-    if (!metaKw) {
-      metaKw = document.createElement("meta");
-      metaKw.name = "keywords";
-      document.head.appendChild(metaKw);
-    }
-    metaKw.content = article.seo.keywords.join(", ");
-
-    const setOg = (property: string, content: string) => {
-      let el = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement | null;
-      if (!el) {
-        el = document.createElement("meta");
-        el.setAttribute("property", property);
-        document.head.appendChild(el);
-      }
-      el.content = content;
-    };
-    setOg("og:title", article.seo.metaTitle);
-    setOg("og:description", article.seo.metaDescription);
-    setOg("og:image", article.coverImage);
-    setOg("og:type", "article");
-    setOg("og:url", `https://de.srilanka-charter.com/information/${article.category}/${article.slug}`);
-    setOg("og:site_name", "SLTCS | Sri Lanka Mietwagen mit privatem Fahrer");
-    setOg("og:locale", "de_DE");
-    setOg("og:image:width", "1200");
-    setOg("og:image:height", "630");
-
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
-      if (!el) {
-        el = document.createElement("meta");
-        el.name = name;
-        document.head.appendChild(el);
-      }
-      el.content = content;
-    };
-    setMeta("twitter:card", "summary_large_image");
-    setMeta("twitter:title", article.seo.metaTitle);
-    setMeta("twitter:description", article.seo.metaDescription);
-    setMeta("twitter:image", article.coverImage);
-
-    // Canonical URL
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    const prevCanonical = canonical?.href || "https://de.srilanka-charter.com/";
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `https://de.srilanka-charter.com/information/${article.category}/${article.slug}`;
-
-    // hreflang alternate links
-    const existingHreflang = document.querySelectorAll('link[hreflang]');
-    existingHreflang.forEach(el => el.remove());
-    // de (self)
-    const hreflangDe = document.createElement('link');
-    hreflangDe.rel = 'alternate';
-    hreflangDe.setAttribute('hreflang', 'de');
-    hreflangDe.href = `https://de.srilanka-charter.com/information/${article.category}/${article.slug}`;
-    document.head.appendChild(hreflangDe);
-    // en / fr / es cross-links
-    const hreflangLangs: Array<'en' | 'fr' | 'es'> = ['en', 'fr', 'es'];
-    hreflangLangs.forEach((lang) => {
-      const url = (article.hreflang as Record<string, string> | undefined)?.[lang];
-      if (url) {
-        const link = document.createElement('link');
-        link.rel = 'alternate';
-        link.setAttribute('hreflang', lang);
-        link.href = url;
-        document.head.appendChild(link);
-      }
-    });
-
-    // Article JSON-LD
-    const articleJsonLd = {
+  // Build article JSON-LD
+  const articleJsonLd = useMemo(() => {
+    if (!article) return null;
+    return {
       "@context": "https://schema.org",
       "@type": "Article",
       headline: article.title,
@@ -261,19 +178,31 @@ export default function ArticleDetail() {
       },
       keywords: article.seo.keywords.join(", "),
     };
-    const articleScript = document.createElement("script");
-    articleScript.type = "application/ld+json";
-    articleScript.id = "article-jsonld";
-    articleScript.textContent = JSON.stringify(articleJsonLd);
-    document.head.appendChild(articleScript);
-
-    return () => {
-      document.querySelectorAll('link[hreflang]').forEach(el => el.remove());
-      document.title = "SLTCS｜Sri Lanka Mietwagen mit privatem Fahrer";
-      canonical!.href = prevCanonical;
-      document.getElementById("article-jsonld")?.remove();
-    };
   }, [article]);
+
+  // Build hreflang overrides for article pages (only de + cross-links where available)
+  const hreflangOverrides = useMemo(() => {
+    if (!article) return undefined;
+    const overrides: Record<string, string> = {
+      de: `https://de.srilanka-charter.com/information/${article.category}/${article.slug}`,
+    };
+    const langs: Array<'en' | 'fr' | 'es'> = ['en', 'fr', 'es'];
+    langs.forEach((lang) => {
+      const url = (article.hreflang as Record<string, string> | undefined)?.[lang];
+      if (url) overrides[lang] = url;
+    });
+    return overrides;
+  }, [article]);
+
+  useSEO({
+    title: article ? article.seo.metaTitle : "SLTCS｜Sri Lanka Mietwagen mit privatem Fahrer",
+    description: article ? article.seo.metaDescription : "",
+    path: article ? `/information/${article.category}/${article.slug}` : "/",
+    ogImage: article?.coverImage,
+    jsonLdList: articleJsonLd ? [articleJsonLd] : undefined,
+    jsonLdIdPrefix: "article",
+    hreflangOverrides,
+  });
 
   const { toc, htmlWithIds } = useMemo(() => {
     if (!article) return { toc: [], htmlWithIds: "" };

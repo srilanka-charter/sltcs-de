@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "wouter";
 import SiteNavbar from "@/components/SiteNavbar";
+import { useSEO } from "@/hooks/useSEO";
 
 // ─── SEO ─────────────────────────────────────────────────────────────────────
 const PAGE_TITLE = "FAQ – Häufig gestellte Fragen | SLTCS Sri Lanka Mietwagen mit privatem Fahrer";
@@ -463,103 +464,26 @@ function AccordionItem({
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  useEffect(() => {
-    const prevTitle = document.title;
-    document.title = PAGE_TITLE;
+  const faqJsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQ_ITEMS.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.plainText,
+      },
+    })),
+  }), []);
 
-    let meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    if (!meta) {
-      meta = document.createElement("meta");
-      meta.name = "description";
-      document.head.appendChild(meta);
-    }
-    const prevDesc = meta.content;
-    meta.content = PAGE_DESC;
-
-    // ─ Canonical ─────────────────────────────────────────────────────────────
-    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-    const prevCanonical = canonical?.href ?? "";
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = "https://de.srilanka-charter.com/faq";
-
-    // ─ hreflang ──────────────────────────────────────────────────────────────
-    const hreflangData = [
-      { hreflang: "de", href: "https://de.srilanka-charter.com/faq" },
-      { hreflang: "en", href: "https://en.srilanka-charter.com/faq" },
-      { hreflang: "fr", href: "https://fr.srilanka-charter.com/faq" },
-      { hreflang: "es", href: "https://es.srilanka-charter.com/faq" },
-      { hreflang: "ru", href: "https://ru.srilanka-charter.com/faq" },
-      { hreflang: "nl", href: "https://nl.srilanka-charter.com/faq" },
-      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/faq" },
-      { hreflang: "ms", href: "https://ms.srilanka-charter.com/faq" },
-      { hreflang: "sv", href: "https://sv.srilanka-charter.com/faq" },
-      { hreflang: "x-default", href: "https://en.srilanka-charter.com/faq" },
-    ];
-    const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
-    existingHreflangs.forEach((el) => el.remove());
-    const addedHreflangs: HTMLLinkElement[] = [];
-    hreflangData.forEach(({ hreflang, href }) => {
-      const link = document.createElement("link");
-      link.rel = "alternate";
-      link.setAttribute("hreflang", hreflang);
-      link.href = href;
-      document.head.appendChild(link);
-      addedHreflangs.push(link);
-    });
-
-    // ─ JSON-LD: FAQPage schema ────────────────────────────────────────────────
-    const jsonLd = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: FAQ_ITEMS.map((item) => ({
-        "@type": "Question",
-        name: item.q,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: item.plainText,
-        },
-      })),
-    };
-    const existingScript = document.querySelector('script[data-id="faq-jsonld"]');
-    if (existingScript) existingScript.remove();
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.setAttribute("data-id", "faq-jsonld");
-    script.textContent = JSON.stringify(jsonLd);
-    document.head.appendChild(script);
-
-    return () => {
-      document.title = prevTitle;
-      if (meta) meta.content = prevDesc;
-      if (canonical) canonical.href = prevCanonical;
-      addedHreflangs.forEach((el) => el.remove());
-      // Restore homepage hreflang
-      const homepageHreflangs = [
-        { hreflang: "de", href: "https://de.srilanka-charter.com/" },
-        { hreflang: "en", href: "https://en.srilanka-charter.com/" },
-        { hreflang: "fr", href: "https://fr.srilanka-charter.com/" },
-        { hreflang: "es", href: "https://es.srilanka-charter.com/" },
-        { hreflang: "ru", href: "https://ru.srilanka-charter.com/" },
-        { hreflang: "nl", href: "https://nl.srilanka-charter.com/" },
-        { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/" },
-        { hreflang: "ms", href: "https://ms.srilanka-charter.com/" },
-        { hreflang: "sv", href: "https://sv.srilanka-charter.com/" },
-        { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
-      ];
-      homepageHreflangs.forEach(({ hreflang, href }) => {
-        const link = document.createElement("link");
-        link.rel = "alternate";
-        link.setAttribute("hreflang", hreflang);
-        link.href = href;
-        document.head.appendChild(link);
-      });
-      document.querySelector('script[data-id="faq-jsonld"]')?.remove();
-    };
-  }, []);
+  useSEO({
+    title: PAGE_TITLE,
+    description: PAGE_DESC,
+    path: "/faq",
+    jsonLdList: [faqJsonLd],
+    jsonLdIdPrefix: "faq",
+  });
 
   return (
     <div

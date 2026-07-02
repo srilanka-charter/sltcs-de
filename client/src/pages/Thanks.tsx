@@ -4,9 +4,17 @@
 
 import { useEffect } from "react";
 import { useLocation } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function Thanks() {
   const [, setLocation] = useLocation();
+
+  useSEO({
+    title: "Vielen Dank für Ihre Anfrage | SLTCS",
+    description: "Ihre Anfrage wurde erfolgreich übermittelt. Wir melden uns innerhalb von 24 Stunden.",
+    path: "/thanks",
+    noindex: true,
+  });
 
   // Scroll to top on mount
   useEffect(() => {
