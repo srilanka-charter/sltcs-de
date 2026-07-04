@@ -137,3 +137,11 @@
 ### TypeScript確認・チェックポイント
 - [x] TypeScriptエラー0件確認
 - [x] チェックポイント保存
+
+## VOICEページ追加（2026-07-05）
+
+- [x] `client/src/data/voiceReviews.ts` を新規作成（全レビューデータのドイツ語版）
+- [x] `client/src/pages/Voice.tsx` を新規作成（英語版と同等のデザイン・SEO完全対応）
+- [x] `client/src/components/SiteNavbar.tsx` にVOICEリンクを追加（PREISの右隣）- [x] `client/src/App.tsx` に `/voice` ルートを登録
+- [x] `client/public/sitemap.xml` に `/voice` を追加
+- [x] `server/seo.ts` に `/voice` のSSRメタタグを追加

@@ -10,6 +10,7 @@ import Pricing from "./pages/Pricing";
 import FAQ from "./pages/FAQ";
 import ArticleList from "./pages/ArticleList";
 import ArticleDetail from "./pages/ArticleDetail";
+import Voice from "./pages/Voice";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -18,6 +19,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/thanks"} component={Thanks} />
       <Route path={"/price"} component={Pricing} />
+      <Route path={"/voice"} component={Voice} />
       <Route path={"/faq"} component={FAQ} />
       <Route path={"/information/:category/:slug"} component={ArticleDetail} />
       <Route path={"/information/:category"} component={ArticleList} />

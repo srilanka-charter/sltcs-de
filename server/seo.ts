@@ -83,6 +83,27 @@ const STATIC_ROUTES: Record<string, RouteMeta> = {
       "Antworten auf häufige Fragen zu SLTCS: Trinkgeld, Aktivitäten, Zahlung, Stornierung, Fahrervorstellung und mehr.",
     canonical: `${BASE_URL}/faq`,
   },
+  "/voice": {
+    title: "Kundenstimmen – Sri Lanka Privatfahrer Bewertungen | SLTCS",
+    description:
+      "Echte Bewertungen von Reisenden, die Sri Lanka mit SLTCS-Privatfahrern erkundet haben. Gesamtbewertung 4,9 ★ – Fahrer, Fahrzeug und Service.",
+    canonical: `${BASE_URL}/voice`,
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "SLTCS – Sri Lanka Mietwagen mit privatem Fahrer",
+        url: `${BASE_URL}/`,
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: 4.9,
+          bestRating: 5,
+          ratingCount: 22,
+          reviewCount: 22,
+        },
+      },
+    ],
+  },
   "/thanks": {
     title: "Vielen Dank für Ihre Anfrage | SLTCS",
     description:
