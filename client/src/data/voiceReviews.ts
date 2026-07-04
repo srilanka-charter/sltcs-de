@@ -34,6 +34,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 4.5,
     quote: "Aruna hat jede Bergstraße wie ein Abenteuer wirken lassen – nicht wie eine Herausforderung.",
     body: "Wir haben Aruna für eine einwöchige Rundreise durch das Hochland gebucht, und er hat jede Erwartung übertroffen. Seine Kenntnisse der malerischen Aussichtspunkte – von denen viele in keinem Reiseführer stehen – waren außergewöhnlich. Er hat unsere Ankunft am Ella Rock perfekt auf den Morgennebel abgestimmt, und sein Vorschlag, an einem kleinen Teeladen am Straßenrand zu halten, wurde zu einer unserer schönsten Erinnerungen. Arunas Fahrstil ist ruhig und sicher, selbst auf engen Bergpässen, und seine gelassene Art hat uns die ganze Zeit vollständig beruhigt. Er war stets pünktlich, stets lächelnd und immer einen Schritt voraus. Ein herausragender Profi und ein durch und durch herzlicher Mensch.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_aruna_78705121.jpeg",
   },
   {
     id: "dhammika-r-couple",
@@ -48,6 +49,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 4.5,
     quote: "Dhammikas Ortskenntnisse haben unsere Reise von einem Urlaub in ein echtes kulturelles Eintauchen verwandelt.",
     body: "Von dem Moment an, als Dhammika uns am Flughafen Colombo abholte, wussten wir, dass wir in guten Händen waren. Er besitzt ein enzyklopädisches Wissen über die Geschichte und Kultur Sri Lankas, das er mit echter Begeisterung teilt – nie belehrend, immer im Gespräch. Am Sigiriya wusste er genau, aus welchem Winkel man den Felsen zur goldenen Stunde fotografiert, und in Kandy führte er uns zu einer Kandyan-Tanzvorstellung, die die meisten Touristen nie finden. Sein Fahrzeug war makellos und klimatisiert, und er hatte immer kaltes Wasser für uns bereit. Dhammika ist der Typ Fahrer, dem es wirklich am Herzen liegt, ob man das bestmögliche Erlebnis hat. Wir haben ihn bereits drei Freundespaaren empfohlen.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_dhammika_f371cfdd.jpeg",
   },
   {
     id: "kushan-b-group",
@@ -62,6 +64,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Kushan hat vier sehr unterschiedliche Persönlichkeiten mit Geduld, Humor und bemerkenswertem Geschick gemanagt.",
     body: "Unsere vierköpfige Gruppe hatte sehr unterschiedliche Interessen – Geschichte, Tierwelt, Strände und Essen – und Kushan hat es geschafft, all das zu einem nahtlosen Reiseplan zu verweben. Er war endlos geduldig, wenn wir uns nicht einigen konnten, wo wir essen wollten, hatte immer einen Vorschlag parat und hat uns nie das Gefühl gegeben, gehetzt zu werden. Sein Fahrstil auf den Küstenstraßen war sicher und souverän, und er kannte jeden Schleichweg, um den schlimmsten Nachmittagsstau zu umgehen. Das Fahrzeug war geräumig, komfortabel und während der gesamten Reise makellos sauber. Kushans lockere Art hat die langen Fahrtage wirklich angenehm gemacht. Wir haben Sri Lanka mit dem Gefühl verlassen, einen Freund gewonnen zu haben.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_kushan_f9478373.jpeg",
   },
   {
     id: "lasith-w-family",
@@ -76,6 +79,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Lasith war unendlich geduldig mit unseren Kindern und hat jeden Moment der Reise mühelos wirken lassen.",
     body: "Lasith bei uns zu haben war ein echter Glücksfall. Seine herzliche Art mit den Kindern hat uns alle sofort beruhigt, und sein klares Englisch bedeutete, dass nichts in der Übersetzung verloren ging. Pünktlich, voller durchdachter Vorschläge für Sehenswürdigkeiten und lokale Restaurants, und stets ruhig am Steuer – er war alles, was wir uns erhofft hatten. Wir empfehlen ihn vorbehaltlos: aufmerksam, kenntnisreich und absolut vertrauenswürdig. Falls du mal nach Europa kommst, Lasith – die erste Runde geht auf uns.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_lasith2_555d5b29.jpeg",
   },
   {
     id: "malinga-s-couple",
@@ -90,6 +94,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Malingas Begeisterung für die Tierwelt Sri Lankas war absolut ansteckend – er hat jede Safari unvergesslich gemacht.",
     body: "Wir haben uns für ein auf Tierwelt ausgerichtetes Reiseprogramm entschieden, und Malinga war dafür der perfekte Guide. Seine Kenntnisse des Wilpattu-Nationalparks waren außergewöhnlich – er entdeckte einen Leoparden, der in einem Baum ruhte und den unser offizieller Safari-Jeep völlig übersehen hatte. Er arrangierte auch eine Bootsafari auf dem Madu River, die nicht in unserem ursprünglichen Plan stand, und sie erwies sich als eines der Highlights der gesamten Reise. Malinga fährt mit echter Sorgfalt auf den Wildreservat-Pisten, und seine Geduld beim Warten auf die perfekte Sichtung ist bemerkenswert. Sein fröhlicher Kommentar während der gesamten Fahrt hat jeden Kilometer zwischen den Parks angenehm gemacht. Ein außergewöhnlicher Fahrer für alle, die die Natur lieben.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_malinga_5636b125.jpeg",
   },
   {
     id: "ravi-y-group",
@@ -104,6 +109,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 4.5,
     quote: "Ravi hat sieben von uns glücklich, pünktlich und lachend durch die gesamte Reise gebracht – keine kleine Leistung.",
     body: "Als große Gruppe von sieben jungen Erwachsenen waren wir etwas nervös, ob ein privater Charter für uns funktionieren würde. Ravi hat jede Sorge innerhalb der ersten Stunde zerstreut. Er hat ein natürliches Talent dafür, Gruppendynamiken zu managen – er weiß, wann er eine Pause vorschlagen soll, wann er weitermachen soll und wann er alle einfach die Landschaft in Stille genießen lassen soll. Sein Van war geräumig und komfortabel, und er hielt ihn während der gesamten Reise makellos. Ravi hat auch ein ausgezeichnetes Auge für Fotomöglichkeiten und war immer bereit, für den perfekten Schuss anzuhalten. Er hat uns zu lokalem Straßenessen geführt, das wir alleine nie gefunden hätten, und jede Empfehlung war hervorragend. Ravi hat unsere Gruppenreise wirklich besonders gemacht.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_ravi_b940edfb.jpeg",
   },
   {
     id: "smith-k-family",
@@ -118,6 +124,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Smiths ruhige Professionalität und echte Herzlichkeit haben unseren Familienurlaub wirklich außergewöhnlich gemacht.",
     body: "Wir sind als Familie zu fünft gereist – darunter zwei kleine Kinder und eine Großmutter – und Smith hat jede logistische Herausforderung mit stiller Effizienz und einem ständigen Lächeln gemeistert. Er war penibel in Sachen Sicherheit, stellte immer sicher, dass alle bequem saßen, bevor er losfuhr, und sein Fahrstil auf den kurvenreichen Straßen nach Ella war beeindruckend sanft. Smith hat für unsere Großmutter in einem Restaurant in Mirissa eine Überraschungs-Geburtstagstorte arrangiert, was die ganze Familie tief bewegt hat. Seine Kenntnisse des Yala-Nationalparks waren herausragend – wir haben Leoparden, Elefanten und Krokodile in einem einzigen Morgen gesehen. Smith ist der Typ Fahrer, der wirklich in Ihr Glück investiert. Wir können ihn nicht genug empfehlen.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_smith_3ba6750f.jpeg",
   },
   {
     id: "asanka-p-couple",
@@ -132,6 +139,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 4.5,
     quote: "Asanka hat die antiken Städte zum Leben erweckt – sein Wissen und seine Herzlichkeit waren schlicht außergewöhnlich.",
     body: "Wir haben das Kulturelle Dreieck mit Asanka über drei Tage erkundet, und es war ein Erlebnis, das wir nie vergessen werden. Sein tiefes Wissen über Anuradhapura und Polonnaruwa hat das, was ein langer Spaziergang durch Ruinen hätte sein können, in eine wirklich bewegende Reise durch die Geschichte verwandelt. Er wusste genau, welche Stätten er priorisieren sollte, wann er verweilen und wann er weitergehen sollte – und las dabei stets unsere Energie perfekt. Am Sigiriya führte er uns mit Geduld und Ermutigung den Felsen hinauf, und sein Timing bedeutete, dass wir die beste Aussicht fast für uns alleine hatten. Asanka ist herzlich, professionell und unerschöpflich begeistert davon, sein Land zu teilen. Wir haben Sri Lanka mit dem Gefühl verlassen, einen wahren Freund gefunden zu haben.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_asanka_couple_3ef4bb3c.png",
   },
   {
     id: "ranjana-h-couple",
@@ -146,6 +154,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 4.5,
     quote: "Ranjana hat unsere Sri-Lanka-Reise in etwas weit über gewöhnliches Sightseeing hinaus verwandelt.",
     body: "Wir haben einen privaten Charter für zwei gebucht und wurden Ranjana zugeteilt – eine Entscheidung, über die wir nicht glücklicher sein könnten. Er brachte eine ruhige Zuversicht in jede Fahrt, navigierte Bergstraßen und belebte Stadtzentren mit gleicher Leichtigkeit. Was am meisten auffiel, war seine echte Begeisterung: Er schlug ein Wildwasser-Rafting-Erlebnis vor, das wir nicht geplant hatten, und es wurde zu einem der Highlights der Reise. Seine Ortskenntnisse über versteckte Aussichtspunkte, authentische Restaurants und kulturelle Bräuche haben jeden Tag bereichert. Ranjana ist der Typ Guide, der einen das Gefühl gibt, ein Gast des Landes zu sein, nicht nur ein Tourist auf der Durchreise.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_ranjana_50bce7fd.jpeg",
   },
   {
     id: "isuru-k-group",
@@ -160,6 +169,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Chamara kannte jeden versteckten Winkel der Neun-Bogen-Brücke – unsere Fotos waren absolut atemberaubend.",
     body: "Wir waren eine vierköpfige Freundesgruppe, die Sri Lanka zum ersten Mal bereiste, und Chamara hat das Erlebnis wirklich unvergesslich gemacht. An der Neun-Bogen-Brücke in Ella führte er uns zu einem Aussichtspunkt, den die meisten Touristen nie finden – das Licht war perfekt und die Aufnahmen unglaublich. Er war immer einen Schritt voraus, wusste genau, wann der Zug vorbeifahren würde, und positionierte uns für die besten Fotos. Sein Fahrstil durch die kurvenreichen Hochlandstraßen war sanft und sicher, und er unterhielt uns während der gesamten Fahrt mit Geschichten über die lokale Kultur und Geschichte. Chamara ist herzlich, professionell und leidenschaftlich darin, das Beste Sri Lankas zu teilen. Wir hätten uns keinen besseren Guide wünschen können.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/voice_review_nine_arch_7dfe057f.jpg",
   },
   {
     id: "pradeep-l-couple",
@@ -173,7 +183,8 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     vehicleScore: 5.0,
     operatorScore: 5.0,
     quote: "Die Bootsafari durch die Feuchtgebiete war magisch – Pradeep hat alles perfekt arrangiert.",
-    body: "Mein Partner und ich suchten nach etwas jenseits des typischen Touristenpfads, und Pradeep hat genau das geliefert. Er arrangierte eine private Bootsafari durch ein atemberaubendes Feuchtgebietsreservat, das wir alleine nie entdeckt hätten. Durch die Seerosen zu gleiten mit einem Strohdach über uns, umgeben von Vogelwelt und üppigem Grün, war einer der friedlichsten Momente unserer gesamten Reise. Pradeeps Kenntnisse des lokalen Ökosystems waren beeindruckend – er identifizierte jeden Vogel und jede Pflanze, die wir sahen. Sein Fahrzeug war makellos, seine Pünktlichkeit tadellos und seine Herzlichkeit ließ uns wie Familie fühlen. Sri Lanka ist ein wunderschönes Land, und Pradeep hat es noch besonderer gemacht.",
+    body: "Pradeep hat unsere Erwartungen an einen privaten Fahrer in Sri Lanka vollständig neu definiert. Er arrangierte eine Bootsafari durch ein atemberaubendes Feuchtgebietsreservat, das wir alleine nie gefunden hätten – über das Wasser zu gleiten, umgeben von Lotusblumen und exotischer Vogelwelt, war einer der friedlichsten Momente der gesamten Reise. Seine Kenntnisse der Tierwelt Sri Lankas waren beeindruckend, und er identifizierte Vögel und Reptilien mit der Expertise eines Naturforschers. Pradeep war immer pünktlich, sein Fahrzeug war makellos, und seine Restaurantempfehlungen waren durchgängig ausgezeichnet. Er hat eine echte Leidenschaft dafür, das Beste seines Landes zu teilen, und das spürte man bei jedem Schritt der Reise.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/voice_review_boat_couple_0be07267.jpg",
   },
   {
     id: "saresh-t-couple",
@@ -188,6 +199,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Nuwans Ortskenntnisse haben Türen geöffnet, die wir nie erwartet hätten – ein wirklich außergewöhnliches Erlebnis.",
     body: "Wir hatten Wunderbares über private Fahrer-Touren in Sri Lanka gehört, aber Nuwan hat sogar unsere höchsten Erwartungen übertroffen. Im Minneriya-Nationalpark positionierte er uns perfekt, um die berühmte Elefantenversammlung zu beobachten – Hunderte von Elefanten, die sich in der Abenddämmerung am Stausee versammelten. Es war ein Wildtierspektakel, das wir noch nie gesehen hatten. Nuwans ruhige Präsenz und sein enzyklopädisches Wissen über den Park ließen das Erlebnis intim und persönlich wirken. Er führte uns auch zu einem versteckten Feuchtgebiet, wo wir eine ruhige Bootsfahrt umgeben von Lotusblumen und Eisvögeln genossen. Seine Liebe zum Detail – von kalten Handtüchern nach langen Fahrten bis zu perfekt getimten Stopps für lokale Snacks – zeigte ein Maß an Fürsorge, das selten zu finden ist.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/voice_review_wetland_jp_372bc3f0.jpg",
   },
   {
     id: "leon-f-couple",
@@ -202,6 +214,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Inmitten von Hunderten wilder Elefanten mit Kasun an unserer Seite zu stehen – ein Erlebnis des Lebens.",
     body: "Wir haben einen privaten Charter speziell gebucht, um die Elefantenversammlung in Minneriya zu sehen, und Kasun hat es absolut außergewöhnlich gemacht. Er kam früh an, um die beste Position im Park zu sichern, und als die Elefanten sich dem Stausee näherten, waren wir perfekt platziert, um das Spektakel vom offenen Jeep aus zu erleben. Das schiere Ausmaß der Versammlung – Dutzende von Familien, die gemeinsam über das offene Grasland zogen – ließ uns sprachlos. Kasun kommentierte das Verhalten jeder Herde mit der Expertise eines Naturforschers und zeigte Kälber, Matriarchinnen und Bullen mit bemerkenswertem Wissen. Über die Safari hinaus war sein Fahrstil durch das Kulturelle Dreieck sanft und sicher, und seine Restaurantempfehlungen waren durchgängig ausgezeichnet. Ein herausragender Fahrer und ein durch und durch liebenswürdiger Mensch.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/voice_review_elephant_couple_efa97b04.jpg",
   },
   {
     id: "anjana-m-couple",
@@ -216,6 +229,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 4.5,
     quote: "Die Yala-Safari in Dilshans Jeep war das Highlight unserer gesamten Flitterwochen.",
     body: "Wir haben Sri Lanka für unsere Flitterwochen gewählt und wollten etwas Abenteuerliches und Unvergessliches. Dilshan arrangierte eine private Jeep-Safari durch den Yala-Nationalpark, die jede Erwartung übertraf. Wir entdeckten Leoparden, Lippenbären, Krokodile und eine atemberaubende Vielfalt an Vogelwelt – alles in einem einzigen Morgen. Dilshans Kenntnisse des Parkgeländes bedeuteten, dass wir immer zur richtigen Zeit am richtigen Ort waren, und seine Begeisterung war ansteckend. Der Jeep selbst war robust und gut gewartet, perfekt für die Offroad-Pisten tief im Park. Nach der Safari fuhr er uns entlang der Südküste nach Mirissa, wo wir Blauwale von einem Boot aus beobachteten, das er vorab arrangiert hatte. Dilshan hat unsere Flitterwochen in ein echtes Abenteuer verwandelt. Wir können ihn nicht genug empfehlen.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/voice_review_jeep_couple_eb1a3cff.jpg",
   },
   {
     id: "sanjeewa-b-couple",
@@ -230,6 +244,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Sanjeewa arrangierte Erlebnisse, die wir alleine nie hätten finden können – darunter eine magische Ochsenkarrenfahrt.",
     body: "Sanjeewa ist der Typ Fahrer, der einen Urlaub in eine echte Kulturreise verwandelt. Während unserer Zeit im Kulturellen Dreieck arrangierte er eine traditionelle Ochsenkarrenfahrt durch ein ländliches Dorf, das völlig abseits der Touristenpfade liegt. Im wunderschön dekorierten Karren zu sitzen, umrahmt von alten Bäumen und umgeben von Vogelgesang, war einer jener seltenen Reisemomente, die man nie vergisst. Sanjeewa hatte offensichtlich über die Jahre echte Beziehungen zu lokalen Familien aufgebaut, und ihre Herzlichkeit ihm gegenüber – und damit auch uns gegenüber – war berührend. Sein Fahrstil war ebenso beeindruckend: sanft, sicher und immer pünktlich. Er antizipierte unsere Bedürfnisse, bevor wir sie überhaupt äußerten, von der Anpassung der Klimaanlage bis zum Vorschlag des perfekten Zeitpunkts für jeden Besuch. Sanjeewa verkörpert alles, was private Fahrer-Reisen in Sri Lanka so besonders macht.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/voice_review_oxcart_couple_1b0751ff.jpg",
   },
   {
     id: "ranjana-s-group",
@@ -244,6 +259,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Ranjana begleitete uns auf der Bootsafari und ließ das gesamte Erlebnis völlig mühelos wirken.",
     body: "Wir waren eine fünfköpfige Freundesgruppe, und Ranjana war der perfekte Begleiter für jeden Abschnitt der Reise. Er arrangierte eine Bootsafari durch ein atemberaubendes Feuchtgebietsreservat, das wir alleine nie gefunden hätten – über das Wasser zu gleiten, umgeben von Lotusblumen und Vogelwelt, war einer der friedlichsten Momente der gesamten Reise. Was uns am meisten beeindruckte, war, wie Ranjana alles zu antizipieren schien: Er wusste genau, wann er eine Pause vorschlagen sollte, welche lokalen Spots einen Besuch wert waren und wie er eine fünfköpfige Gruppe reibungslos voranbringen konnte, ohne dass sich jemand gehetzt fühlte. Seine Herzlichkeit und echte Begeisterung dafür, das Beste Sri Lankas zu teilen, ließen jeden Tag wie ein Abenteuer wirken. Wir hätten uns keinen besseren Guide wünschen können.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/voice_review_ranjana_boat_group_e98c1415.jpg",
   },
   {
     id: "chami-y-group",
@@ -258,6 +274,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Chami empfing uns am Flughafen mit Blumengirlanden – und die Herzlichkeit hörte von diesem Moment an nie auf.",
     body: "Vom allerersten Moment am Flughafen Colombo an setzte Chami den Ton für eine außergewöhnliche Reise. Er wartete mit traditionellen Blumengirlanden auf uns, was uns sofort das Gefühl gab, willkommen und besonders zu sein. In den folgenden Tagen führte er uns durch Sigiriya, Kandy und die Südküste mit der Expertise von jemandem, der sein Land wirklich liebt und stolz darauf ist, es zu teilen. Sein Englisch war ausgezeichnet, sein Fahrstil sanft und sicher, und seine Restaurantempfehlungen waren durchgängig hervorragend. Er war immer einen Schritt voraus – arrangierte frühe Starts, um die Menschenmassen an beliebten Sehenswürdigkeiten zu vermeiden, und fand ruhige Ecken, die die meisten Touristen nie entdecken. Chami ist ein wirklich außergewöhnlicher Fahrer und ein wunderbarer Mensch. Wir werden definitiv nach Sri Lanka zurückkehren und ihn wieder anfragen.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/voice_review_chami_airport_group_55b90413.jpg",
   },
   {
     id: "eranga-r-family",
@@ -272,6 +289,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Professioneller Service von der ersten Anfrage bis zur letzten Abfahrt – wir fühlten uns die ganze Zeit vollständig wohl.",
     body: "Von der Vorbuchung bis zum Reisetag hat das Team prompt und klar geantwortet. Preisgestaltung und Reiseplanung wurden so erklärt, dass kein Raum für Unsicherheiten blieb. Am Tag selbst fuhr Eranga mit Sorgfalt und Besonnenheit, umging Staus nahtlos, um uns im Zeitplan zu halten. Sein tiefes Wissen über Anuradhapura, Dambulla, Sigiriya und Polonnaruwa gab uns eine reiche historische Grundlage für das Verständnis dieses bemerkenswerten Landes. Wir betrachten uns als glücklich, ihn sowohl als Fahrer als auch als Guide gehabt zu haben.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review1_r_family_eranga_a3545b4c.png",
   },
   {
     id: "lasith-w-family-2",
@@ -286,6 +304,22 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Lasith war unendlich geduldig mit unseren Kindern und hat jeden Moment der Reise mühelos wirken lassen.",
     body: "Lasith bei uns zu haben war ein echter Glücksfall. Seine herzliche Art mit den Kindern hat uns alle sofort beruhigt, und sein klares Englisch bedeutete, dass nichts in der Übersetzung verloren ging. Pünktlich, voller durchdachter Vorschläge für Sehenswürdigkeiten und lokale Restaurants, und stets ruhig am Steuer – er war alles, was wir uns erhofft hatten. (Die Straße zwischen Passikudah und Sigiriya würden wir beim nächsten Mal vielleicht überspringen!) Wir empfehlen ihn vorbehaltlos: aufmerksam, kenntnisreich und absolut vertrauenswürdig. Falls du mal nach Europa kommst, Lasith – die erste Runde geht auf uns.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_lasith_family_ae2d2464.jpeg",
+  },
+  {
+    id: "ranjana-new",
+    driverName: "Ranjana",
+    guestLabel: "Ehepaar N.",
+    passengers: 2,
+    date: "September 2025",
+    route: "Colombo – Kandy – Nuwara Eliya – Mirissa",
+    overallScore: 5.0,
+    driverScore: 5.0,
+    vehicleScore: 5.0,
+    operatorScore: 5.0,
+    quote: "Ranjana hat unsere Sri-Lanka-Reise in etwas weit über gewöhnliches Sightseeing hinaus verwandelt.",
+    body: "Ranjana ist ein außergewöhnlicher Fahrer und Guide. Seine Kenntnisse der Teeplantagen rund um Nuwara Eliya waren beeindruckend, und er arrangierte einen privaten Besuch bei einer kleinen Teefarm, der nicht im Reiseführer stand. Seine Empfehlungen für lokale Restaurants waren durchgängig ausgezeichnet – wir haben Gerichte probiert, die wir sonst nie gefunden hätten. Ranjanas ruhige, professionelle Art hat jeden langen Fahrtag angenehm gemacht, und sein echtes Interesse an unseren Reiseerfahrungen hat das Erlebnis sehr persönlich wirken lassen.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_ranjana_new_2b654dea.png",
   },
   {
     id: "priyanth-as",
@@ -300,6 +334,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Priyanth hat sechs Tage wie eine Reise mit einem vertrauten Freund wirken lassen – nicht mit einem bezahlten Fahrer.",
     body: "Vom Flughafen Colombo aus führte Priyanth uns über sechs Tage durch Sigiriya, Kandy, Nuwara Eliya und Galle. Er war pünktlich und fuhr die ganze Zeit mit Sorgfalt, fragte immer nach, wie es uns geht – etwas, das wir bei längeren Strecken wirklich zu schätzen wussten. Seine fröhliche Gesellschaft machte jeden Transfer angenehm, und seine Einblicke in die Geschichte und Kultur Sri Lankas verliehen allem, was wir sahen, echte Tiefe. Er führte uns auch zu einem atemberaubenden Aussichtspunkt, der nicht in unserem ursprünglichen Plan stand, und empfahl lokale Restaurants, die schlicht hervorragend waren. Wir würden gerne bei unserem nächsten Besuch in Sri Lanka wieder mit ihm reisen.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_priyantha_couple_e0a47aaf.png",
   },
   {
     id: "indika-t-couple",
@@ -314,6 +349,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 5.0,
     quote: "Dank Indika wurde unsere Reise nicht nur Sightseeing – sie wurde eine farbenprächtige, unvergessliche Reise.",
     body: "Wir reisten als Paar von Negombo über Sigiriya, Kandy, Nuwara Eliya und Mirissa über fünf Tage. Am allerersten Morgen – der zufällig ein Geburtstag war – erschien eine Torte beim Frühstück, die Indika still über das Hotel arrangiert hatte. Er schenkte uns auch eine kleine Elefantenfigur. Wir waren wirklich bewegt. Während der gesamten Reise war er eine ruhige, beruhigende Präsenz: Er informierte uns vor jeder Sehenswürdigkeit, bewältigte frühe Starts ohne Klagen, empfahl Restaurants, die er persönlich besucht (jedes war ausgezeichnet), und fuhr sogar mit uns im Zug mit, um uns in den Menschenmassen sicher zu halten. Wenn etwas überteuert schien, sagte er einfach: ‚Lass uns das überspringen' – diese Ehrlichkeit ließ uns ihm vollständig vertrauen.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review5_t_couple_indika_519f1510.png",
   },
   {
     id: "chamil-d-family",
@@ -328,6 +364,7 @@ export const VOICE_REVIEWS: VoiceReview[] = [
     operatorScore: 4.5,
     quote: "Obwohl wir nach einem Zyklon unseren gesamten Reiseplan neu gestalten mussten, hat Chamil daraus die Reise unseres Lebens gemacht.",
     body: "Wir reisten als drei Generationen – Großeltern, Eltern und ein Kind – kurz nachdem ein Zyklon die Insel erschüttert hatte. Chamil sammelte ständig die neuesten Informationen über Straßenverhältnisse und Sicherheit und schlug immer die besten verfügbaren Routen unter Berücksichtigung unserer Wünsche vor. Als wir Hotels und Zugbuchungen kurzfristig stornieren und neu arrangieren mussten, war er bei jedem Schritt dabei und half uns. Er begleitete uns beim Sigiriya-Felsaufstieg und der Safari, was uns enorme Sicherheit gab. Seine Aufmerksamkeit gegenüber unserem Kind war besonders berührend. Chamils Herzlichkeit, schnelles Denken und natürliche Rücksichtnahme haben jedes Mitglied unserer Familie gewonnen. Wir freuen uns bereits auf unsere nächste Reise nach Sri Lanka und werden definitiv nach Chamil fragen.",
+    photoUrl: "https://en.srilanka-charter.com/manus-storage/review_dfamily_chamil_9214e24c.png",
   },
 ];
 

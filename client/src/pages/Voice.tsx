@@ -44,6 +44,18 @@ function ScoreBar({ label, score }: { label: string; score: number }) {
 function ReviewCard({ review }: { review: (typeof VOICE_REVIEWS)[0] }) {
   return (
     <article className="voice-review-card">
+      {/* Photo */}
+      {review.photoUrl && (
+        <div className="voice-review-card__photo-wrap">
+          <img
+            src={review.photoUrl}
+            alt={`${review.driverName} mit Gästen`}
+            className="voice-review-card__photo"
+            loading="lazy"
+          />
+          <div className="voice-review-card__photo-badge">★ {review.overallScore.toFixed(1)}</div>
+        </div>
+      )}
       <header className="voice-review-card__header">
         <div className="voice-review-card__driver-badge">
           <span className="voice-review-card__driver-icon">
