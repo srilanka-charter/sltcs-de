@@ -168,7 +168,7 @@ function Navbar() {
           </li>
           <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>FAHRZEUGE</a></li>
           <li><a href="/price">PREIS</a></li>
-          <li><a href="/voice">VOICE</a></li>
+          <li><a href="/voice">STIMMEN</a></li>
           <li className="nav-dropdown" onMouseEnter={() => setInfoOpen(true)} onMouseLeave={() => setInfoOpen(false)}>
             <button>INFORMATION</button>
             {infoOpen && (
@@ -227,7 +227,7 @@ function Navbar() {
           </div>
           <a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>Fahrzeuge</a>
           <a href="/price">Preis</a>
-          <a href="/voice">Voice</a>
+          <a href="/voice">Stimmen</a>
           {/* Information accordion */}
           <div className="mobile-accordion">
             <button

@@ -64,7 +64,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
             </div>
           </li>
           <li><a href="/price">PREIS</a></li>
-          <li><a href="/voice">VOICE</a></li>
+          <li><a href="/voice">STIMMEN</a></li>
           <li className="nav-dropdown">
             <button>INFORMATION</button>
             <div className="nav-dropdown-menu">
@@ -127,7 +127,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
             )}
           </div>
           <a href="/price">Preis</a>
-          <a href="/voice">Voice</a>
+          <a href="/voice">Stimmen</a>
           {/* Information accordion */}
           <div className="mobile-accordion">
             <button
