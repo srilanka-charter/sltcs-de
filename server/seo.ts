@@ -14,6 +14,8 @@ interface RouteMeta {
   canonical: string;
   noindex?: boolean;
   jsonLd?: Record<string, unknown>[];
+  /** ページ固有のhreflangタグ。未指定時はホームページのデフォルトを使用 */
+  hreflangLinks?: Array<{ hreflang: string; href: string }>;
 }
 
 // ─── Static route definitions ─────────────────────────────────────────────────
@@ -88,6 +90,14 @@ const STATIC_ROUTES: Record<string, RouteMeta> = {
     description:
       "Echte Bewertungen von Reisenden, die Sri Lanka mit SLTCS-Privatfahrern erkundet haben. Gesamtbewertung 4,9 ★ – Fahrer, Fahrzeug und Service.",
     canonical: `${BASE_URL}/voice`,
+    hreflangLinks: [
+      { hreflang: "de", href: "https://de.srilanka-charter.com/voice" },
+      { hreflang: "en", href: "https://en.srilanka-charter.com/voice" },
+      { hreflang: "fr", href: "https://fr.srilanka-charter.com/voice" },
+      { hreflang: "es", href: "https://es.srilanka-charter.com/voice" },
+      { hreflang: "nl", href: "https://nl.srilanka-charter.com/voice" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/voice" },
+    ],
     jsonLd: [
       {
         "@context": "https://schema.org",
@@ -322,10 +332,27 @@ export function injectSEOMeta(html: string, pathname: string): string {
     result = result.replace("</head>", `  ${canonicalTag}\n  </head>`);
   }
 
-  // Inject robots meta
+  // Build hreflang tags
+  const hreflangTags = (meta.hreflangLinks || [])
+    .map(
+      ({ hreflang, href }) =>
+        `<link rel="alternate" hreflang="${escapeHtml(hreflang)}" href="${escapeHtml(href)}" />`
+    )
+    .join("\n    ");
+
+  // If page has custom hreflang, replace existing hreflang links in the HTML
+  if (meta.hreflangLinks && meta.hreflangLinks.length > 0) {
+    // Remove all existing hreflang alternate links
+    result = result.replace(
+      /<link\s+rel="alternate"\s+hreflang="[^"]*"\s+href="[^"]*"\s*\/?>/g,
+      ""
+    );
+  }
+
+  // Inject robots meta + hreflang
   result = result.replace(
     "</head>",
-    `  ${robotsTag}\n  ${ogTitleTag}\n  ${ogDescTag}\n  ${ogUrlTag}\n  ${jsonLdTags ? jsonLdTags + "\n  " : ""}</head>`
+    `  ${robotsTag}\n  ${ogTitleTag}\n  ${ogDescTag}\n  ${ogUrlTag}\n  ${hreflangTags ? hreflangTags + "\n  " : ""}${jsonLdTags ? jsonLdTags + "\n  " : ""}</head>`
   );
 
   return result;

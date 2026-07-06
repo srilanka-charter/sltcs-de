@@ -31,8 +31,13 @@ export interface SEOOptions {
   jsonLdIdPrefix?: string;
   /** hreflangリンクを生成するかどうか（デフォルト: true） */
   hreflang?: boolean;
-  /** カスタムhreflangマッピング（パスが各言語で異なる場合） */
+  /** カスタhreflangマッピング（パスが各言語で異なる場合） */
   hreflangOverrides?: Record<string, string>;
+  /**
+   * hreflangを生成する言語リスト。未指定時はHREFLANG_PATHSの全言語。
+   * 特定ページに存在する言語のみを指定する場合に使用。
+   */
+  hreflangLangs?: string[];
 }
 
 /**
@@ -49,6 +54,7 @@ export function useSEO({
   jsonLdIdPrefix,
   hreflang: enableHreflang = true,
   hreflangOverrides,
+  hreflangLangs,
 }: SEOOptions): void {
   useEffect(() => {
     const canonicalUrl = `${BASE_URL}${path}`;
@@ -139,7 +145,10 @@ export function useSEO({
       existingHreflangs.forEach((el) => el.remove());
 
       // Add page-specific hreflang links
-      Object.entries(HREFLANG_PATHS).forEach(([lang, baseHref]) => {
+      const langEntries = hreflangLangs
+        ? Object.entries(HREFLANG_PATHS).filter(([lang]) => hreflangLangs.includes(lang))
+        : Object.entries(HREFLANG_PATHS);
+      langEntries.forEach(([lang, baseHref]) => {
         const href = hreflangOverrides?.[lang] ?? `${baseHref}${path}`;
         const link = document.createElement("link");
         link.rel = "alternate";

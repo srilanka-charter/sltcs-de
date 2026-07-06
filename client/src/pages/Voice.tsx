@@ -152,6 +152,15 @@ export default function Voice() {
     path: "/voice",
     jsonLdList,
     jsonLdIdPrefix: "voice",
+    hreflangLangs: ["de", "en", "fr", "es", "nl"],
+    hreflangOverrides: {
+      "en": "https://en.srilanka-charter.com/voice",
+      "fr": "https://fr.srilanka-charter.com/voice",
+      "de": "https://de.srilanka-charter.com/voice",
+      "es": "https://es.srilanka-charter.com/voice",
+      "nl": "https://nl.srilanka-charter.com/voice",
+      "x-default": "https://en.srilanka-charter.com/voice",
+    },
   });
 
   const scrollToContact = () => {
