@@ -43,6 +43,19 @@ const STATIC_ROUTES: Record<string, RouteMeta> = {
     description:
       "Sri Lanka Mietwagen mit Fahrer – Pauschaltarife ohne versteckte Kosten. Bronze, Silber & Gold ab $270. Limousine, Van & Großer Van. Jetzt kostenlos anfragen.",
     canonical: `${BASE_URL}/price`,
+    hreflangLinks: [
+      { hreflang: "de", href: "https://de.srilanka-charter.com/price" },
+      { hreflang: "en", href: "https://en.srilanka-charter.com/price" },
+      { hreflang: "fr", href: "https://fr.srilanka-charter.com/price" },
+      { hreflang: "es", href: "https://es.srilanka-charter.com/price" },
+      { hreflang: "nl", href: "https://nl.srilanka-charter.com/price" },
+      { hreflang: "ru", href: "https://ru.srilanka-charter.com/price" },
+      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/price" },
+      { hreflang: "ms", href: "https://ms.srilanka-charter.com/price" },
+      { hreflang: "sv", href: "https://sv.srilanka-charter.com/price" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/price" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/price" },
+    ],
     jsonLd: [
       {
         "@context": "https://schema.org",
@@ -84,6 +97,19 @@ const STATIC_ROUTES: Record<string, RouteMeta> = {
     description:
       "Antworten auf häufige Fragen zu SLTCS: Trinkgeld, Aktivitäten, Zahlung, Stornierung, Fahrervorstellung und mehr.",
     canonical: `${BASE_URL}/faq`,
+    hreflangLinks: [
+      { hreflang: "de", href: "https://de.srilanka-charter.com/faq" },
+      { hreflang: "en", href: "https://en.srilanka-charter.com/faq" },
+      { hreflang: "fr", href: "https://fr.srilanka-charter.com/faq" },
+      { hreflang: "es", href: "https://es.srilanka-charter.com/faq" },
+      { hreflang: "nl", href: "https://nl.srilanka-charter.com/faq" },
+      { hreflang: "ru", href: "https://ru.srilanka-charter.com/faq" },
+      { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/faq" },
+      { hreflang: "ms", href: "https://ms.srilanka-charter.com/faq" },
+      { hreflang: "sv", href: "https://sv.srilanka-charter.com/faq" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/faq" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/faq" },
+    ],
   },
   "/voice": {
     title: "Kundenstimmen – Sri Lanka Privatfahrer Bewertungen | SLTCS",
@@ -96,6 +122,7 @@ const STATIC_ROUTES: Record<string, RouteMeta> = {
       { hreflang: "fr", href: "https://fr.srilanka-charter.com/voice" },
       { hreflang: "es", href: "https://es.srilanka-charter.com/voice" },
       { hreflang: "nl", href: "https://nl.srilanka-charter.com/voice" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/voice" },
       { hreflang: "x-default", href: "https://en.srilanka-charter.com/voice" },
     ],
     jsonLd: [

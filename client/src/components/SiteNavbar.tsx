@@ -22,6 +22,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
     { label: "Japanese", url: "https://sltcs.srilanka-charter.com/" },
     { label: "Malay",    url: "https://ms.srilanka-charter.com/" },
     { label: "Swedish",  url: "https://sv.srilanka-charter.com/" },
+    { label: "Korean",   url: "https://ko.srilanka-charter.com/" },
   ];
 
   useEffect(() => {

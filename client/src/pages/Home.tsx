@@ -122,6 +122,7 @@ const LANGUAGES = [
   { code: "ja", label: "Japanese", url: "https://sltcs.srilanka-charter.com/" },
   { code: "ms", label: "Malay", url: "https://ms.srilanka-charter.com/" },
   { code: "sv", label: "Swedish", url: "https://sv.srilanka-charter.com/" },
+  { code: "ko", label: "Korean", url: "https://ko.srilanka-charter.com/" },
 ];
 
 function Navbar() {

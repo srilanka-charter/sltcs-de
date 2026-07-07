@@ -12,6 +12,7 @@ const HREFLANG_PATHS: Record<string, string> = {
   ja: "https://sltcs.srilanka-charter.com",
   ms: "https://ms.srilanka-charter.com",
   sv: "https://sv.srilanka-charter.com",
+  ko: "https://ko.srilanka-charter.com",
 };
 
 export interface SEOOptions {
@@ -203,6 +204,7 @@ export function useSEO({
           { hreflang: "ja", href: "https://sltcs.srilanka-charter.com/" },
           { hreflang: "ms", href: "https://ms.srilanka-charter.com/" },
           { hreflang: "sv", href: "https://sv.srilanka-charter.com/" },
+          { hreflang: "ko", href: "https://ko.srilanka-charter.com/" },
           { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
         ];
         homepageHreflangs.forEach(({ hreflang, href }) => {
